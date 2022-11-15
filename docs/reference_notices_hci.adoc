@@ -1,0 +1,80 @@
+---
+sidebar: sidebar 
+permalink: docs/reference_notices_hci.html 
+keywords: copyrights, notice, trademarks, patents, privacy, open source 
+summary: Rechtliche Hinweise ermöglichen den Zugriff auf Copyright-Erklärungen, Marken, Patente und mehr. 
+translate: false 
+---
+= Rechtliche Hinweise
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Rechtliche Hinweise ermöglichen den Zugriff auf Copyright-Erklärungen, Marken, Patente und mehr.
+
+
+
+== Urheberrecht
+
+http://www.netapp.com/us/legal/copyright.aspx[]
+
+
+
+== Marken
+
+NetApp, das NETAPP Logo und die auf der NetApp Markenseite aufgeführten Marken sind Marken von NetApp Inc. Andere Firmen- und Produktnamen können Marken der jeweiligen Eigentümer sein.
+
+http://www.netapp.com/us/legal/netapptmlist.aspx[]
+
+
+
+== Patente
+
+Eine aktuelle Liste der NetApp Patente finden Sie unter:
+
+https://www.netapp.com/us/media/patents-page.pdf[]
+
+
+
+== Datenschutzrichtlinie
+
+https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
+
+
+
+== Open Source
+
+In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.
+
+* link:../media/NetApp_HCI_1.11_notice.pdf["Hinweis zu NetApp HCI 1.11"^]
+* link:../media/Element_Software_12.7.pdf["Hinweis zu Element Software 12.7"^]
+* link:../media/Ember_OS_12.7.pdf["Hinweis für Ember OS 12.7"^]
+* link:../media/mNode_12.7.pdf["Hinweis für Management-Node 12.7"^]
+* link:../media/NetApp_HCI_1.10_notice.pdf["Hinweis zu NetApp HCI 1.10"^]
+* link:../media/Element_Software_12.5.pdf["Hinweis zu Element Software 12.5"^]
+* link:../media/SolidFire_eSDS_12.5.pdf["Hinweis zu NetApp SolidFire-Enterprise-SDS 12.5"^]
+* link:../media/mNode_12.5.pdf["Hinweis für Management-Node 12.5"^]
+* link:../media/ansible-products-notice.pdf["Hinweis zur Ansible-Rolle für Computing-Upgrades"^]
+* link:../media/storage_firmware_bundle_2.164.0_notices.pdf["Hinweis zum Storage Firmware Bundle 2.164"^]
+* link:../media/storage_firmware_bundle_2.150_notices.pdf["Hinweis zum Storage Firmware Bundle 2.150"^]
+* link:../media/compute_firmware_bundle_2.154.4_notices.pdf["Hinweis zum Compute-Firmware-Bundle 2.154.4"^]
+* link:../media/storage_firmware_bundle_2.146_notices.pdf["Hinweis zum Storage Firmware Bundle 2.146"^]
+* link:../media/compute_firmware_bundle_2.146_notices.pdf["Hinweis zum Compute-Firmware-Bundle 2.146"^]
+* link:../media/storage_firmware_bundle_2.99_notices.pdf["Hinweis zum Storage Firmware Bundle 2.99.2"^]
+* link:../media/compute_firmware_bundle_2.76_notices.pdf["Hinweis zum Compute-Firmware-Bundle 2.76"^]
+* link:../media/storage_firmware_bundle_2.76_notices.pdf["Hinweis zum Storage Firmware Bundle 2.76"^]
+* link:../media/compute_firmware_bundle_2.27_notices.pdf["Hinweis zum Compute-Firmware-Bundle 2.27"^]
+* link:../media/storage_firmware_bundle_2.27_notices.pdf["Hinweis zum Storage Firmware Bundle 2.27"^]
+* link:../media/compute_iso_notice.pdf["Hinweis zur Berechnung der Firmware-ISO"^]
+* link:../media/H610S_BMC_notice.pdf["Hinweis für H610S BMC"^]
+* link:../media/mgmt_svcs_2.22_notice.pdf["Hinweis zu Management Services 2.22.7 (NetApp Element-Plug-in für VMware vCenter Server 5.0.37)"^]
+* link:../media/mgmt_svcs_2.21_notice.pdf["Hinweis zu Management Services 2.21.61 (NetApp Element Plug-in für VMware vCenter Server 4.10.12)"^]
+* link:../media/2.20_notice.pdf["Hinweis zu Managementservices 2.20.69 (NetApp Element-Plug-in für vCenter Server 4.9.14)"^]
+* link:../media/2.19_notice.pdf["Hinweis zu Managementservices 2.19.48 (NetApp Element-Plug-in für vCenter Server 4.8.34)"^]
+* link:../media/2.18_notice.pdf["Hinweis zu Managementservices 2.18.91 (NetApp Element-Plug-in für vCenter Server 4.7.10)"^]
+

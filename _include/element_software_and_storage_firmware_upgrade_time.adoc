@@ -1,0 +1,26 @@
+= 
+:allow-uri-read: 
+
+
+* *Aktualisierungszeit*: Sie haben genügend Zeit für die Durchführung Ihres Upgrades eingeplant. Bei einem Upgrade auf Element Software 12.5 oder höher variiert die Dauer des Upgradevorgangs je nach aktueller Element Softwareversion und Firmware-Updates.
++
+[cols="20,20,20,20,20"]
+|===
+| Storage-Node | Aktuelle Version der Element Software | Ungefähre Installationszeit für Software und Firmware pro Node^1^ | Ungefähre Synchronisierungszeit pro Knoten^2^ | Ungefähre gesamte Upgrade-Zeit pro Node 
+
+
+| Alle SolidFire und NetApp H-Series Nodes mit aktueller Firmware | 12.x | 15 Minuten | 10 bis 15 Minuten | 20 bis 30 Minuten 
+
+
+| H610S und H410S | 12.x und 11.8 | 60 Minuten | 30 bis 60 Minuten | 90 bis 120 Minuten 
+
+
+| H610S | 11.7 und früher | 90 Minuten | 40 bis 70 Minuten | 130 bis 160 Minuten müssen Sie auch https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure["Führen Sie ein komplettes Herunterfahren des Node durch, und trennen Sie die Stromversorgung"^] Für jeden H610S Node. 
+|===
++
+^1^eine vollständige Matrix von Firmware und Treiber-Firmware für Ihre Hardware finden Sie unter link:firmware_driver_versions.html["Unterstützte Firmware- und ESXi-Treiberversionen für NetApp HCI und Firmware-Versionen für NetApp HCI Storage Nodes"].
+
++
+^2^Wenn Sie ein Cluster mit einer hohen Lese-IOPS-Last und einer längeren Firmware-Update-Zeit kombinieren, erhöht sich die Zeit für die Datensynchronisierung.
+
+

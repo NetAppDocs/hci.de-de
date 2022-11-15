@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: docs/hci_prereqs_deployment_configuration_restriction.html 
+summary: Weitere Informationen zu Konfigurationsbeschränkungen für die Implementierung. 
+keywords: netapp, hci, deployment, restriction, configuration, nde, compute, node, storage 
+---
+= Einschränkungen bei der Implementierungskonfiguration
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: netapp, hci, element, Witness Node
+
+
+[role="lead"]
+Bestimmte Konfigurationen sind in der NetApp Deployment Engine eingeschränkt – abhängig von der VMware vSphere Version, dem Computing-Node-Typ und der Anzahl der Storage-Nodes. Die eingeschränkten Konfigurationen gelten für VMware vSphere 7.0 mit H610C oder H615C Computing-Nodes und zwei oder drei Storage-Nodes. Wenn Sie mit einer eingeschränkten Konfiguration fortfahren möchten, müssen Sie eine andere vSphere Version, z. B. vSphere 6.7, auswählen oder die Bereitstellung von Witness Nodes verhindern, indem Sie mindestens vier Storage-Nodes in der Konfiguration haben.
+
+Wenn Sie link:task_nde_select_inventory.html["Wählen Sie auf der Seite *Inventar* eine eingeschränkte Konfiguration aus"] Während der Bereitstellung wird eine Fehlermeldung mit anderen gültigen Konfigurationsoptionen angezeigt.
+
+[discrete]
+== Weitere Informationen
+
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["Ressourcen-Seite zu NetApp HCI"^]
+* https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in für vCenter Server"^]
+

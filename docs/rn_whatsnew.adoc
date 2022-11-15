@@ -1,0 +1,136 @@
+---
+sidebar: sidebar 
+permalink: docs/rn_whatsnew.html 
+summary: Informieren Sie sich über die Neuerungen dieser Version von NetApp HCI. 
+keywords: netapp, hci, element, new, whatsnew 
+---
+= Was ist neu in NetApp HCI
+:hardbreaks:
+:allow-uri-read: 
+:url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: hci, cloud, onprem, documentation, help, element
+
+
+[role="lead"]
+NetApp aktualisiert regelmäßig den NetApp HCI, um Ihnen neue Funktionen, Verbesserungen und Fehlerkorrekturen zu bieten. NetApp HCI 1.10 enthält Element Software 12.5 für Storage-Cluster.
+
+
+NOTE: Element Software 12.7 ist die neueste Version und beinhaltet Sicherheits- und Systemkomponenten-Updates, Verbesserungen beim Betrieb sowie behobene Probleme. https://docs.netapp.com/us-en/element-software/concepts/concept_rn_whats_new_element.html["Informieren Sie sich über die Neuerungen bei Element 12.7"^].
+
+* Der  HCI 1.10 Abschnitt beschreibt neue Funktionen und Updates in NetApp HCI Version 1.10.
+* Der  software 12.5 Abschnitt beschreibt neue Funktionen und Updates in Element 12.5.
+
+
+
+
+== NetApp HCI 1.10
+
+NetApp HCI 1.10 verbessert Sicherheit und Stabilität und erhöht die Flexibilität nach der Skalierung.
+
+
+
+=== Flexibilität bei der Skalierung nach der Implementierung
+
+NetApp HCI 1.10 erhöht Ihre Flexibilität bei der Erweiterung der NetApp HCI Computing-Ressourcen, da die Standardkonfigurationseinstellungen für vmk und vmnic auf den Computing-Nodes entfällt. Ab NetApp HCI 1.10 werden von NetApp HCI nur allgemeine vmk-Konfigurationen auf den Computing-Nodes erwartet, wenn Sie die Computing-Ressourcen erweitern. link:task_nde_supported_net_changes.html["Weitere Informationen ."].
+
+
+
+=== Updates der Storage Node-Firmware
+
+NetApp HCI 1.10 umfasst Firmware-Updates für Storage-Nodes. link:rn_relatedrn.html#storage-firmware["Weitere Informationen ."].
+
+
+
+=== Updates der Computing Node-Firmware
+
+NetApp HCI 1.10 umfasst Firmware-Updates für Computing-Nodes. link:rn_relatedrn.html#compute-firmware["Weitere Informationen ."].
+
+
+
+=== NetApp Element Plug-in für vCenter Server 4.9 Verfügbarkeit
+
+Das NetApp Element Plug-in für vCenter Server 4.9 ist außerhalb der Management-Nodes 12.5 und NetApp HCI 1.10 Versionen erhältlich. Um das Plug-in zu aktualisieren, befolgen Sie die Anweisungen im link:concept_hci_upgrade_overview.html["NetApp HCI-Upgrades"] Dokumentation.
+
+
+
+=== Unterstützte Versionen von VMware vSphere Updates
+
+Ab NetApp HCI 1.10 wird VMware vSphere 7.0 auch zur Implementierung und Erweiterung unterstützt.
+
+
+
+=== Verbesserungen bei der NetApp Hybrid Cloud Control
+
+NetApp Hybrid Cloud Control ist für Version 1.10 erweitert. link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["Weitere Informationen ."^].
+
+
+
+=== Behobene Probleme und bekannte Probleme
+
+Das NetApp Bugs Online Tool enthält gelöste und bekannte Probleme für NetApp HCI, Element Software und andere Produkte. Sie können diese Probleme mit Stichwörtern oder Versionen unter durchsuchen https://mysupport.netapp.com/site/products/all/details/netapp-hci/bugsonline-tab["NetApp Bugs Online"^].
+
+
+
+== Element Software 12.5
+
+Element 12.5 bietet einen verbesserten Zugriff auf Storage Nodes, eine erweiterte Managementfunktionen für benutzerdefinierte Protection Domains, neue und verbesserte Cluster-Fehler und -Ereignisse, verbesserte Cluster-UI-Funktionalität, verbesserte Sicherheit und automatisierte Upgrades mit Ansible.
+
+
+
+=== Verbesserter Zugriff auf Storage-Nodes
+
+Element 12.5 bietet mithilfe signierter SSH-Zertifikate einen verbesserten Remote-Zugriff auf einzelne Knoten. Für sicheren Remote-Zugriff auf Storage-Nodes wird ein neues lokales Benutzerkonto mit beschränkter Berechtigung aufgerufen `sfreadonly` Wird jetzt während RTFI eines Speicherknotens erstellt. Der `sfreadonly` Account ermöglicht den Zugriff auf das Backend des Storage-Nodes zu grundlegenden Wartungs- oder Fehlerbehebungszwecken. Sie können nun die konfigurieren `supportAdmin` Zugriffstyp für Cluster-Administratorbenutzer, damit der NetApp Support nach Bedarf auf das Cluster zugreifen kann
+
+
+
+=== Verbessertes Management individueller Sicherungsdomänen
+
+Element 12.5 verfügt über eine neue Benutzeroberfläche, mit der Sie vorhandene benutzerdefinierte Schutz-Domains schnell und einfach anzeigen und neue benutzerdefinierte Schutz-Domains konfigurieren können.
+
+
+
+=== Neue und verbesserte Fehler, Ereignisse und Warnmeldungen im Cluster
+
+Element 12.5 verbessert die Fehlerbehebung im System durch die Einführung der neuen Cluster-Fehlercodes `BmcSelfTestFailed` Und `CpuThermalEventThreshold`. Element 12.5 enthält auch Verbesserungen der Robustheit bei vorhandenen Cluster-Ereignissen und Warnungen, z. B. `nodeOffline`, `volumeOffline`, `driveHealthFault`, `networkEvent`, und `cSumEvent`.
+
+
+
+=== Aktivieren Sie die Softwareverschlüsselung im Ruhezustand über die Benutzeroberfläche Cluster erstellen
+
+Durch Hinzufügen eines neuen Kontrollkästchens in der Benutzeroberfläche „Cluster erstellen“ bietet Element 12.5 die Möglichkeit, während der Cluster-Erstellung Cluster-übergreifende Softwareverschlüsselung für SolidFire All-Flash-Storage-Cluster zu aktivieren.
+
+
+
+=== Updates der Storage Node-Firmware
+
+Element 12.5 umfasst Firmware-Updates für Storage-Nodes. link:https://docs.netapp.com/us-en/element-software/concepts/concept_rn_relatedrn_element.html#storage-firmware["Weitere Informationen ."^].
+
+
+
+=== Erhöhte Sicherheit
+
+Element 12.5 enthält die Minderung, die das Risiko der Element Software gegenüber der Apache Log4j-Sicherheitsanfälligkeit schließt. NetApp SolidFire Storage-Cluster mit aktivierter Funktion Virtual Volumes (VVols) sind der Apache Log4j Sicherheitsanfälligkeit ausgesetzt. Informationen zum Workaround für die Sicherheitsanfälligkeit von Apache Log4j in der NetApp Element-Software finden Sie im {url-Peak}[KB-Artikel^].
+
+Wenn Sie Element 11.x, 12.0 oder 12.2 verwenden oder sich Ihr Storage-Cluster bereits bei Element 12.3 oder 12.3.1 befindet und die VVols-Funktion aktiviert ist, sollten Sie ein Upgrade auf 12.5 durchführen.
+
+Element 12.5 umfasst außerdem mehr als 120 CVE-Sicherheitsvorkehrungen.
+
+
+
+== Automatisierte Upgrades mit Ansible
+
+Bei Element 12.5 lässt sich der Workflow für Element Software-Upgrades mithilfe von Ansible automatisieren, um ein Rolling Upgrade des gesamten Storage-Clusters durchzuführen. Navigieren Sie zum, um zu beginnen https://github.com/NetApp-Automation["NetApp Ansible Repository"^] Auf GitHub und laden Sie die herunter `nar_solidfire_sds_upgrade` Rolle und Dokumentation:
+
+[discrete]
+== Weitere Informationen
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["Versionshinweise zu NetApp Hybrid Cloud Control and Management Services"^]
+* https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in für vCenter Server"^]
+* https://www.netapp.com/us/documentation/hci.aspx["Ressourcen-Seite zu NetApp HCI"^]
+* https://docs.netapp.com/us-en/element-software/index.html["Dokumentation von SolidFire und Element Software"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software["Firmware- und Treiberversionen für NetApp HCI und NetApp Element-Software"^]
+

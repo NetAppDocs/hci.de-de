@@ -1,0 +1,164 @@
+---
+sidebar: sidebar 
+permalink: docs/task_hcc_upgrade_management_node.html 
+summary: Im Rahmen eines Upgrades des NetApp HCI Systems führen Sie ein Upgrade des Management-Node durch. 
+keywords: netapp, hci, on premise, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x, 12.5, 12.7 
+---
+= Upgrade eines Management-Node
+:allow-uri-read: 
+
+
+[role="lead"]
+Sie können Ihren Management-Node ab Version 12.3.x oder höher auf den Management-Node 12.5 oder höher aktualisieren.
+
+Zum Upgrade der Element Software auf dem Storage-Cluster ist kein Upgrade des Betriebssystems des Management-Node mehr erforderlich. Die Managementservices können einfach auf die neueste Version aktualisiert werden, um Element-Upgrades mit NetApp Hybrid Cloud Control durchzuführen. Befolgen Sie für Ihr Szenario die Vorgehensweise zum Upgrade des Management-Node, wenn Sie aus anderen Gründen, wie z. B. Sicherheitsbehebungsmaßnahmen, ein Upgrade des Betriebssystems des Management-Node durchführen möchten.
+
+
+NOTE: Wenn Sie Informationen zum Upgrade von Management-Knoten 12.2 oder älter benötigen, lesen Sie den https://docs.netapp.com/us-en/hci19/docs/task_hcc_upgrade_management_node.html["Dokumentation zum Upgrade der NetApp HCI 1.9 Management-Nodes"^].
+
+Wählen Sie eine der folgenden Optionen:
+
+*  a management node to version 12.5 or later from version 12.3.x or later
+*  authentication using the management node REST API
++
+Wählen Sie diese Option, wenn Sie *sequenziell* aktualisiert haben (1) die Version der Managementservices und (2) Ihre Element Speicherversion und Ihren vorhandenen Management-Node *beibehalten* möchten:
+
+
+
+
+NOTE: Wenn Sie Ihre Managementservices, gefolgt vom Element Storage, nicht nacheinander aktualisieren, können Sie die erneute Authentifizierung mit diesem Verfahren nicht neu konfigurieren. Befolgen Sie stattdessen das entsprechende Upgrade-Verfahren.
+
+
+
+== Aktualisieren Sie einen Management-Node von Version 12.3.x oder höher auf Version 12.5 oder höher
+
+Sie können ein Upgrade des Management-Node von Version 12.3.x oder höher auf Version 12.5 oder höher durchführen, ohne dass eine neue Management Node Virtual Machine bereitgestellt werden muss.
+
+
+NOTE: Der Element 12.5 oder höher ist ein optionales Upgrade. Bei bestehenden Implementierungen wird dieser Bedarf nicht benötigt.
+
+.Was Sie und#8217;ll benötigen
+* Der RAM der Management-Node-VM ist 24 GB.
+* Der Management-Node, den Sie aktualisieren möchten, ist die Version 12.0 und verwendet IPv4-Netzwerke. Der Management-Node Version 12.5 oder höher unterstützt IPv6 nicht.
++
+
+TIP: Um die Version Ihres Management-Node zu überprüfen, melden Sie sich bei Ihrem Management-Node an, und zeigen Sie die Versionsnummer des Elements im Anmeldebanner an.
+
+* Sie haben das Management-Services-Bundle mit NetApp Hybrid Cloud Control auf die neueste Version aktualisiert. NetApp Hybrid Cloud Control kann über folgende IP-Adresse darauf zugreifen: `\https://<ManagementNodeIP>`
+* Wenn Sie Ihren Managementknoten auf Version 12.5 oder höher aktualisieren, benötigen Sie Managementdienste 2.21.61 oder höher, um fortzufahren.
+* Sie haben (falls erforderlich) einen zusätzlichen Netzwerkadapter mit den Anweisungen für konfiguriert link:task_mnode_install_add_storage_NIC.html["Konfigurieren einer zusätzlichen Speicher-NIC"].
++
+
+NOTE: Für persistente Volumes ist möglicherweise ein zusätzlicher Netzwerkadapter erforderlich, wenn eth0 nicht an das SVIP weitergeleitet werden kann. Konfigurieren Sie einen neuen Netzwerkadapter im iSCSI-Speichernetzwerk zur Konfiguration von persistenten Volumes.
+
+* Auf Storage-Nodes ist Element 12.3.x oder höher ausgeführt.
+
+
+.Schritte
+. Melden Sie sich bei der Virtual Machine des Management-Node über SSH oder Konsolenzugriff an.
+. Laden Sie die herunter https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["ISO für den Management-Node"^] Für Element Software von der NetApp Support Site bis zur Management-Node Virtual Machine.
++
+
+NOTE: Der Name der ISO ist ähnlich wie `solidfire-fdva-<Element release>-patchX-XX.X.X.XXXX.iso`
+
+. Prüfen Sie die Integrität des Downloads, indem Sie md5sum auf der heruntergeladenen Datei ausführen und vergleichen Sie die Ausgabe mit den verfügbaren Ressourcen der NetApp Support Site für Element Software wie im folgenden Beispiel:
++
+`sudo md5sum -b <path to iso>/solidfire-fdva-<Element release>-patchX-XX.X.X.XXXX.iso`
+
+. Mounten Sie das Management-Node-ISO-Image und kopieren Sie den Inhalt auf das Dateisystem mit den folgenden Befehlen:
++
+[listing]
+----
+sudo mkdir -p /upgrade
+----
++
+[listing]
+----
+sudo mount <solidfire-fdva-<Element release>-patchX-XX.X.X.XXXX.iso> /mnt
+----
++
+[listing]
+----
+sudo cp -r /mnt/* /upgrade
+----
+. Wechseln Sie in das Home-Verzeichnis, und heben Sie die Bereitstellung der ISO-Datei von ab `/mnt`:
++
+[listing]
+----
+sudo umount /mnt
+----
+. Löschen Sie die ISO, um Speicherplatz auf dem Management-Node einzusparen:
++
+[listing]
+----
+sudo rm <path to iso>/solidfire-fdva-<Element release>-patchX-XX.X.X.XXXX.iso
+----
+. Führen Sie auf dem Management-Node, den Sie aktualisieren, den folgenden Befehl aus, um die Version des Management-Node-Betriebssystems zu aktualisieren. Das Skript speichert alle erforderlichen Konfigurationsdateien nach dem Upgrade, wie z. B. Active IQ-Collector- und Proxy-Einstellungen.
++
+[listing]
+----
+sudo /sf/rtfi/bin/sfrtfi_inplace file:///upgrade/casper/filesystem.squashfs sf_upgrade=1
+----
++
+Der Management-Node wird nach Abschluss des Upgrades mit einem neuen OS neu gebootet.
+
++
+
+NOTE: Nachdem Sie den in diesem Schritt beschriebenen Sudo-Befehl ausgeführt haben, wird die SSH-Sitzung abgebrochen. Für kontinuierliches Monitoring ist ein Konsolenzugriff erforderlich. Wenn während des Upgrades kein Konsolenzugriff verfügbar ist, versuchen Sie die SSH-Anmeldung erneut, und überprüfen Sie die Verbindung nach 15 bis 30 Minuten. Nach der Anmeldung können Sie die neue Betriebssystemversion im SSH-Banner bestätigen, die angibt, dass das Upgrade erfolgreich war.
+
+. Führen Sie auf dem Management-Node den aus `redeploy-mnode` Skript zur Beibehaltung der Konfigurationseinstellungen für frühere Managementservices:
++
+
+NOTE: Das Skript behält die vorherige Konfiguration der Managementservices bei, einschließlich der Konfiguration über den Active IQ Collector Service, Controller (vCenters) oder Proxy, je nach Ihren Einstellungen.
+
++
+[listing]
+----
+sudo /sf/packages/mnode/redeploy-mnode -mu <mnode user>
+----
+
+
+
+IMPORTANT: Wenn Sie die SSH-Funktion zuvor auf dem Management-Node deaktiviert hatten, müssen Sie dies ausführen link:task_mnode_ssh_management.html["Deaktivieren Sie SSH erneut"] Auf dem wiederhergestellten Management-Node. SSH-Funktion, die bietet link:task_mnode_enable_remote_support_connections.html["Zugriff auf Session-Session (Remote Support Tunnel) durch NetApp Support"] Ist standardmäßig auf dem Management-Node aktiviert.
+
+
+
+== Konfigurieren Sie die Authentifizierung mithilfe der REST-API des Management-Node neu
+
+Bei einem sequenziell aktualisierten Management-Service (1) und (2) Element Storage können bestehende Management-Node weiterhin verwendet werden. Wenn Sie eine andere Upgrade-Reihenfolge eingehalten haben, lesen Sie die Verfahren für Upgrades von vorhandenen Management-Nodes.
+
+.Bevor Sie beginnen
+* Sie haben Ihre Managementservices auf 2.20.69 oder höher aktualisiert.
+* Im Storage Cluster wird Element 12.3 oder höher ausgeführt.
+* Sie haben Ihre Managementservices sequenziell aktualisiert und anschließend den Element Storage aktualisiert. Mit diesem Verfahren können Sie die Authentifizierung erst neu konfigurieren, wenn Sie Upgrades in der beschriebenen Reihenfolge durchgeführt haben.
+
+
+.Schritte
+. Öffnen Sie die REST-API-UI für den Management-Node:
++
+[listing]
+----
+https://<ManagementNodeIP>/mnode
+----
+. Wählen Sie *autorisieren* aus, und füllen Sie Folgendes aus:
++
+.. Geben Sie den Benutzernamen und das Passwort für den Cluster ein.
+.. Geben Sie die Client-ID als ein `mnode-client` Wenn der Wert nicht bereits ausgefüllt ist.
+.. Wählen Sie *autorisieren*, um eine Sitzung zu starten.
+
+
+. Wählen Sie in DER REST API-Benutzeroberfläche *POST /Services/rekonfigurieren-auth* aus.
+. Wählen Sie *Probieren Sie es aus*.
+. Wählen Sie für den Parameter *load_images* `true`.
+. Wählen Sie *Ausführen*.
++
+Der Antwortkörper zeigt an, dass die Neukonfiguration erfolgreich war.
+
+
+
+[discrete]
+== Weitere Informationen
+
+* https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in für vCenter Server"^]
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["Seite „NetApp HCI Ressourcen“"^]
+
