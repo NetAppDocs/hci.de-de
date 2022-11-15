@@ -139,15 +139,15 @@ Ein Banner erscheint in der Benutzeroberfläche des Registrierungsprogramms, wen
 NOTE: Durch diese Aktion wird eine neue Datenbank erstellt und die Installation im vSphere Web Client abgeschlossen.
 
 . Suchen Sie im vSphere Web Client nach den folgenden abgeschlossenen Aufgaben im Task Monitor, um sicherzustellen, dass die Installation abgeschlossen wurde: `Download plug-in` Und `Deploy plug-in`.
-. Stellen Sie sicher, dass die Erweiterungspunkte für NetApp Element-Konfiguration und -Verwaltung auf der Registerkarte *Shortcuts* des vSphere Web Clients und im Seitenbedienfeld angezeigt werden.
+. Überprüfen Sie, ob die Plug-in-Erweiterungspunkte auf der Registerkarte *Shortcuts* des vSphere Web Clients und im Seitenfenster angezeigt werden.
 +
-Ab Element Plug-in für vCenter Server 5:0:
+Beginnend mit dem Element Plug-in für vCenter Server 5.0, dem NetApp Element Remote Plugin Extension Point:
 
 +
 image::vcp_remote_plugin_icons_home_page.png[Zeigt den Plug-in-Erweiterungspunkt nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 5.10 oder höher]
 
 +
-Element Plug-in für vCenter Server 4.10 oder früher:
+Element Plug-in für vCenter Server 4.10 oder früher, NetApp Element-Konfigurations- und Management-Erweiterungspunkte:
 
 +
 image::vcp_shortcuts_page_accessing_plugin.png[Zeigt die Plug-in-Erweiterungspunkte nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 4.10 oder früher]

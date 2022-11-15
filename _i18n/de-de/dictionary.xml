@@ -5222,7 +5222,6 @@
   <block id="2bfb7d51aea637d48bf5bca4afcb46a1" category="list-text">Melden Sie sich beim vSphere Web Client als vCenter Administrator an. Wenn Sie bereits beim vSphere Web Client angemeldet sind, müssen Sie sich zuerst abmelden, zwei bis drei Minuten warten und sich erneut anmelden.</block>
   <block id="f523905d48a1db956815565365a5a6ad" category="admonition">Durch diese Aktion wird eine neue Datenbank erstellt und die Installation im vSphere Web Client abgeschlossen.</block>
   <block id="9b572df8237d34b7c32142ac15f1325f" category="list-text">Suchen Sie im vSphere Web Client nach den folgenden abgeschlossenen Aufgaben im Task Monitor, um sicherzustellen, dass die Installation abgeschlossen wurde:<block ref="ec6215521ab965944e6a3eeb6b9ab6f1" prefix=" " category="inline-code"></block> Und<block ref="0f5814fb45e88fb5a7d984788675e425" prefix=" " category="inline-code"></block>.</block>
-  <block id="c4676996d8b51da422f5ab619c54ae01" category="list-text">Stellen Sie sicher, dass die Erweiterungspunkte für NetApp Element-Konfiguration und -Verwaltung auf der Registerkarte *Shortcuts* des vSphere Web Clients und im Seitenbedienfeld angezeigt werden.</block>
   <block id="a00eed84eaa5a9a20d9aaa7f39c5e19e" category="image-alt">Zeigt den Plug-in-Erweiterungspunkt nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 5.10 oder höher</block>
   <block id="85406fb94df2ff523b7477f229b1c9c8" category="image-alt">Zeigt die Plug-in-Erweiterungspunkte nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 4.10 oder früher</block>
   <block id="a0abd6db969f497b63a29f8fbd1771df" category="inline-link-macro">Element Plug-in für vCenter Server</block>
@@ -6431,4 +6430,7 @@
   <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp Community</block>
   <block id="213686afc3803be7caa09348765467fe" category="sidebar">Wo Sie Hilfe erhalten</block>
   <block id="389672366ff11f72a82c5c495b9b5159" category="sidebar">NetApp HCI 1.8-Dokumentation</block>
+  <block id="d471727ba1fb423986701d5307906d08" category="list-text">Überprüfen Sie, ob die Plug-in-Erweiterungspunkte auf der Registerkarte *Shortcuts* des vSphere Web Clients und im Seitenfenster angezeigt werden.</block>
+  <block id="290b380ec7760347344e9055b68f217d" category="paragraph">Beginnend mit dem Element Plug-in für vCenter Server 5.0, dem NetApp Element Remote Plugin Extension Point:</block>
+  <block id="7491d78d51f3545fc9fe30d2249bc196" category="paragraph">Element Plug-in für vCenter Server 4.10 oder früher, NetApp Element-Konfigurations- und Management-Erweiterungspunkte:</block>
 </blocks>
