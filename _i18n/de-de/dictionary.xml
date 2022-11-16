@@ -4599,7 +4599,6 @@
   <block id="1291d04b420cee74581d131dee5acf86" category="paragraph">Sie sollten ein Upgrade auf das NetApp Element-Plug-in für vCenter Server 5.0 durchführen, um das Plug-in mit VMware vCenter 7.0 Update 3 bereitzustellen, ohne dass ein Workaround bereitgestellt werden muss.</block>
   <block id="af5fe52fe204cf15311c07d5bf36b9a1" category="paragraph">Bei einem Element Plug-in für vCenter Server 4.x kann das Plug-in bei einem Upgrade auf VMware vCenter Server 7.0 Update 3 nicht implementiert werden. Informationen zur Lösung dieses Problems mit Spring Framework 4 finden Sie unter<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
   <block id="42baa5e1ef15c663eada13ad52636d31" category="inline-link">Cluster mit zwei Nodes</block>
-  <block id="a50b70530b2fe6f9c56d3487c7007ab4" category="admonition">Bei der Aktualisierung von ESXi für Computing-Nodes für ein<block ref="a0bfaabcd2d25ba0f3411534ca4d26c2" category="inline-link-rx"></block>, Aktualisieren Sie nur einen Computing-Knoten gleichzeitig, damit nur ein Zeuge-Knoten vorübergehend nicht verfügbar ist und Cluster-Quorum aufrechterhalten werden kann.</block>
   <block id="0ba7583639a274c434bbe6ef797115a4" category="inline-link">Registrieren</block>
   <block id="81750b82d55f7148c9a0001ed71e7dd4" category="list-text"><block ref="670ccc28c8c6a3ae1c020a0fa12ec195" category="inline-link-rx"></block> Das Element Plug-in für vCenter Server erneut mit vCenter.</block>
   <block id="2984cab36bd51d5446963e671e808f5d" category="inline-link">Fügen Sie Cluster hinzu</block>
@@ -5202,9 +5201,7 @@
   <block id="c13fa68b55894aaf612067aa7455ac53" category="list-text">Geben Sie die IP-Adresse für den Management-Node in einem Browser ein, einschließlich des TCP-Ports für die Registrierung:<block ref="95eed0d846a235b32511f995c34bae39" prefix=" " category="inline-code"></block>Die Registrierungs-Utility-Benutzeroberfläche wird auf der Seite * QoSSIOC Service Credentials* verwalten für das Plug-in geöffnet.</block>
   <block id="26fc450c5cd9b7f28b10cff7659b479d" category="image-alt">Zeigt die Benutzeroberfläche des Registrierungsprogramms für das Plug-in</block>
   <block id="0bd0c7dc69df55cee394b64eebcd27ab" category="list-text">Wählen Sie *vCenter Plug-in Registrierung*.</block>
-  <block id="e8b1bdd38a7601206cf400f05fbdc57d" category="paragraph">Ab Element Plug-in für vCenter Server 5:0:</block>
   <block id="f1b4824619210c84aa04d2783d1f908e" category="image-alt">Zeigt die Benutzeroberfläche des Registrierungsprogramms für ein Remote-Plug-in</block>
-  <block id="05c0e13a813e930c3eab807f98959379" category="paragraph">Element Plug-in für vCenter Server 4.10 oder früher:</block>
   <block id="cbe647d2b7e55a533fb2f01689441181" category="image-alt">Zeigt die Benutzeroberfläche des Registrierungsprogramms für ein lokales Plug-in</block>
   <block id="5c8b8f78ed09c86ecda3569ee8c3a3f0" category="list-text">Wählen Sie in *vCenter-Plug-in verwalten* die Option *Update Plug-in* aus.</block>
   <block id="8d8ce4b808495ff41a197ebd82fa0d15" category="list-text">Bestätigen oder aktualisieren Sie die folgenden Informationen:</block>
@@ -5212,7 +5209,6 @@
   <block id="d5fcc07cbc4a070c18d26103f54f3f58" category="list-text">Der vCenter Administrator-Benutzername.</block>
   <block id="b1e24f0b2fb8f66a9c2444bf0e385f97" category="admonition">Der von Ihnen eingegebene Benutzername und das Kennwort müssen für einen Benutzer mit den Berechtigungen der vCenter Administrator-Rolle verwendet werden.</block>
   <block id="c2611280cf76890b83743a67ac6478e2" category="list-text">Das vCenter Administrator-Passwort.</block>
-  <block id="23fa7915a24406758b2d7b2b274fe1f3" category="list-text">(Für interne Server/dunkle Sites) je nach Element Plug-in für vCenter Version, eine benutzerdefinierte URL für Plug-in-JSON-Datei oder Plug-in ZIP:</block>
   <block id="1e35767408ad5bd29ecc61c301c556ef" category="list-text">Beginnend mit dem Element Plug-in für vCenter Server 5.0, einer benutzerdefinierten URL für die JSON-Plug-in-Datei.</block>
   <block id="b9d11c83e937a9ece9e8b7051bc68606" category="admonition">Sie können *Benutzerdefinierte URL* wählen, um die URL anzupassen, wenn Sie einen HTTP- oder HTTPS-Server (dunkle Site) verwenden oder den JSON-Dateinamen oder die Netzwerkeinstellungen geändert haben. Weitere Konfigurationsschritte, wenn Sie eine URL anpassen möchten, finden Sie in der Dokumentation zum Element Plug-in für vCenter Server zum Ändern von vCenter-Eigenschaften für einen internen HTTP-Server (Dark Site).</block>
   <block id="ba85baaa049f62983a89ac7da1647abd" category="list-text">Für Element Plug-in für vCenter Server 4.10 oder früher, eine benutzerdefinierte URL für das Plug-in ZIP.</block>
@@ -6431,6 +6427,15 @@
   <block id="213686afc3803be7caa09348765467fe" category="sidebar">Wo Sie Hilfe erhalten</block>
   <block id="389672366ff11f72a82c5c495b9b5159" category="sidebar">NetApp HCI 1.8-Dokumentation</block>
   <block id="d471727ba1fb423986701d5307906d08" category="list-text">Überprüfen Sie, ob die Plug-in-Erweiterungspunkte auf der Registerkarte *Shortcuts* des vSphere Web Clients und im Seitenfenster angezeigt werden.</block>
-  <block id="290b380ec7760347344e9055b68f217d" category="paragraph">Beginnend mit dem Element Plug-in für vCenter Server 5.0, dem NetApp Element Remote Plugin Extension Point:</block>
-  <block id="7491d78d51f3545fc9fe30d2249bc196" category="paragraph">Element Plug-in für vCenter Server 4.10 oder früher, NetApp Element-Konfigurations- und Management-Erweiterungspunkte:</block>
+  <block id="14ff77c680c9acb2e3a54c4ea137f642" category="cell">RMCP-Anschluss Erforderlich für Upgrades der NetApp Hybrid Cloud Control Computing-Firmware</block>
+  <block id="2e4fe9cef5b49ad23180da86877e63cb" category="cell">Computing Node BMC/IPMI H410 und H600 Serie</block>
+  <block id="59f1e3a87c5b329f2a5a951d9bf325f8" category="cell">HTTPS-UI- und API-Zugriff auf die Remote-Steuerung des Nodes</block>
+  <block id="1381491a5bb8087f95db0601150c5c28" category="cell">Storage Node BMC/IPMI H410 und H600 Series</block>
+  <block id="291dd45cc603b1047e92bf5a13259357" category="cell">RMCP-Anschluss Dies ist erforderlich, um IPMI-fähige Systeme zu verwalten.</block>
+  <block id="4fc3110ffa80f16c08c41963de559312" category="admonition">Bei der Aktualisierung von ESXi für Computing-Nodes für ein<block ref="c40679731a13cea0e8ba16410d87ab2b" category="inline-link-rx"></block>, Aktualisieren Sie nur einen Computing-Knoten gleichzeitig, damit nur ein Zeuge-Knoten vorübergehend nicht verfügbar ist und Cluster-Quorum aufrechterhalten werden kann.</block>
+  <block id="3ef00ef1af91bf9fe0b72f4052a67f59" category="list-text">Die Seite vCenter Plug-in-Registrierung für Element Plug-in für vCenter Server 5.0:</block>
+  <block id="b53963914b8930756b5acf2d4aca8094" category="list-text">Die Seite vCenter Plug-in-Registrierung für Element Plug-in für vCenter Server 4.x:</block>
+  <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">(Für interne Server/dunkle Sites) je nach Element Plug-in für vCenter Version, eine benutzerdefinierte URL für die Plug-in-JSON-Datei oder Plug-in ZIP:</block>
+  <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">Ab dem Element Plug-in für vCenter Server 5.0 erscheint der NetApp Element Remote Plugin Extension Point:</block>
+  <block id="1c63b3cd9a6d3bdf8b9b31aca68672d7" category="list-text">Bei Element Plug-in für vCenter Server 4.10 oder früher werden die Erweiterungspunkte für NetApp Element-Konfiguration und -Verwaltung angezeigt:</block>
 </blocks>
