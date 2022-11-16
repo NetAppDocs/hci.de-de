@@ -2472,7 +2472,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 14:26:03 +0000">11/15/2022</time>
+    <time datetime="2022-11-16 13:40:02 +0000">11/16/2022</time>
     
   
 
@@ -2482,6 +2482,8 @@
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
 <p>Unter Umständen müssen Sie die folgenden Ports über die Edge-Firewall Ihres Datacenters zulassen, damit Sie das System Remote managen, Clients außerhalb Ihres Datacenters eine Verbindung zu Ressourcen herstellen und sicherstellen können, dass interne Services ordnungsgemäß funktionieren. Einige dieser Ports, URLs oder IP-Adressen sind je nach Nutzung des Systems möglicherweise nicht erforderlich. Wenn nicht anders angegeben, sind alle Ports TCP.</p>
 </div>
@@ -2717,7 +2719,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Management-Node</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BMC/IPMI für Computing-Node</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">623 UDP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RMCP-Anschluss (Remote Management Control Protocol) Erforderlich für Upgrades der NetApp Hybrid Cloud Control Computing-Firmware</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RMCP-Anschluss Erforderlich für Upgrades der NetApp Hybrid Cloud Control Computing-Firmware</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Management-Node</p></td>
@@ -2895,6 +2897,12 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">System Administrator-PC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Computing Node BMC/IPMI H410 und H600 Serie</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS-UI- und API-Zugriff auf die Remote-Steuerung des Nodes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System Administrator-PC</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Management-Node</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS-UI- und API-Zugriff auf den Management-Node</p></td>
@@ -2907,9 +2915,27 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">System Administrator-PC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage Node BMC/IPMI H410 und H600 Series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS-UI- und API-Zugriff auf die Remote-Steuerung des Nodes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System Administrator-PC</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">MIP-Speicher-Node</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Erstellung von HTTPS-Storage-Clustern, UI-Zugriff nach der Implementierung auf das Storage-Cluster</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System Administrator-PC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Computing Node BMC/IPMI H410 und H600 Serie</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">623 UDP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RMCP-Anschluss Dies ist erforderlich, um IPMI-fähige Systeme zu verwalten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System Administrator-PC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage Node BMC/IPMI H410 und H600 Series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">623 UDP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RMCP-Anschluss Dies ist erforderlich, um IPMI-fähige Systeme zu verwalten.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">System Administrator-PC</p></td>
@@ -2949,7 +2975,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="weitere-informationen" class="discrete">Weitere Informationen</h2>
+</div>
+</div>
+<div class="sect1">
+<h2 id="weitere-informationen">Weitere Informationen</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
@@ -2959,6 +2989,8 @@
 <p><a href="https://docs.netapp.com/us-en/vcp/index.html" target="_blank" rel="noopener">"NetApp Element Plug-in für vCenter Server"</a></p>
 </li>
 </ul>
+</div>
+</div>
 </div>
 
     </article>
