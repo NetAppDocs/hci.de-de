@@ -1,20 +1,7 @@
----
-sidebar: sidebar 
-permalink: docs/fw_compute_nodes.html 
-keywords: documentation, earlier, previous, versions 
-summary: Unterstützte Firmware- und Treiberversionen für Compute-Nodes 
----
-= Computing Nodes
-:hardbreaks:
+= H615C
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
-:keywords: hci, earlier, documentation, versions
 
 
-[role="lead"]
 Die unterstützten Firmware- und ESXi-Treiberversionen für NetApp HCI-Rechner-Nodes.
 
 * 

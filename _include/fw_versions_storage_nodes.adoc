@@ -1,20 +1,7 @@
----
-sidebar: sidebar 
-permalink: docs/fw_storage_nodes.html 
-keywords: documentation, earlier, previous, versions 
-summary: Unterstützte Firmware- und Treiberversionen für Storage-Nodes 
----
-= Storage-Nodes
-:hardbreaks:
+= H610S
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
-:keywords: hci, earlier, documentation, versions
 
 
-[role="lead"]
 Die unterstützten Firmware-Versionen für H-Series und SolidFire Storage Nodes
 
 * 
