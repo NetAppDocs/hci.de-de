@@ -17,10 +17,10 @@ summary: Unterstützte Firmware- und Treiberversionen für Compute-Nodes
 [role="lead"]
 Die unterstützten Firmware- und ESXi-Treiberversionen für NetApp HCI-Rechner-Nodes.
 
-* 
-* 
-* 
-* /H500E/H700E
+* <<H615C>>
+* <<H610C>>
+* <<H410C>>
+* <<H300E/H500E/H700E>>
 
 
 

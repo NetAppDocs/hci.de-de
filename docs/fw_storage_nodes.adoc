@@ -17,9 +17,9 @@ summary: Unterstützte Firmware- und Treiberversionen für Storage-Nodes
 [role="lead"]
 Die unterstützten Firmware-Versionen für H-Series und SolidFire Storage Nodes
 
-* 
-* 
-* ,SF38410, SF19210, SF9605 UND SF4805
+* <<H610S>>
+* <<H410S>>
+* <<sf_nodes,SF38410, SF19210, SF9605 UND SF4805>>
 
 
 
@@ -238,7 +238,7 @@ Die folgende Firmware wird nicht von einem Storage Firmware Bundle verwaltet:
 |===
 
 
-== SF38410, SF19210, SF9605 UND SF4805
+== [[sf_Nodes]]SF38410, SF19210, SF9605 und SF4805
 
 *Volle Modellnummern:* SF38410, SF19210, SF9605 und SF4805
 

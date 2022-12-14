@@ -14,7 +14,7 @@ Für ein Upgrade der NetApp Element Software kann die NetApp Hybrid Cloud Contro
 
 NOTE: Ab Element 12.5 werden NetApp HealthTools bei Upgrades der Element Software nicht mehr unterstützt. Wenn Sie Element 11.0 oder 11.1 ausführen, müssen Sie zuerst link:https://docs.netapp.com/us-en/hci19/docs/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["Upgrade auf Element 12.3 mit HealthTools"^] Und dann upgraden Sie mithilfe von NetApp Hybrid Cloud Control auf Element 12.5 oder höher.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * *Administratorrechte*: Sie haben Berechtigungen für den Storage Cluster Administrator, um das Upgrade durchzuführen.
 * *Gültiger Upgrade-Pfad*: Sie haben die Upgrade-Pfadinformationen für die Element-Version, auf die Sie aktualisieren, überprüft und bestätigt, dass der Upgrade-Pfad gültig ist. Siehe https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software%3F["NetApp KB: Upgrade-Matrix für Storage Cluster mit NetApp Element Software"^]
 * *System Time SYNC*: Sie haben sichergestellt, dass die Systemzeit auf allen Knoten synchronisiert ist und NTP für den Speicher-Cluster und die Knoten korrekt konfiguriert ist. Jeder Node muss in der Web-UI pro Node mit einem DNS-Nameserver konfiguriert sein (`https://[IP address]:442`) Ohne ungelöste Cluster Fehler im Zusammenhang mit Zeitverzerrung.
@@ -68,10 +68,11 @@ NOTE: Wenn Sie die EULA akzeptieren, wird sie für alle zukünftigen Updates auf
 
 
 
+.Upgrade-Optionen
 Wählen Sie eine der folgenden Upgrade-Optionen für Element Software:
 
-*  NetApp Hybrid Cloud Control UI to upgrade Element storage
-*  NetApp Hybrid Cloud Control API to upgrade Element storage
+* <<Verwendung der NetApp Hybrid Cloud Control UI für das Upgrade von Element Storage>>
+* <<Nutzen Sie die NetApp Hybrid Cloud Control API für das Upgrade von Element Storage>>
 
 
 
@@ -83,6 +84,7 @@ IMPORTANT: Wenn Sie einen Node der H610S-Serie auf Element 12.5 oder höher aktu
 
 Über die Benutzeroberfläche von NetApp Hybrid Cloud Control können Sie ein Storage-Cluster-Upgrade durchführen.
 
+.Was Sie benötigen
 Wenn Ihr Management-Node nicht mit dem Internet verbunden ist, haben Sie den heruntergeladen https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab["NetApp HCI Softwarepaket für NetApp HCI Storage-Cluster"^].
 
 
@@ -114,7 +116,7 @@ Auf der Registerkarte *Storage* werden die Speichercluster aufgelistet, die Teil
 
 
 
-TIP: Der *Upgrade-Status* ändert sich während des Upgrades, um den Status des Prozesses anzuzeigen. Es ändert sich auch in Reaktion auf Aktionen, die Sie ergreifen, z. B. die Unterbrechung des Upgrades oder wenn das Upgrade einen Fehler zurückgibt. Siehe  status changes.
+TIP: Der *Upgrade-Status* ändert sich während des Upgrades, um den Status des Prozesses anzuzeigen. Es ändert sich auch in Reaktion auf Aktionen, die Sie ergreifen, z. B. die Unterbrechung des Upgrades oder wenn das Upgrade einen Fehler zurückgibt. Siehe <<Statusänderungen des Upgrades>>.
 
 
 NOTE: Während das Upgrade läuft, können Sie die Seite verlassen und zu einem späteren Zeitpunkt zurückkehren, um den Fortschritt zu überwachen. Die Seite aktualisiert den Status und die aktuelle Version nicht dynamisch, wenn die Cluster-Zeile ausgeblendet ist. Die Cluster-Zeile muss erweitert werden, um die Tabelle zu aktualisieren, oder Sie können die Seite aktualisieren.
@@ -141,7 +143,7 @@ Nach dem erfolgreichen Hochladen und Validierungen der Datei wird eine Meldung a
 .. Führen Sie die zusätzlichen Schritte aus, die im erforderlich sind https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure["KB-Artikel"^], Und bestätigen Sie in der Benutzeroberfläche, dass Sie sie abgeschlossen haben.
 
 
-Sie können Protokolle herunterladen, nachdem die Aktualisierung abgeschlossen ist. Informationen zu den verschiedenen Änderungen des Aktualisierungsstatus finden Sie unter  status changes.
+Sie können Protokolle herunterladen, nachdem die Aktualisierung abgeschlossen ist. Informationen zu den verschiedenen Änderungen des Aktualisierungsstatus finden Sie unter <<Statusänderungen des Upgrades>>.
 
 |===
 

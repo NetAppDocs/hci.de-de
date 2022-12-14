@@ -16,10 +16,11 @@ Zum Upgrade der Element Software auf dem Storage-Cluster ist kein Upgrade des Be
 
 NOTE: Wenn Sie Informationen zum Upgrade von Management-Knoten 12.2 oder älter benötigen, lesen Sie den https://docs.netapp.com/us-en/hci19/docs/task_hcc_upgrade_management_node.html["Dokumentation zum Upgrade der NetApp HCI 1.9 Management-Nodes"^].
 
+.Upgrade-Optionen
 Wählen Sie eine der folgenden Optionen:
 
-*  a management node to version 12.5 or later from version 12.3.x or later
-*  authentication using the management node REST API
+* <<Aktualisieren Sie einen Management-Node von Version 12.3.x oder höher auf Version 12.5 oder höher>>
+* <<Konfigurieren Sie die Authentifizierung mithilfe der REST-API des Management-Node neu>>
 +
 Wählen Sie diese Option, wenn Sie *sequenziell* aktualisiert haben (1) die Version der Managementservices und (2) Ihre Element Speicherversion und Ihren vorhandenen Management-Node *beibehalten* möchten:
 
@@ -37,7 +38,7 @@ Sie können ein Upgrade des Management-Node von Version 12.3.x oder höher auf V
 
 NOTE: Der Element 12.5 oder höher ist ein optionales Upgrade. Bei bestehenden Implementierungen wird dieser Bedarf nicht benötigt.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * Der RAM der Management-Node-VM ist 24 GB.
 * Der Management-Node, den Sie aktualisieren möchten, ist die Version 12.0 und verwendet IPv4-Netzwerke. Der Management-Node Version 12.5 oder höher unterstützt IPv6 nicht.
 +

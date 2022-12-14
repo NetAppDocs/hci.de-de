@@ -11,7 +11,7 @@ keywords: netapp, storage prechecks, element upgrade, sfupgradecheck
 [role="lead"]
 Vor dem Upgrade von Element Storage müssen Sie Zustandsprüfungen durchführen, um sicherzustellen, dass alle Storage-Nodes im Cluster für das nächste Element Storage Upgrade bereit sind.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * *Management Services*: Sie haben das neueste Management Services Bundle (2.10.27 oder höher) aktualisiert.
 +
 
@@ -38,15 +38,16 @@ NOTE: Wenn Sie die EULA akzeptieren, wird sie für alle zukünftigen Updates auf
 
 
 
+.Optionen zur Zustandsprüfung
 Mit der Benutzeroberfläche von NetApp Hybrid Cloud Control oder der NetApp Hybrid Cloud Control API lassen sich Systemchecks durchführen:
 
-*  NetApp Hybrid Cloud Control to run Element storage health checks prior to upgrading storage (Bevorzugte Methode)
-*  API to run Element storage health checks prior to upgrading storage
+* <<NetApp Hybrid Cloud Control bietet Zustandsüberprüfungen für Element Storage vor Storage-Upgrades>> (Bevorzugte Methode)
+* <<Nutzen Sie API zur Ausführung von Element Storage-Zustandsprüfungen vor einem Storage-Upgrade>>
 
 
 Weitere Informationen zu den vom Service ausgeführten Storage-Zustandsprüfungen:
 
-*  health checks made by the service
+* <<Storage-Systemprüfungen, die vom Service durchgeführt werden>>
 
 
 

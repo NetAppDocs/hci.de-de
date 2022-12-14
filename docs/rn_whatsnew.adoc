@@ -21,8 +21,8 @@ NetApp aktualisiert regelmäßig den NetApp HCI, um Ihnen neue Funktionen, Verbe
 
 NOTE: Element Software 12.7 ist die neueste Version und beinhaltet Sicherheits- und Systemkomponenten-Updates, Verbesserungen beim Betrieb sowie behobene Probleme. https://docs.netapp.com/us-en/element-software/concepts/concept_rn_whats_new_element.html["Informieren Sie sich über die Neuerungen bei Element 12.7"^].
 
-* Der  HCI 1.10 Abschnitt beschreibt neue Funktionen und Updates in NetApp HCI Version 1.10.
-* Der  software 12.5 Abschnitt beschreibt neue Funktionen und Updates in Element 12.5.
+* Der <<NetApp HCI 1.10>> Abschnitt beschreibt neue Funktionen und Updates in NetApp HCI Version 1.10.
+* Der <<Element Software 12.5>> Abschnitt beschreibt neue Funktionen und Updates in Element 12.5.
 
 
 
