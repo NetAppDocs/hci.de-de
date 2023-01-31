@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-Unterstützte Firmware- und ESXi-Treiberversionen für NetApp HCI- und Firmware-Versionen für NetApp HCI Storage Nodes
+Unterstützte Firmware- und ESXi-Treiberversionen für NetApp HCI und Firmware-Versionen für NetApp HCI Storage Nodes
 
 link:fw_storage_nodes.html["Storage-Nodes"]* H610S * H410S
 

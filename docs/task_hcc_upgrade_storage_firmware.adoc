@@ -33,7 +33,7 @@ IMPORTANT: Wenden Sie sich an den NetApp Support, um die iDRAC/BIOS-Firmware zu 
 
 
 
-NOTE: Eine vollständige Matrix der Firmware und der Treiber-Firmware für Ihre Hardware finden Sie unter link:firmware_driver_versions.html["Unterstützte Firmware- und ESXi-Treiberversionen für NetApp HCI und Firmware-Versionen für NetApp HCI Storage Nodes"].
+NOTE: Eine vollständige Matrix der Firmware und der Treiber-Firmware für Ihre Hardware finden Sie unter link:firmware_driver_versions.html["Unterstützte Firmware-Versionen für NetApp HCI Storage-Nodes"].
 
 [[storage-firmware-upgrade]]
 * *Aktualisierungszeit*: Sie haben genügend Zeit für die Durchführung Ihres Upgrades eingeplant. Bei einem Upgrade auf Element Software 12.5 oder höher variiert die Dauer des Upgradevorgangs je nach aktueller Element Softwareversion und Firmware-Updates.

@@ -12,7 +12,7 @@ keywords: netapp, hci, on premise, cluster, element, compute node
 Für jeden H-Series-Computing-Node können Sie die auf den Nodes verwendeten Treiber mithilfe des VMware Update Manager aktualisieren.
 
 .Was Sie benötigen
-Informationen zur Hardware finden Sie in der Firmware- und Treibermatrix unter https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html["Unterstützte Firmware- und ESXi-Treiberversionen"^].
+Informationen zur Hardware finden Sie in der Firmware- und Treibermatrix unter link:firmware_driver_versions.html["Unterstützte Firmware- und ESXi-Treiberversionen"].
 
 .Über diese Aufgabe
 Führen Sie jeweils nur einen dieser Aktualisierungsvorgänge aus.
