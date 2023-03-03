@@ -65,5 +65,3 @@ Wenn Sie beim Einschalten der Knoten mehr Zeit einplanen und überprüfen möcht
 == Weitere Informationen
 
 link:firmware_driver_versions.html["Unterstützte Firmware- und ESXi-Treiberversionen für NetApp HCI und Firmware-Versionen für NetApp HCI Storage Nodes"]
-
- // 2023-MAR-3, DOC-4661
