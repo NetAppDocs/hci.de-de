@@ -25,7 +25,7 @@ Suchen Sie in VMware vSphere Web Client 8.0 und 7.0 das Hardware-Tag für einen 
 image:../media/hw_tag_70.PNG["Screenshot der Systemtabelle"]
 
 . Kopieren und speichern Sie den Wert für *Tag*.
-. xref:task_mnode_add_assets.adoc[Fügen Sie Ihre Computing- und Controller-Ressourcen dem Management-Node hinzu]..
+. xref:task_mnode_add_assets.adoc[Fügen Sie Ihre Computing- und Controller-Ressourcen dem Management-Node hinzu].
 
 
 --

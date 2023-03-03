@@ -42,5 +42,4 @@ Wenn Sie nicht lange genug warten, wird eine Meldung angezeigt, die besagt, dass
 [discrete]
 == Weitere Informationen
 
-* link:firmware_driver_versions.html["Unterstützte Firmware- und ESXi-Treiberversionen für NetApp HCI und Firmware-Versionen für NetApp HCI Storage Nodes"]
-
+link:firmware_driver_versions.html["Unterstützte Firmware- und ESXi-Treiberversionen für NetApp HCI und Firmware-Versionen für NetApp HCI Storage Nodes"]
