@@ -18,8 +18,6 @@ Bei bestehenden vSphere Umgebungen mit einem registrierten NetApp Element Plug-i
 
 Sie können die Plug-in-Registrierung auf der vCenter Server Virtual Appliance (vCSA) oder Windows mithilfe des Registrierungsprogramms aktualisieren. Sie müssen Ihre Registrierung für das vCenter Plug-in auf jedem vCenter Server ändern, auf dem Sie das Plug-in verwenden müssen.
 
-Dieses Upgrade-Verfahren umfasst die folgenden Upgrade-Szenarien.
-
 
 NOTE: Management Services 2.22.7 enthält Element Plug-in für vCenter Server 5.0, das das Remote-Plug-in enthält. Wenn Sie das Element-Plug-in verwenden, sollten Sie ein Upgrade auf die Managementservices 2.22.7 oder höher durchführen, um die VMware-Direktive zu erfüllen, die die Unterstützung für lokale Plug-ins überflüssig macht. https://kb.vmware.com/s/article/87880["Weitere Informationen ."^].
 
@@ -29,7 +27,7 @@ NOTE: Management Services 2.22.7 enthält Element Plug-in für vCenter Server 5.
 --
 Dieses Upgrade-Verfahren umfasst die folgenden Upgrade-Szenarien:
 
-* Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.0 oder 5.1 durch.
+* Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.1 oder 5.0 durch.
 * Sie aktualisieren gerade auf einen 8.0 oder 7.0 HTML5 vSphere Web Client.
 +
 
@@ -162,14 +160,14 @@ Nach dem Upgrade auf NetApp Element Plug-in für vCenter Server 4.8 oder höher 
 +
 Die folgenden Versionsdetails bzw. Details zu einer neueren Version sollten angezeigt werden:
 
-
-
++
 [listing]
 ----
 NetApp Element Plug-in Version: 5.1
 NetApp Element Plug-in Build Number: 12
-
 ----
+
+
 
 NOTE: Das vCenter Plug-in enthält Online-Hilfeinhalte. Um sicherzustellen, dass Ihre Hilfe die neuesten Inhalte enthält, löschen Sie Ihren Browser-Cache, nachdem Sie Ihr Plug-in aktualisiert haben.
 

@@ -4760,7 +4760,6 @@
   <block id="9e31323b5cbbe61c6c8c43ad2755958b" category="doc">Aktualisieren Sie das Element Plug-in für vCenter Server</block>
   <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">Bei bestehenden vSphere Umgebungen mit einem registrierten NetApp Element Plug-in für VMware vCenter Server können Sie Ihre Plug-in-Registrierung aktualisieren, nachdem Sie das Management-Services-Paket, das den Plug-in-Service enthält, aktualisiert haben.</block>
   <block id="e6c04958395a323ddbc02c929b4dfdf0" category="paragraph">Sie können die Plug-in-Registrierung auf der vCenter Server Virtual Appliance (vCSA) oder Windows mithilfe des Registrierungsprogramms aktualisieren. Sie müssen Ihre Registrierung für das vCenter Plug-in auf jedem vCenter Server ändern, auf dem Sie das Plug-in verwenden müssen.</block>
-  <block id="56f4bca23bb3dd45148dc7171511b7e5" category="paragraph">Dieses Upgrade-Verfahren umfasst die folgenden Upgrade-Szenarien.</block>
   <block id="04e630ae5e9700f09b6ca3715246283d" category="open-title">Element Plug-in für vCenter 5.0 und höher</block>
   <block id="61517793d4523320c7cd75e303ad36ff" category="list-text">Sie aktualisieren gerade auf einen 8.0 oder 7.0 HTML5 vSphere Web Client.</block>
   <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">Das Element Plug-in für vCenter 5.0 und höher ist nicht mit vCenter Server 6.7 und 6.5 kompatibel.</block>
@@ -6077,7 +6076,6 @@
   <block id="8157d1d3bb72f3ce50b0672f12f201dd" category="list-text">Wählen Sie Durchsuchen, um das gespeicherte Paket zu suchen und hochzuladen.</block>
   <block id="4ac581155f2c6a4a3a056078e2b122a1" category="list-text">Öffnen Sie die REST API-UI auf dem Managementknoten:</block>
   <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">Dieses Upgrade-Verfahren umfasst die folgenden Upgrade-Szenarien:</block>
-  <block id="0c6a507d40e276c8d0426facc36aaeca" category="list-text">Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.0 oder 5.1 durch.</block>
   <block id="609cfd925544c2aaccb703dcb95eed4d" category="admonition">Wenn Sie von Element Plug-in für vCenter Server 4.x auf 5.x aktualisieren, gehen die bereits mit dem Plug-in konfigurierten Cluster verloren, da die Daten nicht von einer vCenter-Instanz in ein Remote-Plug-in kopiert werden können. Sie müssen die Cluster dem Remote-Plug-in erneut hinzufügen. Dies ist eine einmalige Aktivität beim Upgrade von einem lokalen Plug-in auf ein Remote-Plug-in.</block>
   <block id="4edf62fd94cfb84b727afbee52aa8128" category="list-text">Die vCenter Plug-in-Registrierungsseite für Element Plug-in für vCenter Server 5.x:</block>
   <block id="04bac97a16b610a555c29c398dc04860" category="paragraph">Auf der Registerkarte *Storage* werden die Speichercluster aufgelistet, die Teil Ihrer Installation sind. Wenn durch NetApp Hybrid Cloud Control auf ein Cluster zugegriffen werden kann, wird es nicht auf der Seite *Upgrades* angezeigt. Wenn bei Clustern mit Element 12.0 oder höher die aktuelle Firmware-Bundle-Version für diese Cluster aufgeführt ist. Wenn die Knoten in einem einzelnen Cluster unterschiedliche Firmware-Versionen haben oder wenn das Upgrade fortschreitet, wird in der Spalte *Aktuelle Firmware Bundle Version* *Multiple* angezeigt. Sie können *multiple* auswählen, um zur Seite *Nodes* zu navigieren, um Firmware-Versionen zu vergleichen. Wenn auf allen Clustern Elementversionen vor 12.0 ausgeführt werden, werden Ihnen keine Informationen über die Versionsnummern der Firmware-Bundles angezeigt. Diese Informationen finden Sie auch auf der Seite *Nodes*. Siehe <block ref="4d8bfbcb84a29a1601595359b67752e6" category="inline-link-macro-rx"></block>.</block>
@@ -6103,4 +6101,5 @@
   <block id="e3b4df69e2fe4e8545e5e0240eada6a2" category="list-text"><block ref="e3b4df69e2fe4e8545e5e0240eada6a2" category="inline-link-rx"></block></block>
   <block id="631923a687ff82d68973d99b95597b47" category="inline-link">Seite „SolidFire und Element Ressourcen“</block>
   <block id="238c5b123e3473c57e2925edccb205c2" category="list-text"><block ref="238c5b123e3473c57e2925edccb205c2" category="inline-link-rx"></block></block>
+  <block id="3a2bbd221f9a6d667af34b16ef1c1a32" category="list-text">Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.1 oder 5.0 durch.</block>
 </blocks>
