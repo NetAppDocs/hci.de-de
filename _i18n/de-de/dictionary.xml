@@ -6102,4 +6102,16 @@
   <block id="631923a687ff82d68973d99b95597b47" category="inline-link">Seite „SolidFire und Element Ressourcen“</block>
   <block id="238c5b123e3473c57e2925edccb205c2" category="list-text"><block ref="238c5b123e3473c57e2925edccb205c2" category="inline-link-rx"></block></block>
   <block id="3a2bbd221f9a6d667af34b16ef1c1a32" category="list-text">Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.1 oder 5.0 durch.</block>
+  <block id="8ce84b11df4b07d7aa9bb1fd260b434f" category="inline-link-macro">Compute Firmware Bundle 2.174.0 – Versionshinweise</block>
+  <block id="5b0fda3cebcf8a643f1180cab01f12da" category="list-text"><block ref="1a4479b2e3ec8fc20906c13b738e7820" category="inline-link-macro-rx"></block> _NEU_</block>
+  <block id="69bac05cf2ab747a8ac20a157b6363b6" category="admonition">Für NetApp Hybrid Cloud Control ist das neueste Management-Services-Bundle erforderlich. Sie müssen auf das neueste Management-Services-Bundle aktualisieren, bevor Sie die Firmware auf den Compute-Nodes auf Version 2.174.0 aktualisieren. Wenn Sie die Firmware auf Ihren Rechenknoten auf Version 2.174.0 aktualisieren, benötigen Sie die Verwaltungsdienste 2.20, um fortzufahren.</block>
+  <block id="78810bf1f4f592e0de1616224eda921a" category="paragraph">Version 2.174.0 enthält allgemeine Bugfixes.</block>
+  <block id="2dac99af4ba8d6920084f83699b5757d" category="cell">*07.02.00*</block>
+  <block id="0054b05feeebac288bc28bf8d6a9d248" category="admonition">Vor dem Upgrade auf Version 2.174.0 müssen Sie die aktuelle ESXi-Treiberversion überprüfen. Wenn der Treiber veraltet ist, aktualisieren Sie zuerst den Treiber. Aktualisieren Sie dann die Compute-Firmware für Ihre Compute-Nodes auf Version 2.174.0. Besuchen Sie <block ref="ba79adf2a648aae596ba5c5e0a50002c" category="inline-link-macro-rx"></block> Anweisungen zum Aktualisieren der Treiber für die Rechnerknoten, einschließlich des ESXi-Treibers.</block>
+  <block id="72538e8fdaa12e28f9171c0b783493e7" category="section-title">Laden Sie Das Compute Firmware Bundle 2.174.0 Herunter</block>
+  <block id="b7f798a9967001ca08ab89776c0966fc" category="list-text">Wählen Sie *Go*.</block>
+  <block id="bb9f34e8741cf096f686b7632f900879" category="list-text">Navigieren Sie zum<block ref="e26f094ec200dc78420831e36f6f3bb7" category="inline-link-rx"></block> Und wählen Sie in der Dropdown-Liste * Element Software* aus:</block>
+  <block id="53edb91d1e6b34073e6e243ed47db12d" category="list-text">Geben Sie in das Schlüsselwort-Suchfeld „Compute Firmware Bundle“ ein und wählen Sie *New Search* aus:</block>
+  <block id="dfa721c0f57e3559aa22a411a4ad2fb0" category="inline-link-macro">Hinweis zum Compute Firmware Bundle 2.174.0</block>
+  <block id="4d34470d64d9d2f569cd7f9c561a9343" category="list-text"><block ref="4d34470d64d9d2f569cd7f9c561a9343" category="inline-link-macro-rx"></block></block>
 </blocks>
