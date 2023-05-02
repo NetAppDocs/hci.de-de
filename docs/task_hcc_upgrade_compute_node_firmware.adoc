@@ -24,6 +24,9 @@ Nach dem Upgrade bootet der Computing-Node in ESXi hoch und funktioniert wie zuv
 | Modell | Minimale BMC-Version | Minimale BIOS-Version 
 
 
+| H300E/H500E/H700E | 6.84.00 | NA2.1 
+
+
 | H410C​ | Alle Versionen werden unterstützt (kein Upgrade erforderlich)​ | Alle Versionen werden unterstützt (kein Upgrade erforderlich)​ 
 
 
