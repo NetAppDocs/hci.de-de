@@ -60,6 +60,7 @@ In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und L
 * link:../media/SolidFire_eSDS_12.5.pdf["Hinweis zu NetApp SolidFire-Enterprise-SDS 12.5"^]
 * link:../media/mNode_12.5.pdf["Hinweis für Management-Node 12.5"^]
 * link:../media/ansible-products-notice.pdf["Hinweis zur Ansible-Rolle für Computing-Upgrades"^]
+* link:../media/storage_firmware_bundle_2.175.0_notices.pdf["Hinweis zum Speicher-Firmware-Paket 2.175.0"^]
 * link:../media/compute_firmware_bundle_2.174.0_notices.pdf["Hinweis zum Compute Firmware Bundle 2.174.0"^]
 * link:../media/storage_firmware_bundle_2.164.0_notices.pdf["Hinweis zum Storage Firmware Bundle 2.164"^]
 * link:../media/storage_firmware_bundle_2.150_notices.pdf["Hinweis zum Storage Firmware Bundle 2.150"^]
