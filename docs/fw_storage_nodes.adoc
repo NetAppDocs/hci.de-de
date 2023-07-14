@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: docs/fw_storage_nodes.html 
-keywords: documentation, earlier, previous, versions 
+keywords: documentation, earlier, previous, versions, storage, nodes 
 summary: Unterstützte Firmware- und Treiberversionen für Storage-Nodes 
 ---
 = Storage-Nodes
@@ -40,6 +40,9 @@ NOTE: Ein Bindestrich (*-*) in der folgenden Tabelle zeigt an, dass die jeweilig
 [cols="26*"]
 |===
 | Fahrzeug Lösen | Freigabedatum | BIOS | BMC | CPLD | 10/25-GbE-NIC CX4 | 10/25-GbE-NIC CX5 | Cache NVDIMM NVDIMM Modul Smart (Gen1) | Cache NVDIMM Energy Source (BPM) Smart (Gen1) | Cache NVDIMM NVDIMM Modul Smart (Gen2) | Cache NVDIMM Energiequelle (BPM) Smart (Gen2) | Cache NVDIMM NVDIMM Modul Micron (Gen1) | Cache NVDIMM Energiequelle (PGEM) Agigatech (Gen1) | Cache NVDIMM NVDIMM Modul Micron (Gen2) | Cache NVDIMM Energiequelle (PGEM) Agigatech (Gen2) | Cache NVDIMM Energiequelle (PGEM) Agigatech (Gen3) | Laufwerk Samsung PM963 (SED) | Laufwerk Samsung PM963 (N-SED) | Laufwerk Samsung PM983 (SED) | Laufwerk Samsung PM983 (N-SED) | Antrieb Kioxia CD5 (SED) | Antrieb Kioxia CD5 (N-SED) | Laufwerk CD5 (FIPS) | Laufwerk Samsung PM9A3 (SED) | Laufwerk SK Hynix PE8010 (SED) | Laufwerk SK Hynix PE8010 (N-SED) 
+
+
+| *Speicher-Firmware-Paket 2.175.0* | 06/15/2023 | 3B11 | 3.94.07 | 122 | 14.25.1020 | 16.32.1010 | 3.1 | 2.16 | 26,2C | 1.30 | 25,3C | 1.40 | 1.10 | 3.5 | 2.17 | CXV8202Q | CXV8501Q | EDA5602Q | EA5900Q | 0109 | 0109 | 0108 | GDC5602Q | 11092A10 | 110B2A10 
 
 
 | *Speicher-Firmware-Paket 2.164.0* | 10/20/2022 | 3B11 | 3.94.07 | 122 | 14.25.1020 | 16.32.1010 | 3.1 | 2.16 | 26,2C | 1.30 | 25,3C | 1.40 | 1.10 | 3.3 | 2.16 | CXV8202Q | CXV8501Q | EDA5602Q | EA5900Q | 0109 | 0109 | 0108 | GDC5602Q | 11092A10 | 110B2A10 
@@ -150,6 +153,12 @@ Komponenten-Firmware, die von einem Storage Firmware Bundle verwaltet wird.
 [cols="12*"]
 |===
 | Fahrzeug Lösen | Freigabedatum | BIOS | BMC | 10/25-GbE-NIC SMCI Mellanox | Cache-NVDIMM RMS200 | Cache-NVDIMM RMS300 | Laufwerk Samsung PM863 (SED) | Laufwerk Samsung PM863 (N-SED) | Laufwerk Toshiba Hawk-4 (SED) | Laufwerk Toshiba Hawk-4 (N-SED) | Laufwerk Samsung PM883 (SED) 
+
+
+| *Speicher-Firmware-Paket 2.175.0* | 06/15/2023 | NAT3.4 | 07.02.00 | 14.25.1020 | Ae3b8cc | 7d8422bc | GXT5404Q | GXT5103Q | 8ENP7101 | 8ENP6101 | HXT7A04Q 
+
+
+| *Speicher-Firmware-Paket 2.164.0 bis NetApp Element 12.7* | 10/20/2022 | NAT3.4 | 6.98.00 | 14.25.1020 | Ae3b8cc | 7d8422bc | GXT5404Q | GXT5103Q | 8ENP7101 | 8ENP6101 | HXT7A04Q 
 
 
 | *Speicher-Firmware-Paket 2.164.0* | 10/20/2022 | NAT3.4 | 6.98.00 | 14.25.1020 | Ae3b8cc | 7d8422bc | GXT5404Q | GXT5103Q | 8ENP7101 | 8ENP6101 | HXT7A04Q 
