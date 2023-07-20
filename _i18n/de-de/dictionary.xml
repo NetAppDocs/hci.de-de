@@ -420,7 +420,6 @@
   <block id="870bd874847cca4294c93fdb50347662" category="section-title">NetApp HCI 1.6P1 und höher</block>
   <block id="80fe8777d7b15097b7f93768f900d2f0" category="paragraph">Sie können NetApp Hybrid Cloud Control nur verwenden, wenn Ihre NetApp HCI Installation unter Version 1.6P1 oder höher ausgeführt wird.</block>
   <block id="2671f57229d8ee038d01d4336694d7e0" category="list-text">Wählen Sie im Fenster Installation erweitern die Option *erweitern*.</block>
-  <block id="053ab309f18a77ef5149424304d1c86d" category="list-text">Melden Sie sich bei der NetApp Deployment Engine an, indem Sie die Anmeldedaten des NetApp HCI Storage-Cluster-Administrators bereitstellen.</block>
   <block id="1704d55dca4dda129b0c084d7b0dac9f" category="list-text">Wählen Sie auf der Willkommensseite *Nein*.</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">Wählen Sie *Weiter*.</block>
   <block id="c1a72b8e6d0e23818ec5b93d9bebfb17" category="list-text">Wählen Sie auf der Seite „Available Inventory“ den Storage-Node aus, den Sie der vorhandenen NetApp HCI-Installation hinzufügen möchten.</block>
@@ -1308,8 +1307,6 @@
   <block id="92a8ed36d68e1b878c9a02a330480988" category="inline-link-macro">Management von Volume-Zugriffsgruppen</block>
   <block id="4b78840fe10d478b48df64eca7f72655" category="list-text"><block ref="4b78840fe10d478b48df64eca7f72655" category="inline-link-macro-rx"></block></block>
   <block id="a61d8a4fcaa8b59b1d8f1d63aada7783" category="summary">Unterstützte Firmware- und Treiberversionen der NetApp HCI- und NetApp Element-Software.</block>
-  <block id="bf44a0123ec45362af49b3862557cdd8" category="paragraph"><block ref="f4e8c07388940da9080e74e50960909d" category="inline-link-macro-rx"></block>* H610S * H410S</block>
-  <block id="a82f3d9d22bfe1382d03945f3377eb65" category="paragraph"><block ref="4fe99558e9030b1914f3007a88f2f74d" category="inline-link-macro-rx"></block>* H615C * H610C * H410C * H300E/H500E/H700E</block>
   <block id="0a5712c2113fc4db522b6907519135e6" category="summary">Informieren Sie sich über die Neuerungen dieser Version von NetApp HCI.</block>
   <block id="9cea15d48c9b5a9632827b358396e207" category="doc">Was ist neu in NetApp HCI</block>
   <block id="9919e22324d983d998afd33f187a0a61" category="paragraph">NetApp aktualisiert regelmäßig den NetApp HCI, um Ihnen neue Funktionen, Verbesserungen und Fehlerkorrekturen zu bieten. NetApp HCI 1.10 enthält Element Software 12.5 für Storage-Cluster.</block>
@@ -6179,4 +6176,8 @@
   <block id="022beb4c9e2bdbe9e3398445a4fad6b2" category="cell">06/15/2023</block>
   <block id="804066a6a5042090a2a0b25c55f38e72" category="cell">3.5</block>
   <block id="489901e715cade6fe0efc7e21e194576" category="cell">2.17</block>
+  <block id="d44403a904c0446f29d8bc5c2ed4770e" category="list-text">Melden Sie sich bei der NetApp Deployment Engine an, indem Sie die Anmeldedaten des Administrators für das lokale NetApp HCI-Storage-Cluster angeben.</block>
+  <block id="60099f97c4a82ba2ee2d4a4d593b844b" category="admonition">Sie können sich nicht mit den Anmeldeinformationen für das Lightweight Directory Access Protocol anmelden.</block>
+  <block id="f4e8c07388940da9080e74e50960909d" category="paragraph"><block ref="f4e8c07388940da9080e74e50960909d" category="inline-link-macro-rx"></block></block>
+  <block id="4fe99558e9030b1914f3007a88f2f74d" category="paragraph"><block ref="4fe99558e9030b1914f3007a88f2f74d" category="inline-link-macro-rx"></block></block>
 </blocks>

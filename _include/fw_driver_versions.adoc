@@ -4,6 +4,16 @@
 
 Unterstützte Firmware- und ESXi-Treiberversionen für NetApp HCI und Firmware-Versionen für NetApp HCI Storage Nodes
 
-link:fw_storage_nodes.html["Storage-Nodes"]* H610S * H410S
+link:fw_storage_nodes.html["Storage-Nodes"]
 
-link:fw_compute_nodes.html["Computing Nodes"]* H615C * H610C * H410C * H300E/H500E/H700E
+* H610S
+* H410S
+
+
+link:fw_compute_nodes.html["Computing Nodes"]
+
+* H615C
+* H610C
+* H410C
+* H300E/H500E/H700E
+
