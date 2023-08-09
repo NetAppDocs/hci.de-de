@@ -44,18 +44,15 @@ NetApp HCI Computing-Nodes sind Hardware, die Computing-Ressourcen wie CPU, Arbe
 
 NetApp HCI Witness Nodes sind VMs, die auf Computing-Nodes parallel mit einem Element Software-basierten Storage-Cluster ausgeführt werden. Witness Nodes hosten keine Slice- oder Block-Services. Ein Witness Node ermöglicht bei Ausfall eines Storage-Nodes die Verfügbarkeit des Storage-Clusters. Sie können Witness Nodes auf dieselbe Weise managen und aktualisieren wie andere Storage Nodes. Ein Storage-Cluster kann bis zu vier Witness-Nodes enthalten. Ihr primärer Zweck ist es, sicherzustellen, dass genügend Clusterknoten vorhanden sind, um ein gültiges Ensemble-Quorum zu bilden.
 
-|===
+[NOTE]
+====
+*Anforderung*: Konfigurieren Sie die Witness Node VMs so, dass der lokale Datastore (der Standardwert ist nde) für den Compute Node verwendet wird. Sie sollten sie nicht auf Shared Storage, z. B. auf SolidFire Storage Volumes, konfigurieren. Um eine automatische Migration der VMs zu verhindern, setzen Sie die Automatisierungsstufe Distributed Resource Scheduler (DRS) für die Witness Node VM auf *disabled*. Dadurch wird verhindert, dass beide Witness-Nodes auf demselben Computing-Node ausgeführt werden und eine Konfiguration mit einem Hochverfügbarkeitspaar (HA-Paar) erstellt wird.
 
+In einem Storage-Cluster mit zwei Nodes werden mindestens zwei Witness-Nodes für Redundanz bereitgestellt, falls ein Witness-Node ausfällt. Wenn der Installationsprozess von NetApp HCI Witness Nodes installiert, wird eine VM-Vorlage in VMware vCenter gespeichert, mit der Sie einen Witness-Node neu bereitstellen können, falls dieser versehentlich entfernt, verloren oder beschädigt wurde. Sie können auch die Vorlage verwenden, um einen Witness Node neu zu implementieren, wenn ein ausgefallener Computing-Node, der den Witness Node hostet, ersetzt werden muss. Anweisungen hierzu finden Sie im Abschnitt * Witness Nodes für zwei und drei-Node-Storage-Cluster neu implementieren* link:task_hci_h410crepl.html["Hier"].
 
- a| 
-*Best Practice:* Konfigurieren Sie die Witness Node VMs so konfigurieren Sie den lokalen Datastore des Computing-Nodes (Standardeinstellung: Nde) und konfigurieren Sie diese nicht auf Shared Storage, z. B. SolidFire Storage Volumes. Um eine automatische Migration der VMs zu verhindern, stellen Sie die Automatisierungsebene des Distributed Resource Scheduler (DRS) der Witness Node VM auf *deaktivierte* ein. Dadurch wird verhindert, dass beide Witness-Nodes auf demselben Computing-Node ausgeführt werden und eine Konfiguration mit einem Hochverfügbarkeitspaar (HA-Paar) erstellt wird.
-
-|===
+====
 
 TIP: Weitere Informationen zu link:hci_prereqs_witness_nodes.html["Ressourcenanforderungen Witness Node"] Und link:hci_prereqs_ip_address.html["Anforderungen an die IP-Adresse des Witness Node"].
-
-
-NOTE: In einem Storage-Cluster mit zwei Nodes werden mindestens zwei Witness-Nodes für Redundanz bereitgestellt, falls ein Witness-Node ausfällt. Wenn der Installationsprozess von NetApp HCI Witness Nodes installiert, wird eine VM-Vorlage in VMware vCenter gespeichert, mit der Sie einen Witness-Node neu bereitstellen können, falls dieser versehentlich entfernt, verloren oder beschädigt wurde. Sie können auch die Vorlage verwenden, um einen Witness Node neu zu implementieren, wenn ein ausgefallener Computing-Node, der den Witness Node hostet, ersetzt werden muss. Anweisungen hierzu finden Sie im Abschnitt * Witness Nodes für zwei und drei-Node-Storage-Cluster neu implementieren* link:task_hci_h410crepl.html["Hier"].
 
 
 

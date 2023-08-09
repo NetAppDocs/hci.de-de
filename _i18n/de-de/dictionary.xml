@@ -698,7 +698,6 @@
   <block id="36d3df322550ec93e10b1da2e3571f62" category="paragraph">NetApp HCI Computing-Nodes sind Hardware, die Computing-Ressourcen wie CPU, Arbeitsspeicher und Netzwerk bereitstellt, die für die Virtualisierung bei der NetApp HCI Installation erforderlich sind. Da auf jedem Server VMware ESXi ausgeführt wird, muss das Management der Computing-Nodes von NetApp HCI (Hinzufügen oder Entfernen von Hosts) außerhalb des Plug-ins im Menü Hosts und Cluster in vSphere erfolgen. Unabhängig davon, ob es sich um ein Storage-Cluster mit vier Nodes oder ein Storage-Cluster mit zwei Nodes handelt, bleibt die Mindestanzahl an Computing-Nodes bei NetApp HCI Implementierungen erhalten.</block>
   <block id="3366c96036458b6c9eedbdaccbd3dc34" category="section-title">Witness Nodes</block>
   <block id="13637fc461c216e2f133872aa68284f3" category="paragraph">NetApp HCI Witness Nodes sind VMs, die auf Computing-Nodes parallel mit einem Element Software-basierten Storage-Cluster ausgeführt werden. Witness Nodes hosten keine Slice- oder Block-Services. Ein Witness Node ermöglicht bei Ausfall eines Storage-Nodes die Verfügbarkeit des Storage-Clusters. Sie können Witness Nodes auf dieselbe Weise managen und aktualisieren wie andere Storage Nodes. Ein Storage-Cluster kann bis zu vier Witness-Nodes enthalten. Ihr primärer Zweck ist es, sicherzustellen, dass genügend Clusterknoten vorhanden sind, um ein gültiges Ensemble-Quorum zu bilden.</block>
-  <block id="2c9355f24d4fb92e48ff0624b5165e70" category="paragraph">*Best Practice:* Konfigurieren Sie die Witness Node VMs so konfigurieren Sie den lokalen Datastore des Computing-Nodes (Standardeinstellung: Nde) und konfigurieren Sie diese nicht auf Shared Storage, z. B. SolidFire Storage Volumes. Um eine automatische Migration der VMs zu verhindern, stellen Sie die Automatisierungsebene des Distributed Resource Scheduler (DRS) der Witness Node VM auf *deaktivierte* ein. Dadurch wird verhindert, dass beide Witness-Nodes auf demselben Computing-Node ausgeführt werden und eine Konfiguration mit einem Hochverfügbarkeitspaar (HA-Paar) erstellt wird.</block>
   <block id="ebd9bcbadb9c9789b855381b4b3c91a1" category="inline-link-macro">Ressourcenanforderungen Witness Node</block>
   <block id="ed227f04b96772f206d5427ed842cdf1" category="inline-link-macro">Anforderungen an die IP-Adresse des Witness Node</block>
   <block id="2558aa1c4b088a01ebbd23c6a72472a3" category="admonition">Weitere Informationen zu <block ref="0614c1798bfcf6fa1dd2b630cd83d6d6" category="inline-link-macro-rx"></block> Und <block ref="9f9f24cd869308f40f7cad49c3f42972" category="inline-link-macro-rx"></block>.</block>
@@ -709,15 +708,11 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">Rechtliche Hinweise ermöglichen den Zugriff auf Copyright-Erklärungen, Marken, Patente und mehr.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Rechtliche Hinweise</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Urheberrecht</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marken</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, das NETAPP Logo und die auf der NetApp Markenseite aufgeführten Marken sind Marken von NetApp Inc. Andere Firmen- und Produktnamen können Marken der jeweiligen Eigentümer sein.</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Patente</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Eine aktuelle Liste der NetApp Patente finden Sie unter:</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Datenschutzrichtlinie</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open Source</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.</block>
   <block id="5c77617ea17cd390f132822ac7f42625" category="inline-link-macro">Hinweis zu NetApp HCI 1.11</block>
@@ -6180,4 +6175,13 @@
   <block id="60099f97c4a82ba2ee2d4a4d593b844b" category="admonition">Sie können sich nicht mit den Anmeldeinformationen für das Lightweight Directory Access Protocol anmelden.</block>
   <block id="f4e8c07388940da9080e74e50960909d" category="paragraph"><block ref="f4e8c07388940da9080e74e50960909d" category="inline-link-macro-rx"></block></block>
   <block id="4fe99558e9030b1914f3007a88f2f74d" category="paragraph"><block ref="4fe99558e9030b1914f3007a88f2f74d" category="inline-link-macro-rx"></block></block>
+  <block id="e74b413ef024dbf7c56a0e2cfe306bd8" category="paragraph">*Anforderung*: Konfigurieren Sie die Witness Node VMs so, dass der lokale Datastore (der Standardwert ist nde) für den Compute Node verwendet wird. Sie sollten sie nicht auf Shared Storage, z. B. auf SolidFire Storage Volumes, konfigurieren. Um eine automatische Migration der VMs zu verhindern, setzen Sie die Automatisierungsstufe Distributed Resource Scheduler (DRS) für die Witness Node VM auf *disabled*. Dadurch wird verhindert, dass beide Witness-Nodes auf demselben Computing-Node ausgeführt werden und eine Konfiguration mit einem Hochverfügbarkeitspaar (HA-Paar) erstellt wird.</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>
