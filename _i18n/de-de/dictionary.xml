@@ -3992,7 +3992,6 @@
   <block id="8b8c8134b91716e60636957418102f63" category="list-text"><block ref="8b8c8134b91716e60636957418102f63" category="inline-link-macro-rx"></block></block>
   <block id="3a155d4e218deae857aac98fd3d2be2c" category="inline-link-macro">Versionshinweise Zum Computing-Firmware-Bundle 12.2.109</block>
   <block id="44ab09772a6239d5bf2ccd62556619aa" category="list-text"><block ref="44ab09772a6239d5bf2ccd62556619aa" category="inline-link-macro-rx"></block></block>
-  <block id="e5f0019a70375a2e883b7840f439118a" category="list-text"><block ref="732713df3c4c58fb19fab37e747f6f0d" category="inline-link-macro-rx"></block> _NEU_</block>
   <block id="002e74c06881f6eef90f201bb310bbfa" category="section-title">Storage-Firmware</block>
   <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link-macro">Versionshinweise Zum Speicher-Firmware-Bundle 2.164.0</block>
   <block id="dd9a6aa21d9f1f41ef6fc5f7516fd509" category="list-text"><block ref="dd9a6aa21d9f1f41ef6fc5f7516fd509" category="inline-link-macro-rx"></block></block>
@@ -4745,7 +4744,6 @@
   <block id="e6c04958395a323ddbc02c929b4dfdf0" category="paragraph">Sie können die Plug-in-Registrierung auf der vCenter Server Virtual Appliance (vCSA) oder Windows mithilfe des Registrierungsprogramms aktualisieren. Sie müssen Ihre Registrierung für das vCenter Plug-in auf jedem vCenter Server ändern, auf dem Sie das Plug-in verwenden müssen.</block>
   <block id="04e630ae5e9700f09b6ca3715246283d" category="open-title">Element Plug-in für vCenter 5.0 und höher</block>
   <block id="61517793d4523320c7cd75e303ad36ff" category="list-text">Sie aktualisieren gerade auf einen 8.0 oder 7.0 HTML5 vSphere Web Client.</block>
-  <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">Das Element Plug-in für vCenter 5.0 und höher ist nicht mit vCenter Server 6.7 und 6.5 kompatibel.</block>
   <block id="f156e2c2564d8d92e0cea1d77dbc95aa" category="open-title">Element Plug-in für vCenter 4.10 und früher</block>
   <block id="524f8acc9609df7272285a19757aefcb" category="list-text">Sie aktualisieren gerade auf Element Plug-in für vCenter Server 4.10, 4.9, 4.8, 4.7, 4.6 4.5, oder 4.4.</block>
   <block id="a6a18366932bfeffc2341cc7aa5fe09d" category="list-text">Sie aktualisieren gerade auf einen 7.0, 6.7 oder 6.5 HTML5 vSphere Web Client.</block>
@@ -4786,8 +4784,6 @@
   <block id="2bfb7d51aea637d48bf5bca4afcb46a1" category="list-text">Melden Sie sich beim vSphere Web Client als vCenter Administrator an. Wenn Sie bereits beim vSphere Web Client angemeldet sind, müssen Sie sich zuerst abmelden, zwei bis drei Minuten warten und sich erneut anmelden.</block>
   <block id="f523905d48a1db956815565365a5a6ad" category="admonition">Durch diese Aktion wird eine neue Datenbank erstellt und die Installation im vSphere Web Client abgeschlossen.</block>
   <block id="9b572df8237d34b7c32142ac15f1325f" category="list-text">Suchen Sie im vSphere Web Client nach den folgenden abgeschlossenen Aufgaben im Task Monitor, um sicherzustellen, dass die Installation abgeschlossen wurde:<block ref="ec6215521ab965944e6a3eeb6b9ab6f1" prefix=" " category="inline-code"></block> Und<block ref="0f5814fb45e88fb5a7d984788675e425" prefix=" " category="inline-code"></block>.</block>
-  <block id="a00eed84eaa5a9a20d9aaa7f39c5e19e" category="image-alt">Zeigt den Plug-in-Erweiterungspunkt nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 5.10 oder höher</block>
-  <block id="85406fb94df2ff523b7477f229b1c9c8" category="image-alt">Zeigt die Plug-in-Erweiterungspunkte nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 4.10 oder früher</block>
   <block id="a0abd6db969f497b63a29f8fbd1771df" category="inline-link-macro">Element Plug-in für vCenter Server</block>
   <block id="5e98629f8afe2eee1c27355eb45a80e0" category="paragraph">Wenn die vCenter-Plug-in-Symbole nicht angezeigt werden, lesen Sie <block ref="ab9b282dbdbe327f4195d1f5d71c406f" category="inline-link-macro-rx"></block> Dokumentation zur Fehlerbehebung beim Plug-in.</block>
   <block id="726e3510e2c172eed6861f3e6d271360" category="paragraph">Nach dem Upgrade auf NetApp Element Plug-in für vCenter Server 4.8 oder höher mit VMware vCenter Server 6.7U1, wenn die Speicher-Cluster nicht aufgeführt sind oder ein Serverfehler in den Abschnitten *Cluster* und *QoSSIOC-Einstellungen* der NetApp Element-Konfiguration angezeigt wird, siehe <block ref="c907b125bbc711015f83b735f4697e97" category="inline-link-macro-rx"></block> Dokumentation über die Fehlerbehebung bei diesen Fehlern.</block>
@@ -6046,7 +6042,6 @@
   <block id="adb27ccd96e9d86f5b808b75377f9b5d" category="list-text"><block ref="adb27ccd96e9d86f5b808b75377f9b5d" category="inline-link-macro-rx"></block></block>
   <block id="f77430f8b3c4f14f1dcd175dca1d54cf" category="paragraph">Sie sollten ein Upgrade auf das NetApp Element Plug-in für vCenter Server 5.0 oder höher durchführen, damit Sie das Plug-in mit VMware vCenter 7.0 Update 3 bereitstellen können, ohne eine Problemumgehung anwenden zu müssen.</block>
   <block id="54db42757b5d75d2f660dc70f35850cf" category="inline-link">Versionshinweise zu vCenter Plug-in 5.1</block>
-  <block id="61ad36f15eb6ab7927cdc50f6e089a98" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block> _NEU_</block>
   <block id="0e051271241f0648ba45a8ad135d030c" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block></block>
   <block id="4af99aa6c1be006a7c064cb06b9464ac" category="cell">Alle Cluster laufen mit Element 11.8 und höher</block>
   <block id="12ffbea7792ac5af1573eb795fa30107" category="list-text">Wählen Sie *Durchsuchen* aus, um das von Ihnen heruntergeladene Paket der Rechner-Firmware hochzuladen<block ref="ce507e854bf63284b201c23bebfddfb9" category="inline-link-rx"></block>.</block>
@@ -6082,7 +6077,6 @@
   <block id="e3b4df69e2fe4e8545e5e0240eada6a2" category="list-text"><block ref="e3b4df69e2fe4e8545e5e0240eada6a2" category="inline-link-rx"></block></block>
   <block id="631923a687ff82d68973d99b95597b47" category="inline-link">Seite „SolidFire und Element Ressourcen“</block>
   <block id="238c5b123e3473c57e2925edccb205c2" category="list-text"><block ref="238c5b123e3473c57e2925edccb205c2" category="inline-link-rx"></block></block>
-  <block id="3a2bbd221f9a6d667af34b16ef1c1a32" category="list-text">Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.1 oder 5.0 durch.</block>
   <block id="8ce84b11df4b07d7aa9bb1fd260b434f" category="inline-link-macro">Compute Firmware Bundle 2.174.0 – Versionshinweise</block>
   <block id="5b0fda3cebcf8a643f1180cab01f12da" category="list-text"><block ref="1a4479b2e3ec8fc20906c13b738e7820" category="inline-link-macro-rx"></block> _NEU_</block>
   <block id="69bac05cf2ab747a8ac20a157b6363b6" category="admonition">Für NetApp Hybrid Cloud Control ist das neueste Management-Services-Bundle erforderlich. Sie müssen auf das neueste Management-Services-Bundle aktualisieren, bevor Sie die Firmware auf den Compute-Nodes auf Version 2.174.0 aktualisieren. Wenn Sie die Firmware auf Ihren Rechenknoten auf Version 2.174.0 aktualisieren, benötigen Sie die Verwaltungsdienste 2.20, um fortzufahren.</block>
@@ -6184,4 +6178,14 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="eea7cb3a63edf642e1f15162351dfce7" category="list-text">Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.2, 5.1 oder 5.0 durch.</block>
+  <block id="474ed7ffbbc0fc1d58ad983e7ef700f6" category="admonition">Das Element Plug-in für vCenter 5.0 oder höher ist nicht mit vCenter Server 6.7 und 6.5 kompatibel.</block>
+  <block id="29a68ec994066bf5beb577a0f3fb9556" category="image-alt">Zeigt den Plug-in-Erweiterungspunkt nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 5.10 oder höher</block>
+  <block id="f35f89119a6374d18bd89e0103590c61" category="image-alt">Zeigt die Plug-in-Erweiterungspunkte nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 4.10 oder früher</block>
+  <block id="faf6c38631911f7840c3498b4ec9f746" category="inline-link-macro">Hinweis zu Managementservices 2.24.40 (NetApp Element-Plug-in für VMware vCenter Server 5.2.12)</block>
+  <block id="1f3c662e49f317f7c70a24adc13870a1" category="list-text"><block ref="1f3c662e49f317f7c70a24adc13870a1" category="inline-link-macro-rx"></block></block>
+  <block id="ce397f79b5032c3e327db3efe5a6048a" category="inline-link">Versionshinweise zu vCenter Plug-in 5.2</block>
+  <block id="4718467fa890cd0dcf159b3d461cedbe" category="list-text"><block ref="6bd87cf3d55c2ead3ab585e965bea4db" category="inline-link-rx"></block> _NEU_</block>
+  <block id="410ecb079e286058eeb2bc6b56d9379c" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block></block>
+  <block id="732713df3c4c58fb19fab37e747f6f0d" category="list-text"><block ref="732713df3c4c58fb19fab37e747f6f0d" category="inline-link-macro-rx"></block></block>
 </blocks>
