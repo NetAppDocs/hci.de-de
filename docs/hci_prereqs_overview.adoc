@@ -30,6 +30,7 @@ Im Folgenden finden Sie die Links zu den Anforderungen und Aufgaben vor der Impl
 * link:hci_prereqs_environmental.html["Umweltanforderungen"]
 * link:hci_prereqs_protection_domains.html["Sicherungsdomänen"]
 * link:hci_prereqs_witness_nodes.html["Ressourcenanforderungen von Witness Node für Storage Cluster mit zwei Nodes"]
+* link:hci_prereqs_deployment_configuration_restriction.html["Einschränkungen bei der Implementierungskonfiguration"]
 
 
 [discrete]
