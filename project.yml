@@ -327,7 +327,7 @@ sidebar:
     - title: Entfernen Sie Witness Nodes nach dem erweitern des Clusters
       url: "/docs/task_hci_removewn.html"
   - title: Verwenden Sie Rancher auf NetApp HCI
-    url: "/docs/concept_rancher_index.html"
+    url: "/docs/concept_rancher_concept.html"
   - title: Hardware der H-Serie warten
     entries:
     - title: Hardware-Wartung der H-Serie – Übersicht
