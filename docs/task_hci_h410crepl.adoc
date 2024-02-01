@@ -58,7 +58,7 @@ Hier sind einige zusätzliche Aufgaben, die Sie möglicherweise durchführen mü
 
 * link:task_hci_removewn.html["Entfernen Sie Witness Nodes, um Computing-Ressourcen freizumachen"]
 * <<Ändern Sie das Passwort, wenn Sie einen Ersatzknoten mit einem nicht standardmäßigen BMC-Passwort erhalten haben>>
-* <<Aktualisieren Sie die BMC-Firmware auf Ihrem Node>>
+* <<Upgrade the BMC firmware on your node>>
 
 
 
@@ -146,6 +146,8 @@ CAUTION: Wenn die Luftströmungsöffnungen an der Rückseite des Gehäuses durch
 
 TIP: Stellen Sie sicher, dass der Ersatz-Node auf die gleiche Weise wie die anderen Nodes im Chassis verkabelt ist.
 
+. Konfigurieren Sie Ihren BMC, siehe link:hci_prereqs_final_prep.html["Konfigurieren Sie IPMI für jeden Node"] Entsprechende Details.
+. Lesen Sie den Artikel der NetApp Knowledge Base https://kb.netapp.com/onprem/solidfire/Element_OS/How_to_disable_BMC_web_UI_access_on_HCI_and_SolidFire_H-Series_systems["Deaktivieren des BMC Web UI-Zugriffs auf HCI und SolidFire H-Series Systeme"^] Um festzustellen, ob Ihr BMC-Webzugriff deaktiviert werden muss.
 
 
 
@@ -925,29 +927,9 @@ image::bmc pw sticker.png[Zeigt die Rückseite des Nodes mit dem Aufkleber unter
 
 
 
-== Aktualisieren Sie die BMC-Firmware auf Ihrem Node
+== Aktualisieren Sie die Firmware auf dem Node
 
-Nach dem Austausch des Computing-Node müssen Sie eventuell die Firmware-Version aktualisieren. Sie können die neueste Firmware-Datei aus dem Dropdown-Menü auf der herunterladen link:https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab["NetApp Support Site (Anmeldung erforderlich)"^].
-
-.Schritte
-. Melden Sie sich bei der Baseboard Management Controller (BMC) UI an.
-. Wählen Sie *Wartung > Firmware-Aktualisierung*.
-+
-image::h410c-bmc1.png[Zeigt die BMC-UI-Navigation für Firmware-Updates an.]
-
-. Wählen Sie in der BMC-Konsole die Option *Wartung* aus.
-+
-image::h410c-bmc2.png[Zeigt den Wartungsbildschirm in der BMC-Benutzeroberfläche an.]
-
-. Wählen Sie auf der Registerkarte Wartung in der Navigation links in der Benutzeroberfläche die Option *Firmware-Aktualisierung* aus, und wählen Sie *Aktualisierungsmodus eingeben*.
-+
-image::h410c-bmc3.png[Zeigt den Bildschirm Firmware-Aktualisierung in der BMC-Benutzeroberfläche an.]
-
-. Wählen Sie im Bestätigungsdialogfeld * Ja* aus.
-. Wählen Sie *Durchsuchen*, um das hochzuladende Firmware-Image auszuwählen, und wählen Sie *Firmware hochladen*. Das Laden der Firmware von einem Standort außerhalb der direkten Umgebung des Node kann zu längeren Ladezeiten und möglichen Timeouts führen.
-. Lassen Sie die Konfigurationsprüfungen beibehalten zu, und wählen Sie *Upgrade starten*. Das Upgrade dauert etwa 5 Minuten. Wenn Ihre Upload-Zeit 60 Minuten überschreitet, brechen Sie den Upload ab und übertragen Sie die Datei auf einen lokalen Rechner in der Nähe des Knotens. Wenn Ihre Sitzung nicht mehr verfügbar ist, wird möglicherweise eine Reihe von Warnungen angezeigt, während Sie versuchen, sich wieder im Firmware-Update-Bereich der BMC-Benutzeroberfläche anzumelden. Wenn Sie das Upgrade abbrechen, werden Sie zur Anmeldeseite umgeleitet.
-. Wählen Sie nach Abschluss der Aktualisierung die Option *OK* aus, und warten Sie, bis der Knoten neu gestartet wurde. Melden Sie sich nach dem Upgrade an, und wählen Sie *System* aus, um zu überprüfen, ob die *Firmware-Version* mit der von Ihnen hochgeladenen Version übereinstimmt.
-
+Nach dem Austausch des Computing-Node müssen Sie eventuell die Firmware-Version aktualisieren. Siehe link:task_hcc_upgrade_compute_node_firmware.html["Aktualisiert die Firmware der Computing-Node"] Entsprechende Details.
 
 
 

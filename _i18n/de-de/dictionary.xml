@@ -3523,19 +3523,6 @@
   <block id="aaeb8011e825f6e35c3a11da3b06ae8e" category="list-text">Wählen Sie *Werkseinstellung* aus, und wählen Sie die Optionsschaltfläche *Aktuelle Einstellungen entfernen und die Benutzereinstellungen auf ADMIN/ADMIN* setzen:</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">Wählen Sie *Wiederherstellen*.</block>
   <block id="51cb13d5d7f53d14e1177bc7209fd917" category="list-text">Melden Sie sich ab und melden Sie sich dann wieder an, um zu bestätigen, dass die Anmeldeinformationen jetzt geändert wurden.</block>
-  <block id="4365aa4d62fcaed8a61f5851f7c63acc" category="section-title">Aktualisieren Sie die BMC-Firmware auf Ihrem Node</block>
-  <block id="e64e1f5e233bff07158f07da3f6f71dc" category="inline-link-macro">NetApp Support Site (Anmeldung erforderlich)</block>
-  <block id="4cd4d7d72d12ae588ded720ce09eb6be" category="paragraph">Nach dem Austausch des Computing-Node müssen Sie eventuell die Firmware-Version aktualisieren. Sie können die neueste Firmware-Datei aus dem Dropdown-Menü auf der herunterladen <block ref="abee0fa17807b632b354ed0eee4c1a88" category="inline-link-macro-rx"></block>.</block>
-  <block id="2a0625a35fb4af01157e81573ba8eeda" category="list-text">Wählen Sie *Wartung &gt; Firmware-Aktualisierung*.</block>
-  <block id="447bf1c51f518d302e2efefb20e4f3e5" category="image-alt">Zeigt die BMC-UI-Navigation für Firmware-Updates an.</block>
-  <block id="5d3ccc6c1013f8038b1f86a92db0c184" category="list-text">Wählen Sie in der BMC-Konsole die Option *Wartung* aus.</block>
-  <block id="051af6c885ceb71e22b881985fe7c46c" category="image-alt">Zeigt den Wartungsbildschirm in der BMC-Benutzeroberfläche an.</block>
-  <block id="5f60cd8039f9c554b92de593bbb6a0a2" category="list-text">Wählen Sie auf der Registerkarte Wartung in der Navigation links in der Benutzeroberfläche die Option *Firmware-Aktualisierung* aus, und wählen Sie *Aktualisierungsmodus eingeben*.</block>
-  <block id="67c015407a3660cd7c1736c3cbf43dd0" category="image-alt">Zeigt den Bildschirm Firmware-Aktualisierung in der BMC-Benutzeroberfläche an.</block>
-  <block id="0356ec6b4d587e5f4d2782c817a2e96b" category="list-text">Wählen Sie im Bestätigungsdialogfeld * Ja* aus.</block>
-  <block id="7874642886c22920789477d73255c589" category="list-text">Wählen Sie *Durchsuchen*, um das hochzuladende Firmware-Image auszuwählen, und wählen Sie *Firmware hochladen*. Das Laden der Firmware von einem Standort außerhalb der direkten Umgebung des Node kann zu längeren Ladezeiten und möglichen Timeouts führen.</block>
-  <block id="9ca6aab24c6382de412d4fb67990fbb9" category="list-text">Lassen Sie die Konfigurationsprüfungen beibehalten zu, und wählen Sie *Upgrade starten*. Das Upgrade dauert etwa 5 Minuten. Wenn Ihre Upload-Zeit 60 Minuten überschreitet, brechen Sie den Upload ab und übertragen Sie die Datei auf einen lokalen Rechner in der Nähe des Knotens. Wenn Ihre Sitzung nicht mehr verfügbar ist, wird möglicherweise eine Reihe von Warnungen angezeigt, während Sie versuchen, sich wieder im Firmware-Update-Bereich der BMC-Benutzeroberfläche anzumelden. Wenn Sie das Upgrade abbrechen, werden Sie zur Anmeldeseite umgeleitet.</block>
-  <block id="fe29f01ceefdfc2a26d419451331a7de" category="list-text">Wählen Sie nach Abschluss der Aktualisierung die Option *OK* aus, und warten Sie, bis der Knoten neu gestartet wurde. Melden Sie sich nach dem Upgrade an, und wählen Sie *System* aus, um zu überprüfen, ob die *Firmware-Version* mit der von Ihnen hochgeladenen Version übereinstimmt.</block>
   <block id="81a98ff8027ae63cb194d5c2051a720c" category="summary">Erfahren Sie mehr über die Netzwerkkonfigurationsoption A. von NetApp HCI</block>
   <block id="ba94a232ffcb3269296e4704d5ee3514" category="paragraph">NetApp HCI kann mehrere verschiedene Netzwerkverkabelungen und VLAN-Konfigurationen nutzen. Bei der ersten Konfiguration, Option A, werden für jeden Computing-Node zwei Netzwerkkabel verwendet.</block>
   <block id="d22f3561a8511117e3224bc405c9381d" category="section-title">Konfigurationsoption A: Zwei Kabel für Computing-Nodes</block>
@@ -5912,33 +5899,6 @@
   <block id="9a273d2d550df11ef961cf667f623547" category="sidebar">Erweiterung der NetApp Storage- und Computing-Ressourcen</block>
   <block id="efaccef33aabd635656b681f92a298ea" category="sidebar">Hardware der H-Serie warten</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">Frühere Versionen</block>
-  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Los geht's</block>
-  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Versionshinweise</block>
-  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Was ist neu</block>
-  <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">Hardware warten</block>
-  <block id="147fc8b7d94adc0dceb5978ab928f776" category="sidebar">Hardware-Installation der H-Serie</block>
-  <block id="09af8dd99d422c917dcb27847056b045" category="sidebar">Hardware-Wartung der H-Serie</block>
-  <block id="bc2592cdeeae26af69f28b4f6a1c8ca0" category="sidebar">Installation von NetApp HCI</block>
-  <block id="96e1a5a82d70a24f161f0adb6e19ac8d" category="sidebar">Übersicht über Installation und Implementierung</block>
-  <block id="8a6e336622cf399a6453e4659f2a6147" category="sidebar">Starten Sie die Implementierung mit der NetApp Deployment Engine</block>
-  <block id="a54d0ac20b8277a267fb90e8c0b05032" category="sidebar">Ausführung von Aufgaben nach der Implementierung</block>
-  <block id="cfe80b2a0cabf734adc7b7c1613cfe4f" category="sidebar">Verwenden Sie NetApp HCI</block>
-  <block id="930dca22f6f735a61fd8f484808fecb3" category="sidebar">Management über NetApp Hybrid Cloud Control</block>
-  <block id="6cb5dfacb4ee1684b5483221bfcf580c" category="sidebar">Verwenden Sie das NetApp Element Plug-in für vCenter Server</block>
-  <block id="d02b5df8c0bf5a555ea650be898817f7" category="sidebar">Erweitern Sie NetApp HCI</block>
-  <block id="748ace58318ab9d82392d680b07e89e6" category="sidebar">Upgrade von NetApp HCI</block>
-  <block id="f7731734f4507319f744fe2c8158536a" category="sidebar">Fehler bei NetApp HCI und Rancher beheben</block>
-  <block id="eeabaf7c41bcd50a6a02694c070dbfb4" category="sidebar">BMC auf Computing-Knoten zurücksetzen</block>
-  <block id="166868e0f588717c1c62116a03c9b979" category="sidebar">Weitere Knowledge Base-Artikel</block>
-  <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">Verbessern Lassen</block>
-  <block id="fcf140abed196b8eba71c45f21312bce" category="sidebar">NetApp Lösungen</block>
-  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">Demos Tutorials</block>
-  <block id="45a52e6c046bce2a0f9f5253cc23fbd6" category="sidebar">NetApp HCI-Videobibliothek</block>
-  <block id="9135ac6f13de11d3b4b9f2f98ff9bcb8" category="sidebar">NetApp Learning Services</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs Community</block>
-  <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp Community</block>
-  <block id="213686afc3803be7caa09348765467fe" category="sidebar">Wo Sie Hilfe erhalten</block>
-  <block id="389672366ff11f72a82c5c495b9b5159" category="sidebar">NetApp HCI 1.8-Dokumentation</block>
   <block id="d471727ba1fb423986701d5307906d08" category="list-text">Überprüfen Sie, ob die Plug-in-Erweiterungspunkte auf der Registerkarte *Shortcuts* des vSphere Web Clients und im Seitenfenster angezeigt werden.</block>
   <block id="14ff77c680c9acb2e3a54c4ea137f642" category="cell">RMCP-Anschluss Erforderlich für Upgrades der NetApp Hybrid Cloud Control Computing-Firmware</block>
   <block id="2e4fe9cef5b49ad23180da86877e63cb" category="cell">Computing Node BMC/IPMI H410 und H600 Serie</block>
@@ -6190,4 +6150,9 @@
   <block id="4b07d1c342b03364f7120990720b53ef" category="section-title">Schritt 5: Neuimplementierung von Witness Nodes für Storage-Cluster mit zwei und drei Nodes</block>
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">SolidFire- und HCI-Upgrades können nicht gestartet werden, da Fehler beim Hochladen der Upgradepakete aufgetreten ist</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">Ab dem 2023. November können Sie ein Komponenten-Upgrade nicht mit NetApp Hybrid Cloud Control oder REST API starten, da die (privaten und öffentlichen) Signaturschlüsselzertifikate am 5. November 2023 abgelaufen sind. Sie können dieses Problem beheben, indem Sie die im Knowledge Base-Artikel dokumentierte Problemumgehung befolgen<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>.</block>
+  <block id="8daa3151587347980e74b151202ea3b6" category="list-text">Konfigurieren Sie Ihren BMC, siehe <block ref="785a710f4c6946c37cc4ffd8e78657df" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="a0701e6fb9d20d52e56b635ed36b87f5" category="inline-link">Deaktivieren des BMC Web UI-Zugriffs auf HCI und SolidFire H-Series Systeme</block>
+  <block id="6eacafa95777fb1e6eb8520265b58990" category="list-text">Lesen Sie den Artikel der NetApp Knowledge Base<block ref="241ab5b011155d72deeb18c5d431446f" category="inline-link-rx"></block> Um festzustellen, ob Ihr BMC-Webzugriff deaktiviert werden muss.</block>
+  <block id="65c8d097794b4f73719e82bebe86d855" category="section-title">Aktualisieren Sie die Firmware auf dem Node</block>
+  <block id="08a91b27b8b81bd9d0b64ba51e61dd98" category="paragraph">Nach dem Austausch des Computing-Node müssen Sie eventuell die Firmware-Version aktualisieren. Siehe <block ref="502434424b58174296cfde9ecff2397f" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
 </blocks>
