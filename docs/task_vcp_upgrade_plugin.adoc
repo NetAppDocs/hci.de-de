@@ -27,7 +27,7 @@ NOTE: Management Services 2.22.7 enthält Element Plug-in für vCenter Server 5.
 --
 Dieses Upgrade-Verfahren umfasst die folgenden Upgrade-Szenarien:
 
-* Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.2, 5.1 oder 5.0 durch.
+* Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.3, 5.2, 5.1 oder 5.0 durch.
 * Sie aktualisieren gerade auf einen 8.0 oder 7.0 HTML5 vSphere Web Client.
 +
 
@@ -69,10 +69,19 @@ IMPORTANT: Das Plug-in ist nicht kompatibel mit Version 6.7 U2 Build 13007421 de
 * *Management Services-Updates*: Sie haben Ihre aktualisiert https://mysupport.netapp.com/site/products/all/details/mgmtservices/downloads-tab["Management Services-Bundle"^] Zur aktuellen Version wechseln. Updates für das vCenter Plug-in werden mithilfe von Updates für die Managementservices bereitgestellt, die außerhalb der größeren Produktversionen für NetApp HCI veröffentlicht werden.
 * *Management-Knoten-Upgrades*:
 +
-** Ab dem Element vCenter Plug-in 5.0 führen Sie einen Management-Node aus, der schon einmal verwendet wurde link:task_hcc_upgrade_management_node.html["Upgrade durchgeführt"] Auf Version 12.3.x oder höher.
-** Für Element vCenter Plug-in 4.4 bis 4.10 führen Sie einen Management-Node aus, der schon einmal verwendet wurde link:task_hcc_upgrade_management_node.html["Upgrade durchgeführt"] Auf Version 11.3 oder höher. VCenter Plug-in 4.4 oder höher erfordert einen Management-Node mit mindestens 11.3 Versionen und einer modularen Architektur, die individuelle Services bietet. Der Management-Node muss mit seiner IP-Adresse oder der konfigurierten DHCP-Adresse eingeschaltet werden.
+[role="tabbed-block"]
+====
+.Element Plug-in für vCenter 5.0 und höher
+--
+Sie führen einen Management-Node aus, der bereits ausgeführt wurde link:task_hcc_upgrade_management_node.html["Upgrade durchgeführt"] Auf Version 12.3.x oder höher.
 
+--
+.Element Plug-in für vCenter 4.10 und früher
+--
+Sie führen einen Management-Node aus, der bereits ausgeführt wurde link:task_hcc_upgrade_management_node.html["Upgrade durchgeführt"] Auf Version 11.3 oder höher. VCenter Plug-in 4.4 oder höher erfordert einen Management-Node mit mindestens 11.3 Versionen und einer modularen Architektur, die individuelle Services bietet. Der Management-Node muss mit seiner IP-Adresse oder der konfigurierten DHCP-Adresse eingeschaltet werden.
 
+--
+====
 * * Element Storage-Upgrades*:
 +
 ** Ab dem Element vCenter Plug-in 5.0 verfügen Sie über einen Cluster, auf dem die NetApp Element Software 12.3.x oder höher ausgeführt wird.
@@ -90,16 +99,23 @@ image::vcp_registration_utility_ui_qossioc.png[Zeigt die Benutzeroberfläche des
 
 . Wählen Sie *vCenter Plug-in Registrierung*.
 +
-** Die vCenter Plug-in-Registrierungsseite für Element Plug-in für vCenter Server 5.x:
-+
+[role="tabbed-block"]
+====
+.Element Plug-in für vCenter 5.0 und höher
+--
+Die Seite vCenter Plug-in Registration wird angezeigt:
+
 image::vcp_remote_plugin_registration_ui.png[Zeigt die Benutzeroberfläche des Registrierungsprogramms für ein Remote-Plug-in]
 
-** Die Seite vCenter Plug-in-Registrierung für Element Plug-in für vCenter Server 4.x:
-+
+--
+.Element Plug-in für vCenter 4.10 und früher
+--
+Die Seite vCenter Plug-in Registration wird angezeigt:
+
 image::vcp_registration_utility_ui.png[Zeigt die Benutzeroberfläche des Registrierungsprogramms für ein lokales Plug-in]
 
-
-
+--
+====
 . Wählen Sie in *vCenter-Plug-in verwalten* die Option *Update Plug-in* aus.
 . Bestätigen oder aktualisieren Sie die folgenden Informationen:
 +
@@ -110,20 +126,27 @@ image::vcp_registration_utility_ui.png[Zeigt die Benutzeroberfläche des Registr
 NOTE: Der von Ihnen eingegebene Benutzername und das Kennwort müssen für einen Benutzer mit den Berechtigungen der vCenter Administrator-Rolle verwendet werden.
 
 .. Das vCenter Administrator-Passwort.
-.. (Für interne Server/dunkle Sites) je nach Element Plug-in für vCenter Version, eine benutzerdefinierte URL für die Plug-in-JSON-Datei oder Plug-in ZIP:
+.. (Für interne Server oder Dark Sites) abhängig von Ihrer Element Plug-in für vCenter Version, eine benutzerdefinierte URL für die JSON-Datei oder Plug-in ZIP:
 +
-... Beginnend mit dem Element Plug-in für vCenter Server 5.0, einer benutzerdefinierten URL für die JSON-Plug-in-Datei.
-+
+[role="tabbed-block"]
+====
+.Element Plug-in für vCenter 5.0 und höher
+--
+Eine benutzerdefinierte URL für die JSON-Plug-in-Datei.
+
 
 NOTE: Sie können *Benutzerdefinierte URL* wählen, um die URL anzupassen, wenn Sie einen HTTP- oder HTTPS-Server (dunkle Site) verwenden oder den JSON-Dateinamen oder die Netzwerkeinstellungen geändert haben. Weitere Konfigurationsschritte, wenn Sie eine URL anpassen möchten, finden Sie in der Dokumentation zum Element Plug-in für vCenter Server zum Ändern von vCenter-Eigenschaften für einen internen HTTP-Server (Dark Site).
 
-... Für Element Plug-in für vCenter Server 4.10 oder früher, eine benutzerdefinierte URL für das Plug-in ZIP.
-+
+--
+.Element Plug-in für vCenter 4.10 und früher
+--
+Eine benutzerdefinierte URL für die Plug-in-ZIP.
+
 
 NOTE: Sie können *Benutzerdefinierte URL* wählen, um die URL anzupassen, wenn Sie einen HTTP- oder HTTPS-Server (dunkle Site) verwenden oder den ZIP-Dateinamen oder die Netzwerkeinstellungen geändert haben. Weitere Konfigurationsschritte, wenn Sie eine URL anpassen möchten, finden Sie in der Dokumentation zum Element Plug-in für vCenter Server zum Ändern von vCenter-Eigenschaften für einen internen HTTP-Server (Dark Site).
 
-
-
+--
+====
 
 
 . Wählen Sie *Aktualisieren*.
@@ -138,14 +161,23 @@ NOTE: Durch diese Aktion wird eine neue Datenbank erstellt und die Installation 
 . Suchen Sie im vSphere Web Client nach den folgenden abgeschlossenen Aufgaben im Task Monitor, um sicherzustellen, dass die Installation abgeschlossen wurde: `Download plug-in` Und `Deploy plug-in`.
 . Überprüfen Sie, ob die Plug-in-Erweiterungspunkte auf der Registerkarte *Shortcuts* des vSphere Web Clients und im Seitenfenster angezeigt werden.
 +
-** Ab dem Element Plug-in für vCenter Server 5.0 erscheint der NetApp Element Remote Plugin Extension Point:
-+
+[role="tabbed-block"]
+====
+.Element Plug-in für vCenter 5.0 und höher
+--
+Der Erweiterungspunkt für das Remote-Plugin von NetApp Element wird angezeigt:
+
 image::vcp_remote_plugin_icons_home_page.png[Zeigt den Plug-in-Erweiterungspunkt nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 5.10 oder höher]
 
-** Bei Element Plug-in für vCenter Server 4.10 oder früher werden die Erweiterungspunkte für NetApp Element-Konfiguration und -Verwaltung angezeigt:
-+
+--
+.Element Plug-in für vCenter 4.10 und früher
+--
+Die Erweiterungspunkte der NetApp Element-Konfiguration und -Verwaltung werden angezeigt:
+
 image::vcp_shortcuts_page_accessing_plugin.png[Zeigt die Plug-in-Erweiterungspunkte nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 4.10 oder früher]
 
+--
+====
 +
 [NOTE]
 ====
@@ -154,8 +186,6 @@ Wenn die vCenter-Plug-in-Symbole nicht angezeigt werden, lesen Sie link:https://
 Nach dem Upgrade auf NetApp Element Plug-in für vCenter Server 4.8 oder höher mit VMware vCenter Server 6.7U1, wenn die Speicher-Cluster nicht aufgeführt sind oder ein Serverfehler in den Abschnitten *Cluster* und *QoSSIOC-Einstellungen* der NetApp Element-Konfiguration angezeigt wird, siehe link:https://docs.netapp.com/us-en/vcp/vcp_reference_troubleshoot_vcp.html#error_vcp48_67u1["Element Plug-in für vCenter Server"^] Dokumentation über die Fehlerbehebung bei diesen Fehlern.
 
 ====
-
-
 . Überprüfen Sie die Versionsänderung auf der Registerkarte *über* im Erweiterungspunkt * NetApp Element Konfiguration* des Plug-ins.
 +
 Die folgenden Versionsdetails bzw. Details zu einer neueren Version sollten angezeigt werden:
@@ -163,8 +193,8 @@ Die folgenden Versionsdetails bzw. Details zu einer neueren Version sollten ange
 +
 [listing]
 ----
-NetApp Element Plug-in Version: 5.2
-NetApp Element Plug-in Build Number: 12
+NetApp Element Plug-in Version: 5.3
+NetApp Element Plug-in Build Number: 9
 ----
 
 

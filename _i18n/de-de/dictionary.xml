@@ -3896,7 +3896,6 @@
   <block id="4eed15839b8c708f78b2b696364ff0aa" category="list-text"><block ref="4eed15839b8c708f78b2b696364ff0aa" category="inline-link-rx"></block></block>
   <block id="3938cfdbe176bad61cedb25bdb572858" category="section-title">NetApp Element Software</block>
   <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">Versionshinweise zu NetApp Element Software 12.7</block>
-  <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _NEU_</block>
   <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">Versionshinweise zu NetApp Element Software 12.5</block>
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
   <block id="56570048e2475ec7b64ee91388743714" category="inline-link">Versionshinweise zu NetApp Element Software 12.3.2</block>
@@ -4719,8 +4718,6 @@
   <block id="73bb2b0d39f901d3bcdddd6b19d7170a" category="list-text">*Management Services-Updates*: Sie haben Ihre aktualisiert<block ref="f6e495ec9a99fcd5692d41358780e884" category="inline-link-rx"></block> Zur aktuellen Version wechseln. Updates für das vCenter Plug-in werden mithilfe von Updates für die Managementservices bereitgestellt, die außerhalb der größeren Produktversionen für NetApp HCI veröffentlicht werden.</block>
   <block id="aac8ad795776bcaba9b87cb70791d2d1" category="list-text">*Management-Knoten-Upgrades*:</block>
   <block id="4c02ebe342ea429a0d2a2a23be2ddd19" category="inline-link-macro">Upgrade durchgeführt</block>
-  <block id="9163ac7fa12bb2150fecf2f1b174db4d" category="list-text">Ab dem Element vCenter Plug-in 5.0 führen Sie einen Management-Node aus, der schon einmal verwendet wurde <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> Auf Version 12.3.x oder höher.</block>
-  <block id="5e3078320e7b08b85d42398585874ce3" category="list-text">Für Element vCenter Plug-in 4.4 bis 4.10 führen Sie einen Management-Node aus, der schon einmal verwendet wurde <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> Auf Version 11.3 oder höher. VCenter Plug-in 4.4 oder höher erfordert einen Management-Node mit mindestens 11.3 Versionen und einer modularen Architektur, die individuelle Services bietet. Der Management-Node muss mit seiner IP-Adresse oder der konfigurierten DHCP-Adresse eingeschaltet werden.</block>
   <block id="924861571eeb51fd5eb1d806da0f0e5e" category="list-text">* Element Storage-Upgrades*:</block>
   <block id="b9ad9c0000e5c2b012be9c9ba83b7cff" category="list-text">Ab dem Element vCenter Plug-in 5.0 verfügen Sie über einen Cluster, auf dem die NetApp Element Software 12.3.x oder höher ausgeführt wird.</block>
   <block id="02738f63a80a594ad3ab131f3a7298f2" category="list-text">Für Element vCenter Plug-in 4.10 oder eine frühere Version verfügen Sie über einen Cluster mit der NetApp Element Software 11.3 oder höher.</block>
@@ -4736,9 +4733,7 @@
   <block id="d5fcc07cbc4a070c18d26103f54f3f58" category="list-text">Der vCenter Administrator-Benutzername.</block>
   <block id="b1e24f0b2fb8f66a9c2444bf0e385f97" category="admonition">Der von Ihnen eingegebene Benutzername und das Kennwort müssen für einen Benutzer mit den Berechtigungen der vCenter Administrator-Rolle verwendet werden.</block>
   <block id="c2611280cf76890b83743a67ac6478e2" category="list-text">Das vCenter Administrator-Passwort.</block>
-  <block id="1e35767408ad5bd29ecc61c301c556ef" category="list-text">Beginnend mit dem Element Plug-in für vCenter Server 5.0, einer benutzerdefinierten URL für die JSON-Plug-in-Datei.</block>
   <block id="b9d11c83e937a9ece9e8b7051bc68606" category="admonition">Sie können *Benutzerdefinierte URL* wählen, um die URL anzupassen, wenn Sie einen HTTP- oder HTTPS-Server (dunkle Site) verwenden oder den JSON-Dateinamen oder die Netzwerkeinstellungen geändert haben. Weitere Konfigurationsschritte, wenn Sie eine URL anpassen möchten, finden Sie in der Dokumentation zum Element Plug-in für vCenter Server zum Ändern von vCenter-Eigenschaften für einen internen HTTP-Server (Dark Site).</block>
-  <block id="ba85baaa049f62983a89ac7da1647abd" category="list-text">Für Element Plug-in für vCenter Server 4.10 oder früher, eine benutzerdefinierte URL für das Plug-in ZIP.</block>
   <block id="daa4768416116e6634bf75e379507244" category="admonition">Sie können *Benutzerdefinierte URL* wählen, um die URL anzupassen, wenn Sie einen HTTP- oder HTTPS-Server (dunkle Site) verwenden oder den ZIP-Dateinamen oder die Netzwerkeinstellungen geändert haben. Weitere Konfigurationsschritte, wenn Sie eine URL anpassen möchten, finden Sie in der Dokumentation zum Element Plug-in für vCenter Server zum Ändern von vCenter-Eigenschaften für einen internen HTTP-Server (Dark Site).</block>
   <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">Wählen Sie *Aktualisieren*.</block>
   <block id="14b68e07a69ae90b19c2bd823797ff21" category="paragraph">Ein Banner erscheint in der Benutzeroberfläche des Registrierungsprogramms, wenn die Registrierung erfolgreich ist.</block>
@@ -5906,10 +5901,6 @@
   <block id="1381491a5bb8087f95db0601150c5c28" category="cell">Storage Node BMC/IPMI H410 und H600 Series</block>
   <block id="291dd45cc603b1047e92bf5a13259357" category="cell">RMCP-Anschluss Dies ist erforderlich, um IPMI-fähige Systeme zu verwalten.</block>
   <block id="4fc3110ffa80f16c08c41963de559312" category="admonition">Bei der Aktualisierung von ESXi für Computing-Nodes für ein<block ref="c40679731a13cea0e8ba16410d87ab2b" category="inline-link-rx"></block>, Aktualisieren Sie nur einen Computing-Knoten gleichzeitig, damit nur ein Zeuge-Knoten vorübergehend nicht verfügbar ist und Cluster-Quorum aufrechterhalten werden kann.</block>
-  <block id="b53963914b8930756b5acf2d4aca8094" category="list-text">Die Seite vCenter Plug-in-Registrierung für Element Plug-in für vCenter Server 4.x:</block>
-  <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">(Für interne Server/dunkle Sites) je nach Element Plug-in für vCenter Version, eine benutzerdefinierte URL für die Plug-in-JSON-Datei oder Plug-in ZIP:</block>
-  <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">Ab dem Element Plug-in für vCenter Server 5.0 erscheint der NetApp Element Remote Plugin Extension Point:</block>
-  <block id="1c63b3cd9a6d3bdf8b9b31aca68672d7" category="list-text">Bei Element Plug-in für vCenter Server 4.10 oder früher werden die Erweiterungspunkte für NetApp Element-Konfiguration und -Verwaltung angezeigt:</block>
   <block id="ed49450e49f19333986b5262b5e1a4d4" category="paragraph">Die unterstützten Firmware- und ESXi-Treiberversionen für NetApp HCI-Rechner-Nodes.</block>
   <block id="0b50a6dd18dd8aee8ba17d59674440d3" category="paragraph">Die unterstützten Firmware-Versionen für H-Series und SolidFire Storage Nodes</block>
   <block id="64e18ac9b2149d7132eaef6563caaaf6" category="paragraph">*Modellnummer (Familienanteil):* H610S *volle Modellnummer:* H610S-1, H610S-1-NE, H610S-2, H610S-2-NE, H610S-4, H610S-4-NE UND H610S-2F</block>
@@ -5987,7 +5978,6 @@
   <block id="4ac581155f2c6a4a3a056078e2b122a1" category="list-text">Öffnen Sie die REST API-UI auf dem Managementknoten:</block>
   <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">Dieses Upgrade-Verfahren umfasst die folgenden Upgrade-Szenarien:</block>
   <block id="609cfd925544c2aaccb703dcb95eed4d" category="admonition">Wenn Sie von Element Plug-in für vCenter Server 4.x auf 5.x aktualisieren, gehen die bereits mit dem Plug-in konfigurierten Cluster verloren, da die Daten nicht von einer vCenter-Instanz in ein Remote-Plug-in kopiert werden können. Sie müssen die Cluster dem Remote-Plug-in erneut hinzufügen. Dies ist eine einmalige Aktivität beim Upgrade von einem lokalen Plug-in auf ein Remote-Plug-in.</block>
-  <block id="4edf62fd94cfb84b727afbee52aa8128" category="list-text">Die vCenter Plug-in-Registrierungsseite für Element Plug-in für vCenter Server 5.x:</block>
   <block id="04bac97a16b610a555c29c398dc04860" category="paragraph">Auf der Registerkarte *Storage* werden die Speichercluster aufgelistet, die Teil Ihrer Installation sind. Wenn durch NetApp Hybrid Cloud Control auf ein Cluster zugegriffen werden kann, wird es nicht auf der Seite *Upgrades* angezeigt. Wenn bei Clustern mit Element 12.0 oder höher die aktuelle Firmware-Bundle-Version für diese Cluster aufgeführt ist. Wenn die Knoten in einem einzelnen Cluster unterschiedliche Firmware-Versionen haben oder wenn das Upgrade fortschreitet, wird in der Spalte *Aktuelle Firmware Bundle Version* *Multiple* angezeigt. Sie können *multiple* auswählen, um zur Seite *Nodes* zu navigieren, um Firmware-Versionen zu vergleichen. Wenn auf allen Clustern Elementversionen vor 12.0 ausgeführt werden, werden Ihnen keine Informationen über die Versionsnummern der Firmware-Bundles angezeigt. Diese Informationen finden Sie auch auf der Seite *Nodes*. Siehe <block ref="4d8bfbcb84a29a1601595359b67752e6" category="inline-link-macro-rx"></block>.</block>
   <block id="df3b4418989705f2099ec054a495c6ff" category="paragraph">Wenn der Cluster aktuell ist und/oder keine Upgrade-Pakete verfügbar sind, werden die Registerkarten *Element* und *Firmware Only* nicht angezeigt. Diese Registerkarten werden auch nicht angezeigt, wenn ein Upgrade ausgeführt wird. Wenn die Registerkarte *Element* angezeigt wird, nicht jedoch die Registerkarte *Firmware only*, stehen keine Firmware-Pakete zur Verfügung.</block>
   <block id="c7f3047b6654f1cb88fcfe6e47c92593" category="cell">Dieser Status wird angezeigt, wenn die Speicherdienst-API einen Upgrade-Status zurückgibt, der nicht in der aufgezählten Liste möglicher Upgrade-Status aufgeführt ist.</block>
@@ -6110,14 +6100,12 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="eea7cb3a63edf642e1f15162351dfce7" category="list-text">Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.2, 5.1 oder 5.0 durch.</block>
   <block id="474ed7ffbbc0fc1d58ad983e7ef700f6" category="admonition">Das Element Plug-in für vCenter 5.0 oder höher ist nicht mit vCenter Server 6.7 und 6.5 kompatibel.</block>
   <block id="29a68ec994066bf5beb577a0f3fb9556" category="image-alt">Zeigt den Plug-in-Erweiterungspunkt nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 5.10 oder höher</block>
   <block id="f35f89119a6374d18bd89e0103590c61" category="image-alt">Zeigt die Plug-in-Erweiterungspunkte nach einem erfolgreichen Upgrade oder einer erfolgreichen Installation für Element Plug-in 4.10 oder früher</block>
   <block id="faf6c38631911f7840c3498b4ec9f746" category="inline-link-macro">Hinweis zu Managementservices 2.24.40 (NetApp Element-Plug-in für VMware vCenter Server 5.2.12)</block>
   <block id="1f3c662e49f317f7c70a24adc13870a1" category="list-text"><block ref="1f3c662e49f317f7c70a24adc13870a1" category="inline-link-macro-rx"></block></block>
   <block id="ce397f79b5032c3e327db3efe5a6048a" category="inline-link">Versionshinweise zu vCenter Plug-in 5.2</block>
-  <block id="4718467fa890cd0dcf159b3d461cedbe" category="list-text"><block ref="6bd87cf3d55c2ead3ab585e965bea4db" category="inline-link-rx"></block> _NEU_</block>
   <block id="410ecb079e286058eeb2bc6b56d9379c" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block></block>
   <block id="732713df3c4c58fb19fab37e747f6f0d" category="list-text"><block ref="732713df3c4c58fb19fab37e747f6f0d" category="inline-link-macro-rx"></block></block>
   <block id="890975e7736a237c513f38124344fb84" category="list-text"><block ref="890975e7736a237c513f38124344fb84" category="inline-link-macro-rx"></block></block>
@@ -6155,4 +6143,19 @@
   <block id="6eacafa95777fb1e6eb8520265b58990" category="list-text">Lesen Sie den Artikel der NetApp Knowledge Base<block ref="241ab5b011155d72deeb18c5d431446f" category="inline-link-rx"></block> Um festzustellen, ob Ihr BMC-Webzugriff deaktiviert werden muss.</block>
   <block id="65c8d097794b4f73719e82bebe86d855" category="section-title">Aktualisieren Sie die Firmware auf dem Node</block>
   <block id="08a91b27b8b81bd9d0b64ba51e61dd98" category="paragraph">Nach dem Austausch des Computing-Node müssen Sie eventuell die Firmware-Version aktualisieren. Siehe <block ref="502434424b58174296cfde9ecff2397f" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="939f531b35412529043c2c302552fa24" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block></block>
+  <block id="d3c4a89052a32dd9783dd119f30d6d47" category="inline-link">Versionshinweise zu vCenter Plug-in 5.3</block>
+  <block id="0c21440ced3ddae10d1eea32870fdf02" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block> _NEU_</block>
+  <block id="6bd87cf3d55c2ead3ab585e965bea4db" category="list-text"><block ref="6bd87cf3d55c2ead3ab585e965bea4db" category="inline-link-rx"></block></block>
+  <block id="976b368b923346c8ea4ccc71e72749f5" category="inline-link-macro">Hinweis zu Managementservices 2.25.42 (NetApp Element-Plug-in für VMware vCenter Server 5.3.9)</block>
+  <block id="f7e890b0a90e234e4df04fc0c6b8c6a7" category="list-text"><block ref="f7e890b0a90e234e4df04fc0c6b8c6a7" category="inline-link-macro-rx"></block></block>
+  <block id="bef71f962ff7a233f3e8439eeb8dac70" category="list-text">Sie führen ein Upgrade auf Element Plug-in für vCenter Server 5.3, 5.2, 5.1 oder 5.0 durch.</block>
+  <block id="1b72ac6198c042d0bd992d1bb6e9d9bd" category="paragraph">Sie führen einen Management-Node aus, der bereits ausgeführt wurde <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> Auf Version 12.3.x oder höher.</block>
+  <block id="08f9e70df1fc159dfb7400ec9dea96a4" category="paragraph">Sie führen einen Management-Node aus, der bereits ausgeführt wurde <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> Auf Version 11.3 oder höher. VCenter Plug-in 4.4 oder höher erfordert einen Management-Node mit mindestens 11.3 Versionen und einer modularen Architektur, die individuelle Services bietet. Der Management-Node muss mit seiner IP-Adresse oder der konfigurierten DHCP-Adresse eingeschaltet werden.</block>
+  <block id="98e5a822cb59ab0389d49ffe93acad7a" category="paragraph">Die Seite vCenter Plug-in Registration wird angezeigt:</block>
+  <block id="2e66ed9729b903e2d862678b10234001" category="list-text">(Für interne Server oder Dark Sites) abhängig von Ihrer Element Plug-in für vCenter Version, eine benutzerdefinierte URL für die JSON-Datei oder Plug-in ZIP:</block>
+  <block id="dfc8b4f16eed3f1e78f9b406c473dd25" category="paragraph">Eine benutzerdefinierte URL für die JSON-Plug-in-Datei.</block>
+  <block id="bfb37ae14420b32b4119e40e73553257" category="paragraph">Eine benutzerdefinierte URL für die Plug-in-ZIP.</block>
+  <block id="8e0d59cc781c5557d1fdc81fdff04d8f" category="paragraph">Der Erweiterungspunkt für das Remote-Plugin von NetApp Element wird angezeigt:</block>
+  <block id="5770384eddfc0ac7f73f0f6242a52b50" category="paragraph">Die Erweiterungspunkte der NetApp Element-Konfiguration und -Verwaltung werden angezeigt:</block>
 </blocks>
