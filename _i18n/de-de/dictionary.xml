@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="db035ffffac30b1a95fd497625c55167" category="summary">Weitere Informationen erhalten Sie unter NetApp HCI Dokumentation zum Konfigurations- und Management sowie Informationen zu NetApp HCI Lösungen.</block>
-  <block id="ad0a505756223d68dc11afeae3459351" category="doc">NetApp HCI-Dokumentation</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
   <block id="57f06358fba0b8a8922a0641b09632cd" category="list-text">*Aktualisierungszeit*: Sie haben genügend Zeit für die Durchführung Ihres Upgrades eingeplant. Bei einem Upgrade auf Element Software 12.5 oder höher variiert die Dauer des Upgradevorgangs je nach aktueller Element Softwareversion und Firmware-Updates.</block>
   <block id="778b8320a31f425d9021c72ba59dd8bd" category="cell">Storage-Node</block>
@@ -6186,4 +6185,5 @@
   <block id="a5f38386dcceecb027de7fd15fcc6aa4" category="list-text"><block ref="a5f38386dcceecb027de7fd15fcc6aa4" category="inline-link-rx"></block></block>
   <block id="0287de700b52d79d64e09aca72f4850b" category="admonition">Wenn Sie ESXi für Compute-Nodes für einen<block ref="d6b7667dc675e8798d67d09fb8931bb2" category="inline-link-rx"></block> aktualisieren, aktualisieren Sie jeweils nur einen Compute-Node, sodass nur ein Witness-Node vorübergehend nicht verfügbar ist und das Cluster-Quorum beibehalten werden kann.</block>
   <block id="a2f9c1250a16a7514c9d6b0865b7bf42" category="list-text"><block ref="a2f9c1250a16a7514c9d6b0865b7bf42" category="inline-link-rx"></block></block>
+  <block id="71ba5558351e89d8a3a0e99e30d1f750" category="sidebar">NetApp HCI-Dokumentation 1.10</block>
 </blocks>
