@@ -25,11 +25,17 @@ Während des Zeitrahmens von 11.x war Element Software die einzige Möglichkeit,
 Der ESXi-Treiber, der mit der 10/25-GbE-NIC kompatibel ist, ist NICHT im Compute Firmware Bundle enthalten, er wird als Referenz angegeben.
 
 
+IMPORTANT: Informationen zu VMware ESXi Version 8.0 finden Sie im folgenden Knowledge Base-Artikellink:https://kb.netapp.com/on-prem/solidfire/Element_OS_Kbs/What_is_supported_with_NetApp_HCI_and_VMware_ESX_version_8.0_and_beyond["Was wird mit NetApp HCI und VMware ESXi Version 8.0 und höher unterstützt?"^].
+
+
 NOTE: Ein Bindestrich (*-*) in der folgenden Tabelle zeigt an, dass die jeweilige Hardware-Komponente IN diesem gegebenen Freigabefahrzeug NICHT unterstützt wurde.
 
 [cols="8*"]
 |===
 | Fahrzeug Lösen | Freigabedatum | BIOS | BMC | 10/25-/25-GbE-NIC | VMware ESXi 6.5-Treiberversion | VMware ESXi 6.7-Treiberversion | VMware ESXi 7.0-Treiberversion 
+
+
+| * Compute Firmware Bundle 2.179.0* | 1 2024-10-17 | 3B14.CO | 4.79.07 | 14.29.1016 | - | - | 4.21.71.1 
 
 
 | * Compute Firmware Bundle 2.174.0* | 04/12/2023 | 3B12.CO | 4.72.07 | 14.29.1016 | 4.16.71.1 | 4.17.71.1 | 4.21.71.1 
@@ -110,11 +116,17 @@ Während NetApp HCI 1.0 - NetApp HCI 1.7 war NetApp HCI die einzige Möglichkeit
 Der ESXi-Treiber, der mit der 10/25-GbE-NIC kompatibel ist, ist NICHT im Compute Firmware Bundle enthalten, er wird als Referenz angegeben.
 
 
+IMPORTANT: Informationen zu VMware ESXi Version 8.0 finden Sie im folgenden Knowledge Base-Artikellink:https://kb.netapp.com/on-prem/solidfire/Element_OS_Kbs/What_is_supported_with_NetApp_HCI_and_VMware_ESX_version_8.0_and_beyond["Was wird mit NetApp HCI und VMware ESXi Version 8.0 und höher unterstützt?"^].
+
+
 NOTE: Ein Bindestrich (*-*) in der folgenden Tabelle zeigt an, dass die jeweilige Hardware-Komponente IN diesem gegebenen Freigabefahrzeug NICHT unterstützt wurde.
 
 [cols="8*"]
 |===
 | Fahrzeug Lösen | Freigabedatum | BIOS | BMC | 10/25-/25-GbE-NIC | VMware ESXi 6.5-Treiberversion | VMware ESXi 6.7-Treiberversion | VMware ESXi 7.0-Treiberversion 
+
+
+| * Compute Firmware Bundle 2.179.0* | 1 2024-10-17 | 3B09 | 4.11.07 | 14.29.1016 | - | - | 4.21.71.1 
 
 
 | * Compute Firmware Bundle 2.174.0* | 04/12/2023 | 3B07 | 4.04.07 | 14.29.1016 | 4.16.71.1 | 4.17.71.1 | 4.21.71.1 
@@ -207,11 +219,17 @@ Während NetApp HCI 1.0 - NetApp HCI 1.7 war NetApp HCI die einzige Möglichkeit
 Der ESXi-Treiber, der mit der 10/25-GbE-NIC kompatibel ist, ist NICHT im Compute Firmware Bundle enthalten, er wird als Referenz angegeben.
 
 
+IMPORTANT: Informationen zu VMware ESXi Version 8.0 finden Sie im folgenden Knowledge Base-Artikellink:https://kb.netapp.com/on-prem/solidfire/Element_OS_Kbs/What_is_supported_with_NetApp_HCI_and_VMware_ESX_version_8.0_and_beyond["Was wird mit NetApp HCI und VMware ESXi Version 8.0 und höher unterstützt?"^].
+
+
 NOTE: Ein Bindestrich (*-*) in der folgenden Tabelle zeigt an, dass die jeweilige Hardware-Komponente IN diesem gegebenen Freigabefahrzeug NICHT unterstützt wurde.
 
 [cols="8*"]
 |===
 | Fahrzeug Lösen | Freigabedatum | BIOS | BMC | 10/25-/25-GbE-NIC | VMware ESXi 6.5-Treiberversion | VMware ESXi 6.7-Treiberversion | VMware ESXi 7.0-Treiberversion 
+
+
+| * Compute Firmware Bundle 2.179.0* | 1 2024-10-17 | NATP3.12 | 6.71.26 | 14.29.1016 | - | - | 4.21.71.1 
 
 
 | * Compute Firmware Bundle 2.174.0* | 04/12/2023 | NATP3.10 | 6.71.20 | 14.29.1016 | 4.16.71.1 | 4.17.71.1 | 4.21.71.1 
@@ -310,11 +328,17 @@ Während NetApp HCI 1.0 - NetApp HCI 1.7 war NetApp HCI die einzige Möglichkeit
 Der ESXi-Treiber, der mit der 10/25-GbE-NIC kompatibel ist, ist NICHT im Compute Firmware Bundle enthalten, er wird als Referenz angegeben.
 
 
+IMPORTANT: Informationen zu VMware ESXi Version 8.0 finden Sie im folgenden Knowledge Base-Artikellink:https://kb.netapp.com/on-prem/solidfire/Element_OS_Kbs/What_is_supported_with_NetApp_HCI_and_VMware_ESX_version_8.0_and_beyond["Was wird mit NetApp HCI und VMware ESXi Version 8.0 und höher unterstützt?"^].
+
+
 NOTE: Ein Bindestrich (*-*) in der folgenden Tabelle zeigt an, dass die jeweilige Hardware-Komponente IN diesem gegebenen Freigabefahrzeug NICHT unterstützt wurde.
 
 [cols="8*"]
 |===
 | Fahrzeug Lösen | Freigabedatum | BIOS | BMC | 10/25-/25-GbE-NIC | VMware ESXi 6.5-Treiberversion | VMware ESXi 6.7-Treiberversion | VMware ESXi 7.0-Treiberversion 
+
+
+| * Compute Firmware Bundle 2.179.0* | 1 2024-10-17 | NAT3.6 | 07.02.00 | 14.29.1016 | - | - | 4.21.71.1 
 
 
 | * Compute Firmware Bundle 2.174.0* | 04/12/2023 | NAT3.4 | 07.02.00 | 14.29.1016 | 4.16.71.1 | 4.17.71.1 | 4.21.71.1 
