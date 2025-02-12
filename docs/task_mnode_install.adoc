@@ -18,7 +18,7 @@ Sie können den Management-Node für Ihr Cluster, auf dem die NetApp Element Sof
 
 Dieses Handbuch richtet sich an NetApp HCI-Administratoren, die die NetApp Deployment Engine nicht zur Installation von Management-Nodes verwenden.
 
-.Was Sie benötigen
+.Bevor Sie beginnen
 * In Ihrer Cluster-Version wird die NetApp Element Software 11.3 oder höher ausgeführt.
 * Ihre Installation verwendet IPv4. Der Management-Node 11.3 unterstützt IPv6 nicht.
 +
@@ -55,19 +55,13 @@ Der Element 12.2 Management-Node ist ein optionales Upgrade. Bei bestehenden Imp
 
 Bevor Sie dieses Verfahren befolgen, sollten Sie ein Verständnis von haben link:concept_hci_volumes.html#persistent-volumes["Persistente Volumes"] Und ob du sie nutzen willst oder nicht. Persistente Volumes sind optional, jedoch im Falle eines Datenverlusts bei der Management-Node-Konfiguration empfohlen.
 
+
+
+== Schritt 1: ISO oder OVA herunterladen und VM bereitstellen
+
+Laden Sie das entsprechende ISO oder OVA von der NetApp-Support-Website herunter, und installieren Sie die VM.
+
 .Schritte
-. <<Laden Sie ISO oder OVA herunter, und implementieren Sie die VM>>
-. <<Erstellen Sie den Management-Node-Administrator, und konfigurieren Sie das Netzwerk>>
-. <<Konfigurieren Sie die Zeitsynchronisierung>>
-. <<Richten Sie den Management-Node ein>>
-. <<Controller-Assets konfigurieren>>
-. <<Configure compute node assets,(Nur NetApp HCI) Konfigurieren der Ressourcen der Computing-Nodes>>
-
-
-
-
-== Laden Sie ISO oder OVA herunter, und implementieren Sie die VM
-
 . Laden Sie die OVA oder ISO für Ihre Installation im herunter https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab["NetApp HCI"^] Auf der NetApp Support Site:
 +
 .. Wählen Sie *Letzte Version herunterladen* und akzeptieren Sie die EULA.
@@ -112,8 +106,11 @@ NOTE: Wenn Sie einen Management-Node mithilfe des Images installieren, kann dies
 
 
 
-== Erstellen Sie den Management-Node-Administrator, und konfigurieren Sie das Netzwerk
+== Schritt 2: Erstellen Sie den Verwaltungsknoten admin und konfigurieren Sie das Netzwerk
 
+Erstellen Sie nach Abschluss der VM-Installation den Admin-Benutzer des Management-Nodes, und konfigurieren Sie das Management-Node-Netzwerk.
+
+.Schritte
 . Erstellen Sie über die Terminal User Interface (TUI) einen Management Node Admin User.
 +
 
@@ -140,8 +137,11 @@ NOTE: Wenn Sie eine zusätzliche NIC benötigen, um den Speicherdatenverkehr zu 
 
 
 
-== Konfigurieren Sie die Zeitsynchronisierung
+== Schritt 3: Konfigurieren der Zeitsynchronisierung
 
+Synchronisieren Sie vor dem Einrichten des Management-Node die Zeit zwischen dem Management-Node und dem Storage-Cluster.
+
+.Schritte
 . Stellen Sie sicher, dass die Zeit zwischen dem Management-Node und dem Storage-Cluster mit NTP synchronisiert wird:
 +
 
@@ -219,8 +219,11 @@ NOTE: Bearbeiten Sie NTP nicht, nachdem Sie die Konfiguration zur Zeitsynchronis
 
 
 
-== Richten Sie den Management-Node ein
+== Schritt 4: Einrichten des Management-Knotens
 
+Konfigurieren Sie den Management-Node mit dem `setup-mnode` Befehl.
+
+.Schritte
 . Konfigurieren und Ausführen des Management-Node-Setup-Befehls:
 +
 
@@ -282,8 +285,11 @@ NOTE: Verwenden Sie einen eindeutigen Kontonamen für persistente Volumes, der s
 
 
 
-== Controller-Assets konfigurieren
+== Schritt 5: Konfiguration der Controller-Assets
 
+Suchen Sie die Installations-ID, und fügen Sie eine vCenter-Controller-Ressource hinzu.
+
+.Schritte
 . Suchen Sie die Installations-ID:
 +
 .. Melden Sie sich in einem Browser bei DER REST API-UI für den Management-Node an:
@@ -348,20 +354,20 @@ NOTE: Sie sollten eine neue NetApp HCC-Rolle in vCenter erstellen, um eine Contr
 
 
 
-== (Nur NetApp HCI) Konfigurieren der Ressourcen der Computing-Nodes
+== Schritt 6: (Nur NetApp HCI) Konfiguration der Ressourcen für Computing-Nodes
 
-. (Nur für NetApp HCI) Hinzufügen einer Computing-Node-Ressource zu den bekannten Management-Node-Assets:
-+
-.. Wählen Sie *POST /Assets/{Asset_id}/Compute-Nodes* aus, um eine Compute-Node-Unterressource mit Anmeldeinformationen für die Compute-Node-Ressource hinzuzufügen.
-.. Wählen Sie *Probieren Sie es aus*.
-.. Geben Sie im Feld *Asset_id* die ID der übergeordneten Basis ein, die Sie in die Zwischenablage kopiert haben.
-.. Geben Sie in der Nutzlast die erforderlichen Nutzlastwerte ein, die auf der Registerkarte „Modell“ definiert sind. Eingabe `ESXi Host` Als `type` Und geben Sie die Hardware-Tag-Nummer ein, die Sie während eines vorherigen Schritts für gespeichert haben `hardware_tag`.
-.. Wählen Sie *Ausführen*.
+Fügen Sie dem Management-Node bekannte Assets eine Compute-Node-Ressource hinzu
+
+.Schritte
+. Wählen Sie *POST /Assets/{Asset_id}/Compute-Nodes* aus, um eine Compute-Node-Unterressource mit Anmeldeinformationen für die Compute-Node-Ressource hinzuzufügen.
+. Wählen Sie *Probieren Sie es aus*.
+. Geben Sie im Feld *Asset_id* die ID der übergeordneten Basis ein, die Sie in die Zwischenablage kopiert haben.
+. Geben Sie in der Nutzlast die erforderlichen Nutzlastwerte ein, die auf der Registerkarte „Modell“ definiert sind. Eingabe `ESXi Host` Als `type` Und geben Sie die Hardware-Tag-Nummer ein, die Sie während eines vorherigen Schritts für gespeichert haben `hardware_tag`.
+. Wählen Sie *Ausführen*.
 
 
 
 
-[discrete]
 == Weitere Informationen
 
 * link:concept_hci_volumes.html#persistent-volumes["Persistente Volumes"]

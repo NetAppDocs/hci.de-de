@@ -1275,8 +1275,6 @@
   <block id="0a5712c2113fc4db522b6907519135e6" category="summary">Informieren Sie sich über die Neuerungen dieser Version von NetApp HCI.</block>
   <block id="9cea15d48c9b5a9632827b358396e207" category="doc">Was ist neu in NetApp HCI</block>
   <block id="9919e22324d983d998afd33f187a0a61" category="paragraph">NetApp aktualisiert regelmäßig den NetApp HCI, um Ihnen neue Funktionen, Verbesserungen und Fehlerkorrekturen zu bieten. NetApp HCI 1.10 enthält Element Software 12.5 für Storage-Cluster.</block>
-  <block id="6f0ce5bfc09a3a4d8737b564d5879f31" category="inline-link">Informieren Sie sich über die Neuerungen bei Element 12.7</block>
-  <block id="f10aa2cb8c994fef24ceca1ee43e4208" category="admonition">Element Software 12.7 ist die neueste Version und beinhaltet Sicherheits- und Systemkomponenten-Updates, Verbesserungen beim Betrieb sowie behobene Probleme.<block ref="d071d61ca9198e87abb60c485f07eada" category="inline-link-rx"></block>.</block>
   <block id="53f59c169b2bb48ac0b8253252a06467" category="list-text">Der <block ref="72c4f5351976259ad654b85496cb20be" category="inline-xref-macro-rx"></block> Abschnitt beschreibt neue Funktionen und Updates in NetApp HCI Version 1.10.</block>
   <block id="2a0ce9a56c6130320cccb8a7f34ec593" category="list-text">Der <block ref="18a6515b1da0f2a2d89c5832cee91752" category="inline-xref-macro-rx"></block> Abschnitt beschreibt neue Funktionen und Updates in Element 12.5.</block>
   <block id="3f1ab5f7c40b8fa8fd0a42ff36510c23" category="section-title">NetApp HCI 1.10</block>
@@ -5370,7 +5368,6 @@
   <block id="f308e6ca453d47a2876df6eae740d8f8" category="cell">Festplattengröße</block>
   <block id="a8eb35236338fefbad16baa7af1c75ba" category="cell">67 GB</block>
   <block id="845f62e2611daf20a77cdbef343a155b" category="paragraph">NetApp HCI unterstützt nur bestimmte Storage-Node-Modelle in Storage-Clustern mit zwei oder drei Nodes. Weitere Informationen finden Sie in den Versionshinweisen für Ihre NetApp HCI-Version.</block>
-  <block id="edc66b1482b45fd0e89fdbe4ba094191" category="admonition">Wenn der Installationsprozess von NetApp HCI Witness Nodes installiert, wird eine VM-Vorlage in VMware vCenter gespeichert, mit der Sie einen Witness-Node neu bereitstellen können, falls dieser versehentlich entfernt, verloren oder beschädigt wurde. Sie können auch die Vorlage verwenden, um einen Witness Node neu zu implementieren, wenn ein ausgefallener Computing-Node, der den Witness Node hostet, ersetzt werden muss. Anweisungen hierzu finden Sie im Abschnitt * Witness Nodes für zwei und drei-Node-Storage-Cluster neu implementieren* <block ref="0deb95019659c8847f806617fd301765" category="inline-link-macro-rx"></block>.</block>
   <block id="6a06383dae58d38fc5f43108b245ada6" category="summary">Wenn Sie eine zusätzliche Netzwerkkarte zum Speichern verwenden, sollten Sie eine nicht markierte oder getaggte Netzwerkschnittstelle einrichten.</block>
   <block id="e951f2b3b1d1d0ed40dad7986c81696d" category="paragraph">Wenn Sie eine zusätzliche NIC für den Speicher verwenden, können Sie SSH in den Management-Knoten einlegen oder die vCenter-Konsole verwenden und einen Curl-Befehl ausführen, um eine getaggte oder nicht getaggte Netzwerkschnittstelle einzurichten.</block>
   <block id="58d53e9386d0e42b92c37f497007f65f" category="list-text">Sie kennen Ihre eth0-IP-Adresse.</block>
@@ -5756,11 +5753,6 @@
   <block id="9385b032418674e92472a8b4a2ae5cdf" category="list-text">(Management-Node 12.0 und höher mit Proxy-Server) Sie haben die Version 2.16 von NetApp Hybrid Cloud Control auf Managementservices aktualisiert, bevor Sie einen Proxy-Server konfigurieren.</block>
   <block id="0406c3e25004e3d1dddbc367d2c4010f" category="paragraph">Der Element 12.2 Management-Node ist ein optionales Upgrade. Bei bestehenden Implementierungen wird dieser Bedarf nicht benötigt.</block>
   <block id="7f10e6e99f08f394e823f7104513126a" category="paragraph">Bevor Sie dieses Verfahren befolgen, sollten Sie ein Verständnis von haben <block ref="6f73bacaba2e470844b654fcbffb809f" category="inline-link-macro-rx"></block> Und ob du sie nutzen willst oder nicht. Persistente Volumes sind optional, jedoch im Falle eines Datenverlusts bei der Management-Node-Konfiguration empfohlen.</block>
-  <block id="d65a2ab43bcac7efebde7effc9d142f8" category="list-text"><block ref="4e8e62755aa10b5d2420c05d87c0085a" category="inline-xref-macro-rx"></block></block>
-  <block id="c92609be7302c756d6d918553df475c1" category="list-text"><block ref="d9e86326331a25418b718094ae602c19" category="inline-xref-macro-rx"></block></block>
-  <block id="0267f7e06220d0fa6fb42578b5746da3" category="list-text"><block ref="b41cb2f7bd156a4035cdf9347b89cebe" category="inline-xref-macro-rx"></block></block>
-  <block id="067315cbc6353502fa36a4f8722badbd" category="inline-xref">(Nur NetApp HCI) Konfigurieren der Ressourcen der Computing-Nodes</block>
-  <block id="cc41647231a76da233743c53a496e137" category="list-text"><block ref="fab01553c96541ce7ac54638294897d8" category="inline-xref-macro-rx"></block></block>
   <block id="7b4b2bec7b806d58982537647a92deef" category="list-text">Wählen Sie *Letzte Version herunterladen* und akzeptieren Sie die EULA.</block>
   <block id="bb79fe0e6bf117510635c505cc16e74d" category="list-text">Erstellen Sie mit der folgenden Konfiguration eine neue 64-Bit-VM aus Ihrem Hypervisor:</block>
   <block id="4cb04e22051dcc88da6d140ef391aab8" category="list-text">Speicheradaptertyp auf LSI Logic Parallel eingestellt</block>
@@ -5768,7 +5760,6 @@
   <block id="4aec8fb7a6a9c5631ebb25a7b86d9ac5" category="admonition">Schalten Sie die VM nicht ein, bevor Sie den Schritt angeben, der später in diesem Verfahren ausgeführt werden soll.</block>
   <block id="1632315c8463eb1e9d1b980297d68c37" category="list-text">Verbinden Sie die ISO mit der VM und starten Sie sie am .iso-Installations-Image.</block>
   <block id="faa024991ac61fa39b20d61ed2e88ada" category="list-text">Schalten Sie die VM nach Abschluss der Installation für den Management-Node ein.</block>
-  <block id="f894cbc944582e1f10fec4bf2a0639f0" category="section-title">Erstellen Sie den Management-Node-Administrator, und konfigurieren Sie das Netzwerk</block>
   <block id="c19f63a05ffe39159954c2b2fd892582" category="list-text">Wenn im Netzwerk ein DHCP-Server (Dynamic Host Configuration Protocol) vorhanden ist, der IPs mit einer MTU (Maximum Transmission Unit) von weniger als 1500 Byte zuweist, müssen Sie die folgenden Schritte durchführen:</block>
   <block id="b44234e2a29812de715ddf5ea19c15fc" category="list-text">Versetzen Sie den Management-Node vorübergehend in ein vSphere-Netzwerk ohne DHCP, z. B. iSCSI,.</block>
   <block id="f35b648abbd5fe5949ea297ee6cef3b9" category="list-text">Starten Sie die VM neu, oder starten Sie das VM-Netzwerk neu.</block>
@@ -5780,7 +5771,6 @@
   <block id="e7538fbaab3148e24ff8ae41d09df5ce" category="list-text">[[substep_f_install_config_time_Sync]]Zeitsynchronisierung mit Host über den Hypervisor deaktivieren (im Folgenden ein VMware-Beispiel):</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">Setup-Befehl</block>
   <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">Bearbeiten Sie NTP nicht, nachdem Sie die Konfiguration zur Zeitsynchronisation abgeschlossen haben, da es sich auf das NTP beim Ausführen des auswirkt <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> Auf dem Management-Node.</block>
-  <block id="627bbdc5a7179606b85a5d6ccb6f65e1" category="section-title">Richten Sie den Management-Node ein</block>
   <block id="5a808c62f4f9557c4df556d6a230ba7c" category="list-text">Konfigurieren und Ausführen des Management-Node-Setup-Befehls:</block>
   <block id="fea104dd45bc0e75d821ddd5af2b02d0" category="admonition">Die gekürzte Form des Befehlsnamens ist in Klammern ( ) und kann durch den vollständigen Namen ersetzt werden.</block>
   <block id="3f124867257c579e7ba689baed3d4f45" category="list-text">*--mnode_admin_user (-mu) [username]*: Der Benutzername für das Administrator-Konto des Management-Node. Dies ist wahrscheinlich der Benutzername für das Benutzerkonto, mit dem Sie sich beim Management-Node anmelden.</block>
@@ -5804,7 +5794,6 @@
   <block id="aabee241823de4ff993b60d0a196a387" category="list-text">(Optional) Verwenden Sie die Parameterhilfe, wenn Sie zusätzliche Informationen über die einzelnen Parameter benötigen:</block>
   <block id="f89c180fd45cb0275c5ee18e59d2b43d" category="list-text">*--help (-h)*: Gibt Informationen über jeden Parameter zurück. Parameter werden basierend auf der ursprünglichen Implementierung als erforderlich oder optional definiert. Die Parameteranforderungen für Upgrades und Neuimplementierungen können variieren.</block>
   <block id="79032d0c879c3afbbb570dd870eb09e1" category="list-text">Führen Sie die aus<block ref="73028873f2b0a018096b6a3d871634b5" prefix=" " category="inline-code"></block> Befehl.</block>
-  <block id="7ea2768c656768f853cd68b9066eba0f" category="section-title">Controller-Assets konfigurieren</block>
   <block id="4240350efa82cb4b2d0dcd00f64f496b" category="list-text">Suchen Sie die Installations-ID:</block>
   <block id="81b4d8ce3b6d3d31bcc065c5589192ab" category="list-text">Melden Sie sich in einem Browser bei DER REST API-UI für den Management-Node an:</block>
   <block id="ed4faf2b135a0f2d74eef06f6fd8899e" category="list-text">Wechseln Sie zum Speicher-MVIP und melden Sie sich an. Durch diese Aktion wird das Zertifikat für den nächsten Schritt akzeptiert.</block>
@@ -5815,7 +5804,6 @@
   <block id="8cfb9a9c7c3001a95af6d09549cdabaa" category="list-text">Wählen Sie *POST /Assets/{Asset_id}/Controllers* aus, um eine Unterressource des Controllers hinzuzufügen.</block>
   <block id="9db4acd10c15ec173e6516c347342e25" category="admonition">Sie sollten eine neue NetApp HCC-Rolle in vCenter erstellen, um eine Controller-Unterressource hinzuzufügen. Diese neue NetApp HCC-Rolle beschränkt die Management Node Services-Ansicht auf reine NetApp Ressourcen. Siehe <block ref="8fe5279440ee3c239e840ed9b8e10ddd" category="inline-link-macro-rx"></block>.</block>
   <block id="e2e193a380a16845739e1445cfe23fde" category="list-text">Geben Sie die erforderlichen Nutzlastwerte mit dem Typ ein<block ref="e10ca1adb349a5228f7573a244805247" prefix=" " category="inline-code"></block> Und vCenter Zugangsdaten.</block>
-  <block id="421226b233bd18f9c1f8d179419a2f39" category="list-text">(Nur für NetApp HCI) Hinzufügen einer Computing-Node-Ressource zu den bekannten Management-Node-Assets:</block>
   <block id="59cb038ca0d26b60e9eda25d59ec865b" category="list-text">Wählen Sie *POST /Assets/{Asset_id}/Compute-Nodes* aus, um eine Compute-Node-Unterressource mit Anmeldeinformationen für die Compute-Node-Ressource hinzuzufügen.</block>
   <block id="ea32544c4914661e6b948f2891dd6a83" category="list-text">Geben Sie in der Nutzlast die erforderlichen Nutzlastwerte ein, die auf der Registerkarte „Modell“ definiert sind. Eingabe<block ref="b0429e6f6291e7688c57a970fe0a03bc" prefix=" " category="inline-code"></block> Als<block ref="599dcce2998a6b40b1e38e8c6006cb0a" prefix=" " category="inline-code"></block> Und geben Sie die Hardware-Tag-Nummer ein, die Sie während eines vorherigen Schritts für gespeichert haben<block ref="881962cb2470d984f65313a8e4ceec64" prefix=" " category="inline-code"></block>.</block>
   <block id="891d7cb5314c1395a5f98467dc959053" category="inline-link-macro">Konfigurieren Sie eine Speicher-NIC</block>
@@ -6233,4 +6221,36 @@
   <block id="f0fe2934aa8d8cec985fef2e0c464532" category="list-text"><block ref="f0fe2934aa8d8cec985fef2e0c464532" category="inline-link-macro-rx"></block></block>
   <block id="08c1b18f2bce38d2bceb61af5b8c4c6e" category="list-text"><block ref="08c1b18f2bce38d2bceb61af5b8c4c6e" category="inline-link-macro-rx"></block></block>
   <block id="c1f2aa244c34463b7aea4f2b566f9420" category="list-text"><block ref="c1f2aa244c34463b7aea4f2b566f9420" category="inline-link-macro-rx"></block></block>
+  <block id="9c9a41bc801502e6500c79ea7586ba95" category="inline-link-macro">Implementieren Sie Witness-Nodes für Storage-Cluster mit zwei und drei Nodes neu</block>
+  <block id="d0f20378e2595fa7956c455387d1bc5a" category="paragraph">Wenn der Installationsprozess von NetApp HCI Witness Nodes installiert, wird eine VM-Vorlage in VMware vCenter gespeichert, mit der Sie einen Witness-Node neu bereitstellen können, falls dieser versehentlich entfernt, verloren oder beschädigt wurde. Sie können auch die Vorlage verwenden, um einen Witness Node neu zu implementieren, wenn ein ausgefallener Computing-Node, der den Witness Node hostet, ersetzt werden muss. Anweisungen hierzu finden Sie unter <block ref="6fa44f1a6cd8ce6de51cb02b7ae12cc5" category="inline-link-macro-rx"></block>.</block>
+  <block id="3c72afcfca67f187b816a55135a243dd" category="inline-link-macro">Upgrade der VM-Hardwareversion</block>
+  <block id="4fff07540e1d83ac9775ec8030cce786" category="paragraph">Wenn Sie ein in-Place-Upgrade eines vorhandenen Witness Node auf Element 12.8 durchführen, müssen Sie vor dem Upgrade sicherstellen, dass die VM-Hardwareversion auf dem Witness Node je nach Umgebung mit ESXi 6.7 (VM-Hardwareversion 14) oder höher kompatibel ist. Siehe <block ref="d1fe5954ed8bd3e53eba83ab0658a6e0" category="inline-link-macro-rx"></block>.</block>
+  <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">Versionshinweise zu NetApp Element Software 12.8</block>
+  <block id="7d776811219f8ebb17adecaa976bd578" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block> _NEU_</block>
+  <block id="a175ee087381806b642bbcfee91690d5" category="inline-link">Informieren Sie sich über die Neuerungen bei Element 12.8</block>
+  <block id="669c1fb7e11e3bb5ca277eb16b4a55f4" category="admonition">Die neueste Version der Element Software 12.8 umfasst Updates für Sicherheits- und Systemkomponenten, betriebliche Verbesserungen und behobene Probleme.<block ref="4f11681fa65d50fd10f6fc370da0cbe3" category="inline-link-rx"></block>.</block>
+  <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">Schritt: Upgrade der VM-Hardwareversion auf einem Management-Node</block>
+  <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">Wenn Sie ein in-Place-Upgrade eines vorhandenen Management-Node auf Element 12.8 durchführen, müssen Sie vor dem Upgrade sicherstellen, dass die VM-Hardwareversion auf dem Management-Node je nach Umgebung mit ESXi 6.7 (VM-Hardwareversion 14) oder höher kompatibel ist.</block>
+  <block id="d334c1e547b1e27eae5f50bf46f786cd" category="admonition">Sie können auch die folgenden Schritte ausführen, um die VM-Hardwareversion auf den Witness Nodes zu aktualisieren.</block>
+  <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">Melden Sie sich beim vSphere Web Client als vCenter Administrator an.</block>
+  <block id="1a331e443f5aee428076dfc1341e09b5" category="list-text">Wählen Sie im vSphere Client-Menü *VMs* und *Templates* aus.</block>
+  <block id="f42849b7cb77e25b9a5601553a509100" category="list-text">Klicken Sie mit der rechten Maustaste auf die virtuelle Maschine, und wählen Sie *Kompatibilität* &gt; *VM-Kompatibilität aktualisieren*.</block>
+  <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">Wählen Sie je nach Version Ihrer vSphere-Umgebung ESXi 6.7 oder eine höhere Version aus.</block>
+  <block id="7473f663a4bbad1085e61ed9c976a50a" category="list-text">Wählen Sie nach Abschluss des Upgrades *vSphere Client Refresh* aus, und überprüfen Sie, ob die VM-Kompatibilität die gewünschte Version hat.</block>
+  <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">Schritt 2: Aktualisieren Sie einen Management-Node auf Element 12.5 oder höher</block>
+  <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">Wählen Sie eine der folgenden Upgrade-Optionen:</block>
+  <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">Schritt 1: ISO oder OVA herunterladen und VM bereitstellen</block>
+  <block id="90c4d8ddd76d9f5f86c144316cec5657" category="paragraph">Laden Sie das entsprechende ISO oder OVA von der NetApp-Support-Website herunter, und installieren Sie die VM.</block>
+  <block id="c6913d34fefabb7329dba971ad99632d" category="section-title">Schritt 2: Erstellen Sie den Verwaltungsknoten admin und konfigurieren Sie das Netzwerk</block>
+  <block id="8e1cc7b20e9f183452b777f8a4fb586d" category="paragraph">Erstellen Sie nach Abschluss der VM-Installation den Admin-Benutzer des Management-Nodes, und konfigurieren Sie das Management-Node-Netzwerk.</block>
+  <block id="5e0472334bca93d0d28d3eeaaf723518" category="section-title">Schritt 3: Konfigurieren der Zeitsynchronisierung</block>
+  <block id="6646ab3d83d88b5b34e61e3a58b244e8" category="paragraph">Synchronisieren Sie vor dem Einrichten des Management-Node die Zeit zwischen dem Management-Node und dem Storage-Cluster.</block>
+  <block id="ef246c91c687e7d720eb49c5e2a4cd47" category="section-title">Schritt 4: Einrichten des Management-Knotens</block>
+  <block id="9f150d20e38589485a1bb878b18c51e2" category="paragraph">Konfigurieren Sie den Management-Node mit dem<block ref="73028873f2b0a018096b6a3d871634b5" prefix=" " category="inline-code"></block> Befehl.</block>
+  <block id="2cec258fd66ace0725a9af6922c80f3e" category="section-title">Schritt 5: Konfiguration der Controller-Assets</block>
+  <block id="b5d27a207b01cd3ca9fef9594d50836f" category="paragraph">Suchen Sie die Installations-ID, und fügen Sie eine vCenter-Controller-Ressource hinzu.</block>
+  <block id="bd6447e80251856484a25ace239c3873" category="section-title">Schritt 6: (Nur NetApp HCI) Konfiguration der Ressourcen für Computing-Nodes</block>
+  <block id="64391abac346294811422637c6d0a865" category="paragraph">Fügen Sie dem Management-Node bekannte Assets eine Compute-Node-Ressource hinzu</block>
+  <block id="975648a39ca92865d807bc35f02b5984" category="inline-link-macro">Hinweis zu Element Software 12.8</block>
+  <block id="d70cd205dfc4339579c798a35dc44462" category="list-text"><block ref="d70cd205dfc4339579c798a35dc44462" category="inline-link-macro-rx"></block></block>
 </blocks>

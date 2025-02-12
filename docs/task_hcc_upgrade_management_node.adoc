@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: docs/task_hcc_upgrade_management_node.html 
 summary: Im Rahmen eines Upgrades des NetApp HCI Systems führen Sie ein Upgrade des Management-Node durch. 
-keywords: netapp, hci, on premise, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x, 12.5, 12.7 
+keywords: netapp, hci, on premise, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x, 12.5, 12.7, 12.8 
 ---
 = Upgrade eines Management-Node
 :allow-uri-read: 
@@ -16,8 +16,30 @@ Zum Upgrade der Element Software auf dem Storage-Cluster ist kein Upgrade des Be
 
 NOTE: Wenn Sie Informationen zum Upgrade von Management-Knoten 12.2 oder älter benötigen, lesen Sie den https://docs.netapp.com/us-en/hci19/docs/task_hcc_upgrade_management_node.html["Dokumentation zum Upgrade der NetApp HCI 1.9 Management-Nodes"^].
 
-.Upgrade-Optionen
-Wählen Sie eine der folgenden Optionen:
+
+
+== Schritt: Upgrade der VM-Hardwareversion auf einem Management-Node
+
+Wenn Sie ein in-Place-Upgrade eines vorhandenen Management-Node auf Element 12.8 durchführen, müssen Sie vor dem Upgrade sicherstellen, dass die VM-Hardwareversion auf dem Management-Node je nach Umgebung mit ESXi 6.7 (VM-Hardwareversion 14) oder höher kompatibel ist.
+
+
+NOTE: Sie können auch die folgenden Schritte ausführen, um die VM-Hardwareversion auf den Witness Nodes zu aktualisieren.
+
+.Schritte
+. Melden Sie sich beim vSphere Web Client als vCenter Administrator an.
+. Wählen Sie im vSphere Client-Menü *VMs* und *Templates* aus.
+. Klicken Sie mit der rechten Maustaste auf die virtuelle Maschine, und wählen Sie *Kompatibilität* > *VM-Kompatibilität aktualisieren*.
+. Wählen Sie *Ja*.
+. Wählen Sie je nach Version Ihrer vSphere-Umgebung ESXi 6.7 oder eine höhere Version aus.
+. Wählen Sie *OK*.
+. Wählen Sie nach Abschluss des Upgrades *vSphere Client Refresh* aus, und überprüfen Sie, ob die VM-Kompatibilität die gewünschte Version hat.
+
+
+
+
+== Schritt 2: Aktualisieren Sie einen Management-Node auf Element 12.5 oder höher
+
+Wählen Sie eine der folgenden Upgrade-Optionen:
 
 * <<Aktualisieren Sie einen Management-Node von Version 12.3.x oder höher auf Version 12.5 oder höher>>
 * <<Konfigurieren Sie die Authentifizierung mithilfe der REST-API des Management-Node neu>>
@@ -31,14 +53,14 @@ NOTE: Wenn Sie Ihre Managementservices, gefolgt vom Element Storage, nicht nache
 
 
 
-== Aktualisieren Sie einen Management-Node von Version 12.3.x oder höher auf Version 12.5 oder höher
+=== Aktualisieren Sie einen Management-Node von Version 12.3.x oder höher auf Version 12.5 oder höher
 
 Sie können ein Upgrade des Management-Node von Version 12.3.x oder höher auf Version 12.5 oder höher durchführen, ohne dass eine neue Management Node Virtual Machine bereitgestellt werden muss.
 
 
 NOTE: Der Element 12.5 oder höher ist ein optionales Upgrade. Bei bestehenden Implementierungen wird dieser Bedarf nicht benötigt.
 
-.Was Sie benötigen
+.Bevor Sie beginnen
 * Der RAM der Management-Node-VM ist 24 GB.
 * Der Management-Node, den Sie aktualisieren möchten, ist die Version 12.0 und verwendet IPv4-Netzwerke. Der Management-Node Version 12.5 oder höher unterstützt IPv6 nicht.
 +
@@ -124,7 +146,7 @@ IMPORTANT: Wenn Sie die SSH-Funktion zuvor auf dem Management-Node deaktiviert h
 
 
 
-== Konfigurieren Sie die Authentifizierung mithilfe der REST-API des Management-Node neu
+=== Konfigurieren Sie die Authentifizierung mithilfe der REST-API des Management-Node neu
 
 Bei einem sequenziell aktualisierten Management-Service (1) und (2) Element Storage können bestehende Management-Node weiterhin verwendet werden. Wenn Sie eine andere Upgrade-Reihenfolge eingehalten haben, lesen Sie die Verfahren für Upgrades von vorhandenen Management-Nodes.
 
@@ -157,7 +179,8 @@ Der Antwortkörper zeigt an, dass die Neukonfiguration erfolgreich war.
 
 
 
-[discrete]
+
+
 == Weitere Informationen
 
 * https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in für vCenter Server"^]
