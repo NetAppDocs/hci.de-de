@@ -374,5 +374,4 @@ Fügen Sie dem Management-Node bekannte Assets eine Compute-Node-Ressource hinzu
 * link:task_mnode_add_assets.html["Fügen Sie dem Management-Node Computing- und Controller-Ressourcen hinzu"]
 * link:task_mnode_install_add_storage_NIC.html["Konfigurieren Sie eine Speicher-NIC"]
 * https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in für vCenter Server"^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["Seite „NetApp HCI Ressourcen“"^]
 

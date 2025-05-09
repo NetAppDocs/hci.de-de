@@ -100,8 +100,6 @@
   <block id="9c83e144e5481ac6766f4055e566594d" category="floating-title">Weitere Informationen</block>
   <block id="a881a0468246e93ae6e2c5bccd78758e" category="inline-link">NetApp Element Plug-in für vCenter Server</block>
   <block id="7cf5cffc3745b8348cdcfb1c3d0d472f" category="list-text"><block ref="7cf5cffc3745b8348cdcfb1c3d0d472f" category="inline-link-rx"></block></block>
-  <block id="a83404b3b2ca8b3c39459b719d7844d7" category="inline-link">Seite „NetApp HCI Ressourcen“</block>
-  <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="1f240d24d777104809b987ee84a5d843" category="summary">Im Hybrid Cloud Control Dashboard können Sie auf Warnungen reagieren.</block>
   <block id="46ad5a3a2173706ab10902a4810729ce" category="doc">Reagieren Sie auf Warnmeldungen über das Hybrid Cloud Control Dashboard</block>
   <block id="bfc5232cd54db21b7879b3adc6550835" category="paragraph">Über das Hybrid Cloud Control Dashboard können Sie Alarme schnell anzeigen und auf Warnungen reagieren.</block>
@@ -263,7 +261,6 @@
   <block id="d794bba6932341c98b2ede5e9fbf71e0" category="paragraph"><block ref="772ff965718b35dbac2ba2eecdf27123" prefix="" category="inline-code"></block><block ref="82407779129cad414658383de9116892" prefix=" " category="inline-code"></block><block ref="b194941dbf1451d683a4caed80fc169c" prefix=" " category="inline-code"></block><block ref="dcde5ecf700fb570ce819b9b94035298" prefix=" " category="inline-code"></block><block ref="337841fbbfcc5609fed4e1c4e929be8f" prefix=" " category="inline-code"></block><block ref="879d64e34f18d251e2c0330a87ec79f1" prefix=" " category="inline-code"></block><block ref="4914a05e05231a2988ab63d6b1e31147" prefix=" " category="inline-code"></block></block>
   <block id="77d2284172cf602a6b301ae681274178" category="admonition">Einige Switches erfordern möglicherweise die Einbeziehung des nativen VLANs in die Liste zulässiger VLANs. Informationen zu Ihrem spezifischen Switch-Modell und der Software-Version finden Sie in der Dokumentation.</block>
   <block id="c93817bbfc3fab71f5f7ca740a11c847" category="inline-link">Ressourcen-Seite zu NetApp HCI</block>
-  <block id="acc25bb29912a0eb99591d6397d5e11d" category="list-text"><block ref="acc25bb29912a0eb99591d6397d5e11d" category="inline-link-rx"></block></block>
   <block id="30bf48918e558b2df1d38f79b26a1ba6" category="summary">Sie können ein benutzerdefiniertes Schutz-Domain-Layout definieren, in dem jeder Knoten einer und nur einer benutzerdefinierten Schutzdomäne zugeordnet ist. Standardmäßig wird jeder Knoten derselben benutzerdefinierten Standard-Schutzdomäne zugewiesen.</block>
   <block id="9f4096a99dd5e34243eb7be9c6242d12" category="doc">Benutzerdefinierte Sicherungsdomänen</block>
   <block id="8180c850351845f95651f26f4897b5b5" category="paragraph">Wenn keine benutzerdefinierten Schutzdomänen zugewiesen sind:</block>
@@ -6233,10 +6230,7 @@
   <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">Wenn Sie ein in-Place-Upgrade eines vorhandenen Management-Node auf Element 12.8 durchführen, müssen Sie vor dem Upgrade sicherstellen, dass die VM-Hardwareversion auf dem Management-Node je nach Umgebung mit ESXi 6.7 (VM-Hardwareversion 14) oder höher kompatibel ist.</block>
   <block id="d334c1e547b1e27eae5f50bf46f786cd" category="admonition">Sie können auch die folgenden Schritte ausführen, um die VM-Hardwareversion auf den Witness Nodes zu aktualisieren.</block>
   <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">Melden Sie sich beim vSphere Web Client als vCenter Administrator an.</block>
-  <block id="1a331e443f5aee428076dfc1341e09b5" category="list-text">Wählen Sie im vSphere Client-Menü *VMs* und *Templates* aus.</block>
-  <block id="f42849b7cb77e25b9a5601553a509100" category="list-text">Klicken Sie mit der rechten Maustaste auf die virtuelle Maschine, und wählen Sie *Kompatibilität* &gt; *VM-Kompatibilität aktualisieren*.</block>
   <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">Wählen Sie je nach Version Ihrer vSphere-Umgebung ESXi 6.7 oder eine höhere Version aus.</block>
-  <block id="7473f663a4bbad1085e61ed9c976a50a" category="list-text">Wählen Sie nach Abschluss des Upgrades *vSphere Client Refresh* aus, und überprüfen Sie, ob die VM-Kompatibilität die gewünschte Version hat.</block>
   <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">Schritt 2: Aktualisieren Sie einen Management-Node auf Element 12.5 oder höher</block>
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">Wählen Sie eine der folgenden Upgrade-Optionen:</block>
   <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">Schritt 1: ISO oder OVA herunterladen und VM bereitstellen</block>
@@ -6253,4 +6247,10 @@
   <block id="64391abac346294811422637c6d0a865" category="paragraph">Fügen Sie dem Management-Node bekannte Assets eine Compute-Node-Ressource hinzu</block>
   <block id="975648a39ca92865d807bc35f02b5984" category="inline-link-macro">Hinweis zu Element Software 12.8</block>
   <block id="2d0be4b4ba388979c4f454ae05179965" category="list-text"><block ref="2d0be4b4ba388979c4f454ae05179965" category="inline-link-macro-rx"></block></block>
+  <block id="6e93fbac14e98fd4eee5f4f560e1d580" category="list-text">Wählen Sie im vSphere Client-Menü *VMs und Vorlagen* aus.</block>
+  <block id="be19667c20f2f3c6b932b48a9c488774" category="list-text">Klicken Sie mit der rechten Maustaste auf die virtuelle Maschine (VM), und wählen Sie *Power* &gt; *Gastbetriebssystem herunterfahren*.</block>
+  <block id="6f5f678ae471ecc070cea185b3d40ed4" category="paragraph">Warten Sie, bis die VM ausgeschaltet ist.</block>
+  <block id="b58c4fe6ac8a2dffa0fb94c9d1de7556" category="list-text">Klicken Sie mit der rechten Maustaste auf die VM, und wählen Sie *Kompatibilität* &gt; *VM-Kompatibilität aktualisieren*.</block>
+  <block id="eeb196c0a77fbb85f8908ae3cca16bfc" category="list-text">Klicken Sie nach Abschluss des Upgrades mit der rechten Maustaste auf die VM, und wählen Sie *Power* &gt; *Power On*.</block>
+  <block id="917268d8045dd1bb18e5f8cc7caf9359" category="list-text">Wählen Sie *vSphere Client refresh* aus, und überprüfen Sie, ob die VM-Kompatibilität die gewünschte Version hat.</block>
 </blocks>
