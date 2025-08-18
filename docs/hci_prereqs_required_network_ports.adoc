@@ -72,9 +72,6 @@ Die folgenden Abkürzungen werden in der Tabelle verwendet:
 | Management-Node | Storage-Node MVIP | 442 | UI- und API-Zugriff auf Upgrades von Storage-Node und Element Software 
 
 
-| Management-Node | `23.32.54.122`, `216.240.21.15` | 443 | Upgrades für Element Software 
-
-
 | Management-Node | Baseboard Management Controller (BMC) | 443 | Hardware-Überwachung und Bestandsverbindung (Redfish- und IPMI-Befehle) 
 
 
