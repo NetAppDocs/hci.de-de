@@ -11,21 +11,24 @@ keywords: netapp, hci, cluster, element, H610S upgrade, hcc
 [role="lead"]
 Für ein Upgrade der NetApp Element Software kann die NetApp Hybrid Cloud Control UI oder DIE REST-API verwendet werden. Bestimmte Vorgänge werden bei einem Upgrade der Element Software unterdrückt, z. B. beim Hinzufügen und Entfernen von Nodes, beim Hinzufügen und Entfernen von Laufwerken sowie Befehle, die unter anderem mit Initiatoren, Volume-Zugriffsgruppen und virtuellen Netzwerken verbunden sind.
 
+VORSICHT:
 
-NOTE: Ab Element 12.5 werden NetApp HealthTools bei Upgrades der Element Software nicht mehr unterstützt. Wenn Sie Element 11.0 oder 11.1 ausführen, müssen Sie zuerst link:https://docs.netapp.com/us-en/hci19/docs/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["Upgrade auf Element 12.3 mit HealthTools"^] Und dann upgraden Sie mithilfe von NetApp Hybrid Cloud Control auf Element 12.5 oder höher.
+[]
+====
+Das Management Services 2.27-Paket enthält das Element Plug-in für vCenter Server 5.5, das nur mit dem Management Node 12.8 kompatibel ist.  Wenn Sie auf Management Services 2.27 aktualisieren, müssen Sie die Upgrade-Reihenfolge ändern und das Management Services-Paket nach dem Upgrade auf Element 12.8 aktualisieren, um die Kompatibilität zwischen dem Management-Knoten und den Management Services sicherzustellen.
 
-.Was Sie benötigen
+Wenn Sie auf die Verwaltungsdienste 2.21.61 bis 2.26.40 aktualisieren, müssen Sie das Verwaltungsdienstpaket aktualisieren, bevor Sie auf Element 12.8 aktualisieren.
+
+====
+.Bevor Sie beginnen
 * *Administratorrechte*: Sie haben Berechtigungen für den Storage Cluster Administrator, um das Upgrade durchzuführen.
 * *Gültiger Upgrade-Pfad*: Sie haben die Upgrade-Pfadinformationen für die Element-Version, auf die Sie aktualisieren, überprüft und bestätigt, dass der Upgrade-Pfad gültig ist. Siehe https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software%3F["NetApp KB: Upgrade-Matrix für Storage Cluster mit NetApp Element Software"^]
++
+Ab Element 12.5 werden NetApp HealthTools bei Upgrades der Element Software nicht mehr unterstützt. Wenn Sie Element 11.0 oder 11.1 ausführen, müssen Sie zuerst link:https://docs.netapp.com/us-en/hci19/docs/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["Upgrade auf Element 12.3 mit HealthTools"^] Und dann upgraden Sie mithilfe von NetApp Hybrid Cloud Control auf Element 12.5 oder höher.
+
 * *System Time SYNC*: Sie haben sichergestellt, dass die Systemzeit auf allen Knoten synchronisiert ist und NTP für den Speicher-Cluster und die Knoten korrekt konfiguriert ist. Jeder Node muss in der Web-UI pro Node mit einem DNS-Nameserver konfiguriert sein (`https://[IP address]:442`) Ohne ungelöste Cluster Fehler im Zusammenhang mit Zeitverzerrung.
 * *System-Ports*: Bei Upgrade-Nutzung von NetApp Hybrid Cloud Control haben Sie sichergestellt, dass die erforderlichen Ports geöffnet sind. Siehe link:hci_prereqs_required_network_ports.html["Netzwerkports"] Finden Sie weitere Informationen.
 * *Management-Node*: Für NetApp Hybrid Cloud Control UI und API wird der Management-Node in Ihrer Umgebung mit Version 11.3 ausgeführt.
-* *Management Services*: Sie haben Ihr Management Services Bundle auf die neueste Version aktualisiert.
-
-
-
-IMPORTANT: Sie müssen ein Upgrade auf das neueste Management Services Bundle durchführen, bevor Sie Ihre Element Software auf Version 12.5 oder höher aktualisieren. Wenn Sie die Element Software auf Version 12.5 oder höher aktualisieren, benötigen Sie Managementdienste 2.21.61 oder höher, um fortfahren zu können.
-
 * *Cluster Health*: Sie haben überprüft, dass der Cluster bereit ist, aktualisiert zu werden. Siehe link:task_hcc_upgrade_element_prechecks.html["Integritätsprüfungen von Element Storage vor einem Storage Upgrade durchführen"].
 * *Aktualisierter Baseboard Management Controller (BMC) für H610S-Knoten*: Sie haben die BMC-Version für Ihre H610S-Knoten aktualisiert. Siehe link:rn_H610S_BMC_3.84.07.html["Versionshinweise und Upgrade-Anweisungen"].
 * *Aktualisierungszeit*: Sie haben genügend Zeit für die Durchführung Ihres Upgrades eingeplant. Bei einem Upgrade auf Element Software 12.5 oder höher variiert die Dauer des Upgradevorgangs je nach aktueller Element Softwareversion und Firmware-Updates.
