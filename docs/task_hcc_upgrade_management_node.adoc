@@ -20,7 +20,7 @@ NOTE: Wenn Sie Informationen zum Upgrade von Management-Knoten 12.2 oder älter 
 
 == Schritt: Upgrade der VM-Hardwareversion auf einem Management-Node
 
-Wenn Sie ein in-Place-Upgrade eines vorhandenen Management-Node auf Element 12.8 durchführen, müssen Sie vor dem Upgrade sicherstellen, dass die VM-Hardwareversion auf dem Management-Node je nach Umgebung mit ESXi 6.7 (VM-Hardwareversion 14) oder höher kompatibel ist.
+Wenn Sie ein In-Place-Upgrade eines bestehenden Management-Knotens auf Element 12.8 oder höher durchführen, müssen Sie vor dem Upgrade sicherstellen, dass die VM-Hardwareversion auf dem Management-Knoten mit ESXi 6.7 (VM-Hardwareversion 14) oder höher kompatibel ist, abhängig von Ihrer Umgebung.
 
 
 NOTE: Sie können auch die folgenden Schritte ausführen, um die VM-Hardwareversion auf den Witness Nodes zu aktualisieren.
