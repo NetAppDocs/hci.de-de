@@ -565,4 +565,6 @@ CAUTION: Während des Einschaltvorgangs etwa fünf Minuten lang zeigt die KVM-Ko
 
 == Weitere Informationen
 
-https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in für vCenter Server"^]
+* link:https://kb.netapp.com/on-prem/solidfire/Element_OS_Kbs/vmnic1_and_vmnic4_is_swapped_by_compute_node_firmware_upgrade["Firmware-Upgrade des Compute-Knotens vertauscht vmnic1 und vmnic4"^]
+* link:https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in für vCenter Server"^]
+
