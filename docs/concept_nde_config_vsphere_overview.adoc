@@ -29,6 +29,7 @@ Wenn Sie einen neuen vCenter Server installieren, können Sie während der Netzw
 
 
 
+[[find-more-information]]
 == Weitere Informationen
 
 * link:firmware_driver_versions.html["Unterstützte Firmware- und ESXi-Treiberversionen für NetApp HCI und Firmware-Versionen für NetApp HCI Storage Nodes"]

@@ -18,6 +18,8 @@ NOTE: Wenn Sie Informationen zum Upgrade von Management-Knoten 12.2 oder älter 
 
 
 
+[[step-1-upgrade-vm-hardware-version-on-a-management-node]]
+[[upgrade-vm-hardware]]
 == Schritt: Upgrade der VM-Hardwareversion auf einem Management-Node
 
 Wenn Sie ein In-Place-Upgrade eines bestehenden Management-Knotens auf Element 12.8 oder höher durchführen, müssen Sie vor dem Upgrade sicherstellen, dass die VM-Hardwareversion auf dem Management-Knoten mit ESXi 6.7 (VM-Hardwareversion 14) oder höher kompatibel ist, abhängig von Ihrer Umgebung.
@@ -42,6 +44,7 @@ Warten Sie, bis die VM ausgeschaltet ist.
 
 
 
+[[step-2-upgrade-a-management-node-to-element-12-5-or-later]]
 == Schritt 2: Aktualisieren Sie einen Management-Node auf Element 12.5 oder höher
 
 Wählen Sie eine der folgenden Upgrade-Optionen:
@@ -58,6 +61,7 @@ NOTE: Wenn Sie Ihre Managementservices, gefolgt vom Element Storage, nicht nache
 
 
 
+[[upgrade-a-management-node-to-version-12-5-or-later-from-version-12-3-x-or-later]]
 === Aktualisieren Sie einen Management-Node von Version 12.3.x oder höher auf Version 12.5 oder höher
 
 Sie können ein Upgrade des Management-Node von Version 12.3.x oder höher auf Version 12.5 oder höher durchführen, ohne dass eine neue Management Node Virtual Machine bereitgestellt werden muss.
@@ -151,6 +155,7 @@ IMPORTANT: Wenn Sie die SSH-Funktion zuvor auf dem Management-Node deaktiviert h
 
 
 
+[[reconfigure-authentication-using-the-management-node-rest-api]]
 === Konfigurieren Sie die Authentifizierung mithilfe der REST-API des Management-Node neu
 
 Bei einem sequenziell aktualisierten Management-Service (1) und (2) Element Storage können bestehende Management-Node weiterhin verwendet werden. Wenn Sie eine andere Upgrade-Reihenfolge eingehalten haben, lesen Sie die Verfahren für Upgrades von vorhandenen Management-Nodes.
@@ -186,6 +191,7 @@ Der Antwortkörper zeigt an, dass die Neukonfiguration erfolgreich war.
 
 
 
+[[find-more-information]]
 == Weitere Informationen
 
 https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in für vCenter Server"^]

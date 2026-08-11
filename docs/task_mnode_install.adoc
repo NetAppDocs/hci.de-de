@@ -57,6 +57,7 @@ Bevor Sie dieses Verfahren befolgen, sollten Sie ein Verständnis von haben link
 
 
 
+[[step-1-download-iso-or-ova-and-deploy-the-vm]]
 == Schritt 1: ISO oder OVA herunterladen und VM bereitstellen
 
 Laden Sie das entsprechende ISO oder OVA von der NetApp-Support-Website herunter, und installieren Sie die VM.
@@ -106,6 +107,7 @@ NOTE: Wenn Sie einen Management-Node mithilfe des Images installieren, kann dies
 
 
 
+[[step-2-create-the-management-node-admin-and-configure-the-network]]
 == Schritt 2: Erstellen Sie den Verwaltungsknoten admin und konfigurieren Sie das Netzwerk
 
 Erstellen Sie nach Abschluss der VM-Installation den Admin-Benutzer des Management-Nodes, und konfigurieren Sie das Management-Node-Netzwerk.
@@ -137,6 +139,7 @@ NOTE: Wenn Sie eine zusätzliche NIC benötigen, um den Speicherdatenverkehr zu 
 
 
 
+[[step-3-configure-time-sync]]
 == Schritt 3: Konfigurieren der Zeitsynchronisierung
 
 Synchronisieren Sie vor dem Einrichten des Management-Node die Zeit zwischen dem Management-Node und dem Storage-Cluster.
@@ -158,7 +161,7 @@ sudo service ntpd stop
 .. Bearbeiten Sie die NTP-Konfigurationsdatei `/etc/ntp.conf`:
 +
 ... Kommentieren Sie die Standardserver (`server 0.gentoo.pool.ntp.org`) Durch Hinzufügen von a `#` Vor jedem.
-... Fügen Sie für jeden Standardserver, den Sie hinzufügen möchten, eine neue Zeile hinzu. Die Standardzeitserver müssen die gleichen NTP-Server sein, die auf dem Speicher-Cluster verwendet werden, die Sie in A verwenden link:task_mnode_install.html#set-up-the-management-node["Später Schritt"].
+... Fügen Sie für jeden Standardzeitserver, den Sie hinzufügen möchten, eine neue Zeile hinzu. Die Standardzeitserver müssen dieselben NTP-Server sein, die auf dem Speichercluster verwendet werden, das Sie in einer link:task_mnode_install.html#step-4-set-up-the-management-node["Später Schritt"] verwenden.
 +
 [listing]
 ----
@@ -215,10 +218,11 @@ NOTE: Aktivieren Sie diese Option nicht, wenn Sie zukünftige Änderungen an der
 
 
 
-NOTE: Bearbeiten Sie NTP nicht, nachdem Sie die Konfiguration zur Zeitsynchronisation abgeschlossen haben, da es sich auf das NTP beim Ausführen des auswirkt link:task_mnode_install.html#set-up-the-management-node["Setup-Befehl"] Auf dem Management-Node.
+NOTE: Bearbeiten Sie den NTP nicht, nachdem Sie die Zeitsynchronisierungskonfiguration abgeschlossen haben, da dies Auswirkungen auf den NTP hat, wenn Sie link:task_mnode_install.html#step-4-set-up-the-management-node["Setup-Befehl"] auf dem Management-Node ausführen.
 
 
 
+[[step-4-set-up-the-management-node]]
 == Schritt 4: Einrichten des Management-Knotens
 
 Konfigurieren Sie den Management-Node mit dem `setup-mnode` Befehl.
@@ -242,7 +246,7 @@ NOTE: Die gekürzte Form des Befehlsnamens ist in Klammern ( ) und kann durch de
 
 +
 *** *--mnode_admin_user (-mu) [username]*: Der Benutzername für das Administrator-Konto des Management-Node. Dies ist wahrscheinlich der Benutzername für das Benutzerkonto, mit dem Sie sich beim Management-Node anmelden.
-*** *--Storage_mvip (-SM) [MVIP-Adresse]*: Die virtuelle Management-IP-Adresse (MVIP) des Speicherclusters, auf dem Element Software ausgeführt wird. Konfigurieren Sie den Management-Node mit demselben Storage-Cluster, das Sie während verwendet haben link:task_mnode_install.html#configure-time-sync["Konfiguration von NTP-Servern"].
+*** *--storage_mvip (-sm) [MVIP-Adresse]*: Die Management Virtual IP-Adresse (MVIP) des Speicherclusters, auf dem die Element Software ausgeführt wird. Der Management-Node wird mit demselben Speichercluster konfiguriert, der während link:task_mnode_install.html#step-3-configure-time-sync["Konfiguration von NTP-Servern"] verwendet wurde.
 *** *--Storage_username (-su) [username]*: Der Benutzername des Speicherclusters für den vom angegebenen Cluster `--storage_mvip` Parameter.
 *** *--Telemetrie_Active (-t) [true]*: Den Wert TRUE beibehalten, der die Datenerfassung zur Analyse durch Active IQ ermöglicht.
 
@@ -285,6 +289,7 @@ NOTE: Verwenden Sie einen eindeutigen Kontonamen für persistente Volumes, der s
 
 
 
+[[step-5-configure-controller-assets]]
 == Schritt 5: Konfiguration der Controller-Assets
 
 Suchen Sie die Installations-ID, und fügen Sie eine vCenter-Controller-Ressource hinzu.
@@ -354,6 +359,7 @@ NOTE: Sie sollten eine neue NetApp HCC-Rolle in vCenter erstellen, um eine Contr
 
 
 
+[[step-6-netapp-hci-only-configure-compute-node-assets]]
 == Schritt 6: (Nur NetApp HCI) Konfiguration der Ressourcen für Computing-Nodes
 
 Fügen Sie dem Management-Node bekannte Assets eine Compute-Node-Ressource hinzu
@@ -368,6 +374,7 @@ Fügen Sie dem Management-Node bekannte Assets eine Compute-Node-Ressource hinzu
 
 
 
+[[find-more-information]]
 == Weitere Informationen
 
 * link:concept_hci_volumes.html#persistent-volumes["Persistente Volumes"]

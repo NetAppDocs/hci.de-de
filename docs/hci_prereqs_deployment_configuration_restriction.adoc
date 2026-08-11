@@ -20,6 +20,7 @@ Wenn Sie link:task_nde_select_inventory.html["Wählen Sie auf der Seite *Inventa
 
 
 
+[[find-more-information]]
 == Weitere Informationen
 
 https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in für vCenter Server"^]

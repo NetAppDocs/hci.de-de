@@ -21,12 +21,14 @@ NOTE: Für NetApp Hybrid Cloud Control ist das neueste Management-Services-Bundl
 
 
 
+[[whats-new]]
 == Was ist neu
 
 Version 2.179.0 enthält allgemeine Bugfixes.
 
 
 
+[[updated-firmware-components]]
 === Aktualisierte Firmware-Komponenten
 
 Dieses Firmware-Paket enthält die folgenden Firmware-Versionen für Hardwarekomponenten. Aktualisierte Versionen in Bold:
@@ -45,6 +47,7 @@ Dieses Firmware-Paket enthält die folgenden Firmware-Versionen für Hardwarekom
 |===
 
 
+[[mellanox-nic-firmware-driver-compatibility]]
 === Kompatibilität mit Mellanox NIC-Firmware-Treibern
 
 Die aktualisierte Mellanox-Firmware-Version 14.29.1016 erfordert eine Mindestversion des VMware ESXi-Treibers:
@@ -87,6 +90,7 @@ Wenn Sie Host Betriebssysteme manuell installieren oder aktualisieren, kann NetA
 
 
 
+[[download-compute-firmware-bundle-2-179-0]]
 == Laden Sie Das Compute Firmware Bundle 2.179.0 Herunter
 
 So laden Sie das Computing-Firmware-Bundle herunter:
@@ -100,12 +104,14 @@ Besuchen Sie link:task_hcc_upgrade_compute_node_firmware.html#use-the-baseboard-
 
 
 
+[[resolved-and-known-issues]]
 == Gelöste und bekannte Probleme
 
 Siehe https://mysupport.netapp.com/site/bugs-online/product["Bugs Online Tool"^] Für Details zu Problemen, die behoben wurden, und für neue Probleme.
 
 
 
+[[accessing-the-bol-tool]]
 === Zugriff auf das BOL-Tool
 
 . Navigieren Sie zur https://mysupport.netapp.com/site/bugs-online/product["Bugs Online Tool"^] und wählen Sie *Element Software* aus der Dropdown-Liste aus:
@@ -124,6 +130,7 @@ image::bol_list_bugs_found.png[Versionshinweise für Storage-Firmware-Bundles]
 
 
 
+[[find-more-information]]
 == Weitere Informationen
 
 * link:firmware_driver_versions.html["Unterstützte Firmware- und ESXi-Treiberversionen für NetApp HCI und Firmware-Versionen für NetApp HCI Storage Nodes"]

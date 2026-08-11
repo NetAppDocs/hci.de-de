@@ -40,6 +40,7 @@ Upgrades mit NetApp Hybrid Cloud Control sind in früheren Service-Bundle-Versio
 
 
 
+[[sysupgradeseqsystem-upgrade-sequence]]
 == [[sys_Upgrade_seq]]Systemaktualisierungssequenz
 
 Sie können die folgende Sequenz verwenden, um Ihr NetApp HCI-System zu aktualisieren.

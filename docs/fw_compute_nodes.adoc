@@ -24,12 +24,14 @@ Die unterstützten Firmware- und ESXi-Treiberversionen für NetApp HCI-Rechner-N
 
 
 
+[[h615c]]
 == H615C
 
 *Modellnummer (Familienanteil):* H615C
 
 
 
+[[component-firmware-managed-by-a-compute-firmware-bundle]]
 === Die Komponenten-Firmware wird von einem Computing-Firmware-Bundle verwaltet
 
 Während des Zeitrahmens von 11.x war Element Software die einzige Möglichkeit, Firmware freizugeben. Ab Element 12.0 wurde das Konzept eines *Compute Firmware Bundle* eingeführt und Firmware Updates wurden nun über ein unabhängig veröffentlichtes Compute Firmware Bundle möglich.
@@ -96,6 +98,7 @@ NOTE: Ein Bindestrich (*-*) in der folgenden Tabelle zeigt an, dass die jeweilig
 |===
 
 
+[[component-firmware-not-managed-by-a-compute-firmware-bundle]]
 === Die Komponenten-Firmware wird nicht von einem Computing-Firmware-Bundle gemanagt
 
 Die folgende Firmware wird nicht von einem Computing Firmware Bundle verwaltet:
@@ -115,12 +118,14 @@ Die folgende Firmware wird nicht von einem Computing Firmware Bundle verwaltet:
 |===
 
 
+[[h610c]]
 == H610C
 
 *Modellnummer (Familienanteil):* H610C
 
 
 
+[[component-firmware-managed-by-a-compute-firmware-bundle]]
 === Die Komponenten-Firmware wird von einem Computing-Firmware-Bundle verwaltet
 
 Während NetApp HCI 1.0 - NetApp HCI 1.7 war NetApp HCI die einzige Möglichkeit, Firmware freizugeben. Ab NetApp HCI 1.8 wurde das Konzept eines *Compute Firmware Bundle* eingeführt und Firmware Updates sind nun durch ein unabhängig veröffentlichtes Compute Firmware Bundle möglich.
@@ -196,6 +201,7 @@ NOTE: Ein Bindestrich (*-*) in der folgenden Tabelle zeigt an, dass die jeweilig
 |===
 
 
+[[component-firmware-not-managed-by-a-compute-firmware-bundle]]
 === Die Komponenten-Firmware wird nicht von einem Computing-Firmware-Bundle gemanagt
 
 Die folgende Firmware wird nicht von einem Computing Firmware Bundle verwaltet:
@@ -218,12 +224,14 @@ Die folgende Firmware wird nicht von einem Computing Firmware Bundle verwaltet:
 |===
 
 
+[[h410c]]
 == H410C
 
 *Modellnummer (Familienanteil):* H410C
 
 
 
+[[component-firmware-managed-by-a-compute-firmware-bundle]]
 === Die Komponenten-Firmware wird von einem Computing-Firmware-Bundle verwaltet
 
 Während NetApp HCI 1.0 - NetApp HCI 1.7 war NetApp HCI die einzige Möglichkeit, Firmware freizugeben. Ab NetApp HCI 1.8 wurde das Konzept eines *Compute Firmware Bundle* eingeführt und Firmware Updates sind nun durch ein unabhängig veröffentlichtes Compute Firmware Bundle möglich.
@@ -299,6 +307,7 @@ NOTE: Ein Bindestrich (*-*) in der folgenden Tabelle zeigt an, dass die jeweilig
 |===
 
 
+[[component-firmware-not-managed-by-a-compute-firmware-bundle]]
 === Die Komponenten-Firmware wird nicht von einem Computing-Firmware-Bundle gemanagt
 
 Die folgende Firmware wird nicht von einem Computing Firmware Bundle verwaltet:
@@ -327,12 +336,14 @@ Die folgende Firmware wird nicht von einem Computing Firmware Bundle verwaltet:
 |===
 
 
+[[h300eh500eh700e]]
 == H300E/H500E/H700E
 
 *Modellnummer (Familienanteil):* H300E/H500E/H700E
 
 
 
+[[component-firmware-managed-by-a-compute-firmware-bundle]]
 === Die Komponenten-Firmware wird von einem Computing-Firmware-Bundle verwaltet
 
 Während NetApp HCI 1.0 - NetApp HCI 1.7 war NetApp HCI die einzige Möglichkeit, Firmware freizugeben. Ab NetApp HCI 1.8 wurde das Konzept eines *Compute Firmware Bundle* eingeführt und Firmware Updates sind nun durch ein unabhängig veröffentlichtes Compute Firmware Bundle möglich.
@@ -408,6 +419,7 @@ NOTE: Ein Bindestrich (*-*) in der folgenden Tabelle zeigt an, dass die jeweilig
 |===
 
 
+[[component-firmware-not-managed-by-a-compute-firmware-bundle]]
 === Die Komponenten-Firmware wird nicht von einem Computing-Firmware-Bundle gemanagt
 
 Die folgende Firmware wird nicht von einem Computing Firmware Bundle verwaltet:

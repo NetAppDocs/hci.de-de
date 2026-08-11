@@ -48,6 +48,7 @@ Weitere Informationen zu den vom Service ausgeführten Storage-Zustandsprüfunge
 
 
 
+[[use-netapp-hybrid-cloud-control-to-run-element-storage-health-checks-prior-to-upgrading-storage]]
 == NetApp Hybrid Cloud Control bietet Zustandsüberprüfungen für Element Storage vor Storage-Upgrades
 
 Mithilfe von NetApp Hybrid Cloud Control (HCC) können Sie überprüfen, ob ein Storage-Cluster für ein Upgrade bereit ist.
@@ -77,6 +78,7 @@ Nachdem die Integritätsprüfung ohne Fehler abgeschlossen wurde, kann das Stora
 
 
 
+[[use-api-to-run-element-storage-health-checks-prior-to-upgrading-storage]]
 == Nutzen Sie API zur Ausführung von Element Storage-Zustandsprüfungen vor einem Storage-Upgrade
 
 Mithilfe DER REST-API können Sie überprüfen, ob ein Storage-Cluster aktualisiert werden kann. Bei der Zustandsprüfung werden keine Hindernisse für Upgrades beseitigt, z. B. ausstehende Nodes, Probleme mit Festplattenspeicher und Cluster-Fehler.
@@ -208,6 +210,7 @@ Wenn alle Zustandsprüfungen erfolgreich sind, ähnelt die Rückkehr dem folgend
 
 
 
+[[storage-health-checks-made-by-the-service]]
 == Storage-Systemprüfungen, die vom Service durchgeführt werden
 
 Bei den Storage-Zustandsprüfungen werden die folgenden Prüfungen pro Cluster durchgeführt.
@@ -241,6 +244,7 @@ Bei den Storage-Zustandsprüfungen werden die folgenden Prüfungen pro Cluster d
 |===
 
 
+[[find-more-information]]
 == Weitere Informationen
 
 https://docs.netapp.com/us-en/vcp/index.html["NetApp Element Plug-in für vCenter Server"^]
